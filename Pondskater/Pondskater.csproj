@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	
+  <PropertyGroup>
+    <TargetFrameworks>net7.0;net48</TargetFrameworks>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <LangVersion>8.0</LangVersion>
+    <Version>1.0</Version>
+    <AssemblyName>Pondskater</AssemblyName>
+    <Title>Pondskater</Title>
+    <Description>Pondskater provides tools for offseting, obtaining the straight skeleton and creating roofs or topographic features. It is a wrap around the library Surfer2 developed by the University of Salzburg's Computational Geometry and Applications Lab. Surfer2 is an implementation of Aichholzer and Aurenhammer's triangulation based straight skeleton algorithm using CGAL. </Description>
+    <TargetExt>.gha</TargetExt>
+    <NoWarn>NU1701;NETSDK1086</NoWarn>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <BaseOutputPath>bin/Pondskater/</BaseOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)'=='net7.0'">
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)'=='net48'">
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Grasshopper" Version="8.0.23164.14305-wip" IncludeAssets="compile;build" />
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources/roofer.png" />
+    <EmbeddedResource Include="Resources/offset.png" />
+    <EmbeddedResource Include="Resources/skeleton2d.png" />
+  </ItemGroup>
+
+</Project>

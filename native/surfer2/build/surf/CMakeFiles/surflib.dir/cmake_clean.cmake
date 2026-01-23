@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  ".1.99"
+  "CMakeFiles/surflib.dir/easyloggingpp/src/easylogging++.cc.o"
+  "CMakeFiles/surflib.dir/easyloggingpp/src/easylogging++.cc.o.d"
+  "CMakeFiles/surflib.dir/src/BGLGraph.cpp.o"
+  "CMakeFiles/surflib.dir/src/BGLGraph.cpp.o.d"
+  "CMakeFiles/surflib.dir/src/BasicInput.cpp.o"
+  "CMakeFiles/surflib.dir/src/BasicInput.cpp.o.d"
+  "CMakeFiles/surflib.dir/src/BasicTriangulation.cpp.o"
+  "CMakeFiles/surflib.dir/src/BasicTriangulation.cpp.o.d"
+  "CMakeFiles/surflib.dir/src/CollapseSpec.cpp.o"
+  "CMakeFiles/surflib.dir/src/CollapseSpec.cpp.o.d"
+  "CMakeFiles/surflib.dir/src/EventQueue.cpp.o"
+  "CMakeFiles/surflib.dir/src/EventQueue.cpp.o.d"
+  "CMakeFiles/surflib.dir/src/KineticTriangle.cpp.o"
+  "CMakeFiles/surflib.dir/src/KineticTriangle.cpp.o.d"
+  "CMakeFiles/surflib.dir/src/KineticTriangulation.cpp.o"
+  "CMakeFiles/surflib.dir/src/KineticTriangulation.cpp.o.d"
+  "CMakeFiles/surflib.dir/src/SkeletonDCEL.cpp.o"
+  "CMakeFiles/surflib.dir/src/SkeletonDCEL.cpp.o.d"
+  "CMakeFiles/surflib.dir/src/SkeletonStructure.cpp.o"
+  "CMakeFiles/surflib.dir/src/SkeletonStructure.cpp.o.d"
+  "CMakeFiles/surflib.dir/src/WavefrontEdge.cpp.o"
+  "CMakeFiles/surflib.dir/src/WavefrontEdge.cpp.o.d"
+  "CMakeFiles/surflib.dir/src/WavefrontVertex.cpp.o"
+  "CMakeFiles/surflib.dir/src/WavefrontVertex.cpp.o.d"
+  "CMakeFiles/surflib.dir/src/cgaltools.cpp.o"
+  "CMakeFiles/surflib.dir/src/cgaltools.cpp.o.d"
+  "CMakeFiles/surflib.dir/src/surf.cpp.o"
+  "CMakeFiles/surflib.dir/src/surf.cpp.o.d"
+  "CMakeFiles/surflib.dir/src/surf_c_api.cpp.o"
+  "CMakeFiles/surflib.dir/src/surf_c_api.cpp.o.d"
+  "CMakeFiles/surflib.dir/src/tools.cpp.o"
+  "CMakeFiles/surflib.dir/src/tools.cpp.o.d"
+  "libsurfer.1.99.dylib"
+  "libsurfer.dylib"
+  "libsurfer.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/surflib.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

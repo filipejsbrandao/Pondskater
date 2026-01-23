@@ -1,0 +1,247 @@
+1. Solution exception:Could not find a part of the path "/
+<?xml version="1.0"?>
+<!DOCTYPE ipe SYSTEM "ipe.dtd">
+<ipe version="70000" creator="surfer2">
+<info bbox="cropbox" />
+<ipestyle name="basic">
+  <pen name="heavier" value="0.8"/>
+  <color name="blue" value="0 0 1"/>
+</ipestyle>
+<ipestyle name="dashstyles">
+  <dashstyle name="dotted-narrower" value="[0.5 0.5] 0"/>
+</ipestyle>
+<ipestyle name="surfer">
+  <pen name="thin" value="0.2"/>
+</ipestyle>
+<page>
+<layer name="input" />
+<layer name="sk" />
+<layer name="offsets" />
+<group layer="offsets">
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    5.1 -0.1 m
+    -0.1 -0.1 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    5.1 5.1 m
+    5.1 -0.1 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.1 4.9 m
+    0.1 0.1 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    4.9 4.9 m
+    0.1 4.9 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    4.9 0.1 m
+    4.9 4.9 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.1 5.1 m
+    5.1 5.1 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.1 -0.1 m
+    -0.1 5.1 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.1 0.1 m
+    4.9 0.1 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    5.2 -0.2 m
+    -0.2 -0.2 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    5.2 5.2 m
+    5.2 -0.2 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.2 4.8 m
+    0.2 0.2 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    4.8 4.8 m
+    0.2 4.8 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    4.8 0.2 m
+    4.8 4.8 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.2 5.2 m
+    5.2 5.2 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.2 -0.2 m
+    -0.2 5.2 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.2 0.2 m
+    4.8 0.2 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    5.3 -0.3 m
+    -0.3 -0.3 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    5.3 5.3 m
+    5.3 -0.3 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.3 4.7 m
+    0.3 0.3 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    4.7 4.7 m
+    0.3 4.7 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    4.7 0.3 m
+    4.7 4.7 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.3 5.3 m
+    5.3 5.3 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.3 -0.3 m
+    -0.3 5.3 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.3 0.3 m
+    4.7 0.3 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    5.4 -0.4 m
+    -0.4 -0.4 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    5.4 5.4 m
+    5.4 -0.4 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.4 4.6 m
+    0.4 0.4 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    4.6 4.6 m
+    0.4 4.6 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    4.6 0.4 m
+    4.6 4.6 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.4 5.4 m
+    5.4 5.4 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.4 -0.4 m
+    -0.4 5.4 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.4 0.4 m
+    4.6 0.4 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    5.5 -0.5 m
+    -0.5 -0.5 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    5.5 5.5 m
+    5.5 -0.5 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.5 4.5 m
+    0.5 0.5 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    4.5 4.5 m
+    0.5 4.5 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    4.5 0.5 m
+    4.5 4.5 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.5 5.5 m
+    5.5 5.5 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.5 -0.5 m
+    -0.5 5.5 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.5 0.5 m
+    4.5 0.5 l
+  </path>
+</group>
+</group>
+<group layer="sk">
+  <path cap="1" stroke="blue">
+    5 0 m
+    15 -10 l
+  </path>
+  <path cap="1" stroke="blue">
+    5 5 m
+    15 15 l
+  </path>
+  <path cap="1" stroke="blue">
+    2.5 2.5 m
+    0 5 l
+  </path>
+  <path cap="1" stroke="blue">
+    2.5 2.5 m
+    5 5 l
+  </path>
+  <path cap="1" stroke="blue">
+    2.5 2.5 m
+    5 0 l
+  </path>
+  <path cap="1" stroke="blue">
+    0 5 m
+    -10 15 l
+  </path>
+  <path cap="1" stroke="blue">
+    0 0 m
+    -10 -10 l
+  </path>
+  <path cap="1" stroke="blue">
+    2.5 2.5 m
+    0 0 l
+  </path>
+</group>
+<group layer="input">
+  <path cap="1" stroke="black" pen="heavier">
+    5 0 m
+    5 5 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    0 5 m
+    5 5 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    0 5 m
+    0 0 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    5 0 m
+    0 0 l
+  </path>
+</group>
+</page>
+</ipe>
+".
+	StackTrace	"  at Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderIpe.Read12_Ipe () [0x00064] in <51cd82a4860040e881a5628800bfb79f>:0 \n  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInf…"	string

@@ -1,0 +1,20 @@
+{
+  "profiles": {
+    "Pondskater": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\Rhino 8\\System\\Rhino.exe",
+      "commandLineArgs": "",
+      "environmentVariables": {
+        "RHINO_PACKAGE_DIRS": "$(ProjectDir)$(BaseOutputPath)$(Configuration)\\$(TargetFramework)\\"
+      }
+    },
+    "Pondskater (macOS)": {
+      "commandName": "Executable",
+      "executablePath": "/Applications/Rhino 8.app/Contents/MacOS/Rhinoceros",
+      "commandLineArgs": "",
+      "environmentVariables": {
+        "RHINO_PACKAGE_DIRS": "$(ProjectDir)$(BaseOutputPath)$(Configuration)/$(TargetFramework)/"
+      }
+    }
+  }
+}

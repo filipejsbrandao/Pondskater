@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema xmlns="http://tempuri.org/ipe" elementFormDefault="qualified" targetNamespace="http://tempuri.org/ipe" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ipe">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" ref="info" />
+        <xs:element minOccurs="0" maxOccurs="1" ref="preamble" />
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="bitmap" />
+          <xs:element ref="ipestyle" />
+        </xs:choice>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="page" />
+      </xs:sequence>
+      <xs:attribute name="creator" type="xs:string" />
+      <xs:attribute name="version" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="info">
+    <xs:complexType>
+      <xs:attribute name="created" type="xs:string" />
+      <xs:attribute name="modified" type="xs:string" />
+      <xs:attribute name="title" type="xs:string" />
+      <xs:attribute name="author" type="xs:string" />
+      <xs:attribute name="subject" type="xs:string" />
+      <xs:attribute name="keywords" type="xs:string" />
+      <xs:attribute fixed="fullscreen" name="pagemode" type="xs:string" />
+      <xs:attribute name="numberpages">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="yes" />
+            <xs:enumeration value="no" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute default="pdftex" name="tex">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="pdftex" />
+            <xs:enumeration value="xetex" />
+            <xs:enumeration value="luatex" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="preamble" type="xs:string" />
+  <xs:element name="bitmap">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="id" type="xs:string" use="required" />
+          <xs:attribute name="width" type="xs:string" use="required" />
+          <xs:attribute name="height" type="xs:string" use="required" />
+          <xs:attribute default="DeviceRGB" name="ColorSpace">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="DeviceGray" />
+                <xs:enumeration value="DeviceRGB" />
+                <xs:enumeration value="DeviceCMYK" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute fixed="8" name="BitsPerComponent" type="xs:string" />
+          <xs:attribute name="ColorKey" type="xs:string" />
+          <xs:attribute name="length" type="xs:string" />
+          <xs:attribute name="encoding">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="base64" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute name="Filter">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="FlateDecode" />
+                <xs:enumeration value="DCTDecode" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="page">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" ref="notes" />
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="layer" />
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="view" />
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="group" />
+          <xs:element ref="image" />
+          <xs:element ref="use" />
+          <xs:element ref="text" />
+          <xs:element ref="path" />
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="title" type="xs:string" />
+      <xs:attribute name="section" type="xs:string" />
+      <xs:attribute name="subsection" type="xs:string" />
+      <xs:attribute default="yes" name="marked">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="yes" />
+            <xs:enumeration value="no" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="notes" type="xs:string" />
+  <xs:element name="layer">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute default="yes" name="edit">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="yes" />
+            <xs:enumeration value="no" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute default="visible" name="snap">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="never" />
+            <xs:enumeration value="visible" />
+            <xs:enumeration value="always" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="data" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="view">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="map" />
+        <xs:element ref="transform" />
+      </xs:choice>
+      <xs:attribute name="layers" type="xs:string" use="required" />
+      <xs:attribute name="active" type="xs:string" use="required" />
+      <xs:attribute default="normal" name="effect" type="xs:string" />
+      <xs:attribute default="" name="name" type="xs:string" />
+      <xs:attribute default="yes" name="marked">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="yes" />
+            <xs:enumeration value="no" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="map">
+    <xs:complexType>
+      <xs:attribute name="kind" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="pen" />
+            <xs:enumeration value="symbolsize" />
+            <xs:enumeration value="arrowsize" />
+            <xs:enumeration value="opacity" />
+            <xs:enumeration value="color" />
+            <xs:enumeration value="dashstyle" />
+            <xs:enumeration value="symbol" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="from" type="xs:string" use="required" />
+      <xs:attribute name="to" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="transform">
+    <xs:complexType>
+      <xs:attribute name="layer" type="xs:string" use="required" />
+      <xs:attribute name="matrix" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="group">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="group" />
+          <xs:element ref="image" />
+          <xs:element ref="use" />
+          <xs:element ref="text" />
+          <xs:element ref="path" />
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="layer" type="xs:string" />
+      <xs:attribute default="1 0 0 1 0 0" name="matrix" type="xs:string" />
+      <xs:attribute name="pin">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="yes" />
+            <xs:enumeration value="h" />
+            <xs:enumeration value="v" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute default="affine" name="transformations">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="affine" />
+            <xs:enumeration value="rigid" />
+            <xs:enumeration value="translations" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="clip" type="xs:string" />
+      <xs:attribute name="url" type="xs:string" />
+      <xs:attribute name="decoration" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="image">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="layer" type="xs:string" />
+          <xs:attribute default="1 0 0 1 0 0" name="matrix" type="xs:string" />
+          <xs:attribute name="pin">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="yes" />
+                <xs:enumeration value="h" />
+                <xs:enumeration value="v" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute default="affine" name="transformations">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="affine" />
+                <xs:enumeration value="rigid" />
+                <xs:enumeration value="translations" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute name="rect" type="xs:string" use="required" />
+          <xs:attribute name="bitmap" type="xs:string" />
+          <xs:attribute name="width" type="xs:string" />
+          <xs:attribute name="height" type="xs:string" />
+          <xs:attribute default="DeviceRGB" name="ColorSpace">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="DeviceGray" />
+                <xs:enumeration value="DeviceRGB" />
+                <xs:enumeration value="DeviceCMYK" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute fixed="8" name="BitsPerComponent" type="xs:string" />
+          <xs:attribute name="length" type="xs:string" />
+          <xs:attribute name="encoding">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="base64" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute name="Filter">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="FlateDecode" />
+                <xs:enumeration value="DCTDecode" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="use">
+    <xs:complexType>
+      <xs:attribute name="layer" type="xs:string" />
+      <xs:attribute default="1 0 0 1 0 0" name="matrix" type="xs:string" />
+      <xs:attribute name="pin">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="yes" />
+            <xs:enumeration value="h" />
+            <xs:enumeration value="v" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute default="affine" name="transformations">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="affine" />
+            <xs:enumeration value="rigid" />
+            <xs:enumeration value="translations" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="size" type="xs:string" />
+      <xs:attribute name="pos" type="xs:string" />
+      <xs:attribute default="black" name="stroke" type="xs:string" />
+      <xs:attribute default="black" name="fill" type="xs:string" />
+      <xs:attribute default="normal" name="pen" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="text">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="layer" type="xs:string" />
+          <xs:attribute default="1 0 0 1 0 0" name="matrix" type="xs:string" />
+          <xs:attribute name="pin">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="yes" />
+                <xs:enumeration value="h" />
+                <xs:enumeration value="v" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute default="affine" name="transformations">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="affine" />
+                <xs:enumeration value="rigid" />
+                <xs:enumeration value="translations" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute default="label" name="type">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="label" />
+                <xs:enumeration value="minipage" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute default="black" name="stroke" type="xs:string" />
+          <xs:attribute name="size" type="xs:string" />
+          <xs:attribute name="pos" type="xs:string" use="required" />
+          <xs:attribute name="width" type="xs:string" />
+          <xs:attribute default="normal" name="opacity" type="xs:string" />
+          <xs:attribute name="height" type="xs:string" />
+          <xs:attribute name="depth" type="xs:string" />
+          <xs:attribute name="valign">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="top" />
+                <xs:enumeration value="bottom" />
+                <xs:enumeration value="center" />
+                <xs:enumeration value="baseline" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute name="halign">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="left" />
+                <xs:enumeration value="right" />
+                <xs:enumeration value="center" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute name="style" type="xs:string" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="path">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="layer" type="xs:string" />
+          <xs:attribute default="1 0 0 1 0 0" name="matrix" type="xs:string" />
+          <xs:attribute name="pin">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="yes" />
+                <xs:enumeration value="h" />
+                <xs:enumeration value="v" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute default="affine" name="transformations">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="affine" />
+                <xs:enumeration value="rigid" />
+                <xs:enumeration value="translations" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute name="stroke" type="xs:string" />
+          <xs:attribute name="fill" type="xs:string" />
+          <xs:attribute default="normal" name="tiling" type="xs:string" />
+          <xs:attribute default="normal" name="gradient" type="xs:string" />
+          <xs:attribute name="dash" type="xs:string" />
+          <xs:attribute default="normal" name="pen" type="xs:string" />
+          <xs:attribute default="normal" name="opacity" type="xs:string" />
+          <xs:attribute name="cap" type="xs:string" />
+          <xs:attribute name="join" type="xs:string" />
+          <xs:attribute name="fillrule">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="wind" />
+                <xs:enumeration value="eofill" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute name="arrow" type="xs:string" />
+          <xs:attribute name="rarrow" type="xs:string" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ipestyle">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element ref="bitmap" />
+          <xs:element ref="symbol" />
+          <xs:element ref="preamble" />
+          <xs:element ref="cmap" />
+          <xs:element ref="textstyle" />
+          <xs:element ref="layout" />
+          <xs:element ref="textpad" />
+          <xs:element ref="titlestyle" />
+          <xs:element ref="pagenumberstyle" />
+          <xs:element ref="pathstyle" />
+          <xs:element ref="gradient" />
+          <xs:element ref="tiling" />
+          <xs:element ref="effect" />
+          <xs:element ref="color" />
+          <xs:element ref="dashstyle" />
+          <xs:element ref="pen" />
+          <xs:element ref="textsize" />
+          <xs:element ref="textstretch" />
+          <xs:element ref="opacity" />
+          <xs:element ref="symbolsize" />
+          <xs:element ref="arrowsize" />
+          <xs:element ref="gridsize" />
+          <xs:element ref="anglesize" />
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pen">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="value" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="symbolsize">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="value" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="arrowsize">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="value" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="color">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="value" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dashstyle">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="value" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="textsize">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="value" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="textstretch">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="value" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="opacity">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="value" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="gridsize">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="value" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="anglesize">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="value" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="symbol">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element ref="group" />
+        <xs:element ref="image" />
+        <xs:element ref="use" />
+        <xs:element ref="text" />
+        <xs:element ref="path" />
+      </xs:choice>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute default="no" name="xform">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="yes" />
+            <xs:enumeration value="no" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="transformations">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="affine" />
+            <xs:enumeration value="rigid" />
+            <xs:enumeration value="translations" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="gradient">
+    <xs:complexType>
+      <xs:sequence minOccurs="1" maxOccurs="unbounded">
+        <xs:element ref="stop" />
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute default="axial" name="type">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="axial" />
+            <xs:enumeration value="radial" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute default="no" name="extend">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="yes" />
+            <xs:enumeration value="no" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute default="1 0 0 1 0 0" name="matrix" type="xs:string" />
+      <xs:attribute name="coords" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stop">
+    <xs:complexType>
+      <xs:attribute name="offset" type="xs:string" use="required" />
+      <xs:attribute name="color" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tiling">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="angle" type="xs:string" use="required" />
+      <xs:attribute name="step" type="xs:string" use="required" />
+      <xs:attribute name="width" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cmap">
+    <xs:complexType>
+      <xs:attribute name="font" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="textstyle">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="begin" type="xs:string" use="required" />
+      <xs:attribute name="end" type="xs:string" use="required" />
+      <xs:attribute default="minipage" name="type">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="label" />
+            <xs:enumeration value="minipage" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="layout">
+    <xs:complexType>
+      <xs:attribute name="paper" type="xs:string" use="required" />
+      <xs:attribute name="origin" type="xs:string" use="required" />
+      <xs:attribute name="frame" type="xs:string" use="required" />
+      <xs:attribute default="yes" name="crop">
+        <xs:simpleType>
+          <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="yes" />
+            <xs:enumeration value="no" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+      <xs:attribute name="skip" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="textpad">
+    <xs:complexType>
+      <xs:attribute name="left" type="xs:string" use="required" />
+      <xs:attribute name="right" type="xs:string" use="required" />
+      <xs:attribute name="top" type="xs:string" use="required" />
+      <xs:attribute name="bottom" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="titlestyle">
+    <xs:complexType>
+      <xs:attribute name="pos" type="xs:string" use="required" />
+      <xs:attribute name="color" type="xs:string" use="required" />
+      <xs:attribute name="size" type="xs:string" use="required" />
+      <xs:attribute name="halign" type="xs:string" />
+      <xs:attribute name="valign" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pagenumberstyle">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="pos" type="xs:string" use="required" />
+          <xs:attribute default="black" name="color" type="xs:string" />
+          <xs:attribute default="normal" name="size" type="xs:string" />
+          <xs:attribute default="baseline" name="valign">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="top" />
+                <xs:enumeration value="bottom" />
+                <xs:enumeration value="center" />
+                <xs:enumeration value="baseline" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute default="left" name="halign">
+            <xs:simpleType>
+              <xs:restriction base="xs:NMTOKEN">
+                <xs:enumeration value="left" />
+                <xs:enumeration value="right" />
+                <xs:enumeration value="center" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="pathstyle">
+    <xs:complexType>
+      <xs:attribute name="cap" type="xs:string" />
+      <xs:attribute name="join" type="xs:string" />
+      <xs:attribute name="fillrule" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="effect">
+    <xs:complexType>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="duration" type="xs:string" />
+      <xs:attribute name="transition" type="xs:string" />
+      <xs:attribute name="effect" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

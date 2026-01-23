@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<graphml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://graphml.graphdrawing.org/xmlns">
+  <key attr.name="vertex-coordinate-x" attr.type="string" for="node" id="x">
+    <default>0</default>
+  </key>
+  <key attr.name="vertex-coordinate-y" attr.type="string" for="node" id="y">
+    <default>0</default>
+  </key>
+  <key attr.name="edge-weight" attr.type="string" for="edge" id="w">
+    <default>1</default>
+  </key>
+  <key attr.name="edge-weight-additive" attr.type="string" for="edge" id="wa">
+    <default>0</default>
+  </key>
+  <graph edgedefault="undirected">
+    <node id="0">
+      <data key="x">0</data>
+      <data key="y">0</data>
+    </node>
+    <node id="1">
+      <data key="x">12.784145789010928</data>
+      <data key="y">0</data>
+    </node>
+    <node id="2">
+      <data key="x">31.03166909002956</data>
+      <data key="y">9.29769162825545</data>
+    </node>
+    <node id="3">
+      <data key="x">58.210536477657044</data>
+      <data key="y">26.903393622718511</data>
+    </node>
+    <node id="4">
+      <data key="x">52.548311572640685</data>
+      <data key="y">37.672221678965329</data>
+    </node>
+    <node id="5">
+      <data key="x">20.422464357288909</data>
+      <data key="y">44.861268135938957</data>
+    </node>
+    <node id="6">
+      <data key="x">2.0676330323385272</data>
+      <data key="y">45.779440375914106</data>
+    </node>
+    <node id="7">
+      <data key="x">0.96412652688957223</data>
+      <data key="y">38.611509667709569</data>
+    </node>
+    <node id="8">
+      <data key="x">-0.0938992630726716</data>
+      <data key="y">21.719681591146866</data>
+    </node>
+    <edge source="0" target="1">
+      <data key="w">1</data>
+    </edge>
+    <edge source="1" target="2">
+      <data key="w">1</data>
+    </edge>
+    <edge source="2" target="3">
+      <data key="w">1</data>
+    </edge>
+    <edge source="3" target="4">
+      <data key="w">1</data>
+    </edge>
+    <edge source="4" target="5">
+      <data key="w">1</data>
+    </edge>
+    <edge source="5" target="6">
+      <data key="w">1</data>
+    </edge>
+    <edge source="6" target="7">
+      <data key="w">1</data>
+    </edge>
+    <edge source="7" target="8">
+      <data key="w">1</data>
+    </edge>
+    <edge source="0" target="8">
+      <data key="w">1</data>
+    </edge>
+  </graph>
+</graphml>

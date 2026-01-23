@@ -1,0 +1,62 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://graphml.graphdrawing.org/xmlns" xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="graphml">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="key" maxOccurs="unbounded" minOccurs="0">
+          <xs:annotation>
+            <xs:documentation> Created by ord-format from /home/weasel/projects/uni/data/held-data/realistic/lines/srpg_octo/srpg_octo0000035.line  [Line.py]</xs:documentation>
+          </xs:annotation>
+          <xs:complexType mixed="true">
+            <xs:sequence>
+              <xs:element type="xs:float" name="default" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="attr.name" use="optional"/>
+            <xs:attribute type="xs:string" name="attr.type" use="optional"/>
+            <xs:attribute type="xs:string" name="for" use="optional"/>
+            <xs:attribute type="xs:string" name="id" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="graph">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="node" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="data" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:double">
+                            <xs:attribute type="xs:string" name="key" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="id" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="edge" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="data">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:double">
+                            <xs:attribute type="xs:string" name="key" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="source" use="optional"/>
+                  <xs:attribute type="xs:string" name="target" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="edgedefault"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

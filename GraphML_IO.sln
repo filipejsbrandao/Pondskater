@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.810.25
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphML_IO", "GraphML_IO\GraphML_IO.csproj", "{10F954A1-6E87-411A-8D50-47D141A88510}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pondskater", "Pondskater\Pondskater.csproj", "{2BFF3A57-A626-4A7E-AC0A-3C34BC0042EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurferNativeSmoke", "tests\SurferNativeSmoke\SurferNativeSmoke.csproj", "{640CA9DA-7A98-4E2B-BB3A-4A5BB2F91F9E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{10F954A1-6E87-411A-8D50-47D141A88510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{10F954A1-6E87-411A-8D50-47D141A88510}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{10F954A1-6E87-411A-8D50-47D141A88510}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{10F954A1-6E87-411A-8D50-47D141A88510}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BFF3A57-A626-4A7E-AC0A-3C34BC0042EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BFF3A57-A626-4A7E-AC0A-3C34BC0042EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BFF3A57-A626-4A7E-AC0A-3C34BC0042EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BFF3A57-A626-4A7E-AC0A-3C34BC0042EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{640CA9DA-7A98-4E2B-BB3A-4A5BB2F91F9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{640CA9DA-7A98-4E2B-BB3A-4A5BB2F91F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{640CA9DA-7A98-4E2B-BB3A-4A5BB2F91F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{640CA9DA-7A98-4E2B-BB3A-4A5BB2F91F9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

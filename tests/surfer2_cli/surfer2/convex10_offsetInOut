@@ -1,0 +1,1174 @@
+<?xml version="1.0"?>
+<!DOCTYPE ipe SYSTEM "ipe.dtd">
+<ipe version="70000" creator="surfer2">
+<info bbox="cropbox" />
+<ipestyle name="basic">
+  <pen name="heavier" value="0.8"/>
+  <color name="blue" value="0 0 1"/>
+</ipestyle>
+<ipestyle name="dashstyles">
+  <dashstyle name="dotted-narrower" value="[0.5 0.5] 0"/>
+</ipestyle>
+<ipestyle name="surfer">
+  <pen name="thin" value="0.2"/>
+</ipestyle>
+<page>
+<layer name="input" />
+<layer name="sk" />
+<layer name="offsets" />
+<group layer="offsets">
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.813 -0.375528 m
+    -0.510426 -0.59536 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.187 -0.375528 m
+    -0.813 -0.375528 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.31944 -0.718967 m
+    -1.39485 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.12202 -0.575528 m
+    -1.31944 -0.718967 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.39485 -0.951057 m
+    -1.31944 -1.18315 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.877983 -1.32658 m
+    -0.680557 -1.18315 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.12202 -1.32658 m
+    -0.877983 -1.32658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.877983 -0.575528 m
+    -1.12202 -0.575528 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.510426 -0.59536 m
+    -0.394854 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.48957 -0.59536 m
+    -1.187 -0.375528 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.60515 -0.951057 m
+    -1.48957 -0.59536 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.31944 -1.18315 m
+    -1.12202 -1.32658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.48957 -1.30675 m
+    -1.60515 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.187 -1.52658 m
+    -1.48957 -1.30675 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.680557 -1.18315 m
+    -0.605146 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.605146 -0.951057 m
+    -0.680557 -0.718967 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.813 -1.52658 m
+    -1.187 -1.52658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.510426 -1.30675 m
+    -0.813 -1.52658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.680557 -0.718967 m
+    -0.877983 -0.575528 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.394854 -0.951057 m
+    -0.510426 -1.30675 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.780508 -0.275528 m
+    -0.425361 -0.533557 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.21949 -0.275528 m
+    -0.780508 -0.275528 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.23438 -0.780771 m
+    -1.28971 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.08952 -0.675528 m
+    -1.23438 -0.780771 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.28971 -0.951057 m
+    -1.23438 -1.12134 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.910475 -1.22658 m
+    -0.765622 -1.12134 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.08952 -1.22658 m
+    -0.910475 -1.22658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.910475 -0.675528 m
+    -1.08952 -0.675528 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.425361 -0.533557 m
+    -0.289708 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.57464 -0.533557 m
+    -1.21949 -0.275528 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.71029 -0.951057 m
+    -1.57464 -0.533557 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.23438 -1.12134 m
+    -1.08952 -1.22658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.57464 -1.36856 m
+    -1.71029 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.21949 -1.62658 m
+    -1.57464 -1.36856 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.765622 -1.12134 m
+    -0.710292 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.710292 -0.951057 m
+    -0.765622 -0.780771 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.780508 -1.62658 m
+    -1.21949 -1.62658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.425361 -1.36856 m
+    -0.780508 -1.62658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.765622 -0.780771 m
+    -0.910475 -0.675528 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.289708 -0.951057 m
+    -0.425361 -1.36856 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.748016 -0.175528 m
+    -0.340296 -0.471754 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.25198 -0.175528 m
+    -0.748016 -0.175528 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.14931 -0.842574 m
+    -1.18456 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.05703 -0.775528 m
+    -1.14931 -0.842574 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.18456 -0.951057 m
+    -1.14931 -1.05954 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.942967 -1.12658 m
+    -0.850687 -1.05954 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.05703 -1.12658 m
+    -0.942967 -1.12658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.942967 -0.775528 m
+    -1.05703 -0.775528 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.340296 -0.471754 m
+    -0.184561 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.6597 -0.471754 m
+    -1.25198 -0.175528 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.81544 -0.951057 m
+    -1.6597 -0.471754 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.14931 -1.05954 m
+    -1.05703 -1.12658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.6597 -1.43036 m
+    -1.81544 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.25198 -1.72658 m
+    -1.6597 -1.43036 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.850687 -1.05954 m
+    -0.815439 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.815439 -0.951057 m
+    -0.850687 -0.842574 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.748016 -1.72658 m
+    -1.25198 -1.72658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.340296 -1.43036 m
+    -0.748016 -1.72658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.850687 -0.842574 m
+    -0.942967 -0.775528 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.184561 -0.951057 m
+    -0.340296 -1.43036 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.715524 -0.0755283 m
+    -0.255231 -0.40995 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.28448 -0.0755283 m
+    -0.715524 -0.0755283 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.06425 -0.904377 m
+    -1.07942 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.02454 -0.875528 m
+    -1.06425 -0.904377 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.07942 -0.951057 m
+    -1.06425 -0.997736 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.975459 -1.02658 m
+    -0.935752 -0.997736 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.02454 -1.02658 m
+    -0.975459 -1.02658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.975459 -0.875528 m
+    -1.02454 -0.875528 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.255231 -0.40995 m
+    -0.0794151 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.74477 -0.40995 m
+    -1.28448 -0.0755283 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.92058 -0.951057 m
+    -1.74477 -0.40995 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.06425 -0.997736 m
+    -1.02454 -1.02658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.74477 -1.49216 m
+    -1.92058 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.28448 -1.82658 m
+    -1.74477 -1.49216 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.935752 -0.997736 m
+    -0.920585 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.920585 -0.951057 m
+    -0.935752 -0.904377 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.715524 -1.82658 m
+    -1.28448 -1.82658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.255231 -1.49216 m
+    -0.715524 -1.82658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.935752 -0.904377 m
+    -0.975459 -0.875528 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.0794151 -0.951057 m
+    -0.255231 -1.49216 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.683032 0.0244717 m
+    -0.170166 -0.348147 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.31697 0.0244717 m
+    -0.683032 0.0244717 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.170166 -0.348147 m
+    0.0257311 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.82983 -0.348147 m
+    -1.31697 0.0244717 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.02573 -0.951057 m
+    -1.82983 -0.348147 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.82983 -1.55397 m
+    -2.02573 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.31697 -1.92658 m
+    -1.82983 -1.55397 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.683032 -1.92658 m
+    -1.31697 -1.92658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.170166 -1.55397 m
+    -0.683032 -1.92658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.0257311 -0.951057 m
+    -0.170166 -1.55397 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.65054 0.124472 m
+    -0.085101 -0.286343 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.34946 0.124472 m
+    -0.65054 0.124472 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.085101 -0.286343 m
+    0.130877 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.9149 -0.286343 m
+    -1.34946 0.124472 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.13088 -0.951057 m
+    -1.9149 -0.286343 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.9149 -1.61577 m
+    -2.13088 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.34946 -2.02658 m
+    -1.9149 -1.61577 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.65054 -2.02658 m
+    -1.34946 -2.02658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.085101 -1.61577 m
+    -0.65054 -2.02658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.130877 -0.951057 m
+    -0.085101 -1.61577 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.618048 0.224472 m
+    -3.59369e-05 -0.22454 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.38195 0.224472 m
+    -0.618048 0.224472 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -3.59369e-05 -0.22454 m
+    0.236024 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.99996 -0.22454 m
+    -1.38195 0.224472 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.23602 -0.951057 m
+    -1.99996 -0.22454 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.99996 -1.67757 m
+    -2.23602 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.38195 -2.12658 m
+    -1.99996 -1.67757 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.618048 -2.12658 m
+    -1.38195 -2.12658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -3.5937e-05 -1.67757 m
+    -0.618048 -2.12658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.236024 -0.951057 m
+    -3.5937e-05 -1.67757 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.585556 0.324472 m
+    0.0850291 -0.162737 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.41444 0.324472 m
+    -0.585556 0.324472 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.0850291 -0.162737 m
+    0.34117 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.08503 -0.162737 m
+    -1.41444 0.324472 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.34117 -0.951057 m
+    -2.08503 -0.162737 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.08503 -1.73938 m
+    -2.34117 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.41444 -2.22658 m
+    -2.08503 -1.73938 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.585556 -2.22658 m
+    -1.41444 -2.22658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.0850291 -1.73938 m
+    -0.585556 -2.22658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.34117 -0.951057 m
+    0.0850291 -1.73938 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.553064 0.424472 m
+    0.170094 -0.100933 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.44694 0.424472 m
+    -0.553064 0.424472 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.170094 -0.100933 m
+    0.446316 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.17009 -0.100933 m
+    -1.44694 0.424472 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.44632 -0.951057 m
+    -2.17009 -0.100933 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.17009 -1.80118 m
+    -2.44632 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.44694 -2.32658 m
+    -2.17009 -1.80118 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.553064 -2.32658 m
+    -1.44694 -2.32658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.170094 -1.80118 m
+    -0.553064 -2.32658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.446316 -0.951057 m
+    0.170094 -1.80118 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.520572 0.524472 m
+    0.255159 -0.0391299 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.47943 0.524472 m
+    -0.520572 0.524472 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.255159 -0.0391299 m
+    0.551462 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.25516 -0.0391299 m
+    -1.47943 0.524472 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.55146 -0.951057 m
+    -2.25516 -0.0391299 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.25516 -1.86298 m
+    -2.55146 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.47943 -2.42658 m
+    -2.25516 -1.86298 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.520572 -2.42658 m
+    -1.47943 -2.42658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.255159 -1.86298 m
+    -0.520572 -2.42658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.551462 -0.951057 m
+    0.255159 -1.86298 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.48808 0.624472 m
+    0.340224 0.0226735 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.51192 0.624472 m
+    -0.48808 0.624472 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.340224 0.0226735 m
+    0.656608 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.34022 0.0226735 m
+    -1.51192 0.624472 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.65661 -0.951057 m
+    -2.34022 0.0226735 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.34022 -1.92479 m
+    -2.65661 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.51192 -2.52658 m
+    -2.34022 -1.92479 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.48808 -2.52658 m
+    -1.51192 -2.52658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.340224 -1.92479 m
+    -0.48808 -2.52658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.656608 -0.951057 m
+    0.340224 -1.92479 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.455588 0.724472 m
+    0.425289 0.0844769 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.54441 0.724472 m
+    -0.455588 0.724472 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.425289 0.0844769 m
+    0.761755 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.42529 0.0844769 m
+    -1.54441 0.724472 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.76175 -0.951057 m
+    -2.42529 0.0844769 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.42529 -1.98659 m
+    -2.76175 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.54441 -2.62658 m
+    -2.42529 -1.98659 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.455588 -2.62658 m
+    -1.54441 -2.62658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.425289 -1.98659 m
+    -0.455588 -2.62658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.761755 -0.951057 m
+    0.425289 -1.98659 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.423096 0.824472 m
+    0.510355 0.14628 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.5769 0.824472 m
+    -0.423096 0.824472 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.510355 0.14628 m
+    0.866901 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.51035 0.14628 m
+    -1.5769 0.824472 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.8669 -0.951057 m
+    -2.51035 0.14628 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.51035 -2.04839 m
+    -2.8669 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.5769 -2.72658 m
+    -2.51035 -2.04839 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.423096 -2.72658 m
+    -1.5769 -2.72658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.510355 -2.04839 m
+    -0.423096 -2.72658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.866901 -0.951057 m
+    0.510355 -2.04839 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.390604 0.924472 m
+    0.59542 0.208084 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.6094 0.924472 m
+    -0.390604 0.924472 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.59542 0.208084 m
+    0.972047 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.59542 0.208084 m
+    -1.6094 0.924472 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.97205 -0.951057 m
+    -2.59542 0.208084 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.59542 -2.1102 m
+    -2.97205 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.6094 -2.82658 m
+    -2.59542 -2.1102 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.390604 -2.82658 m
+    -1.6094 -2.82658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.59542 -2.1102 m
+    -0.390604 -2.82658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.972047 -0.951057 m
+    0.59542 -2.1102 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.358112 1.02447 m
+    0.680485 0.269887 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.64189 1.02447 m
+    -0.358112 1.02447 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.680485 0.269887 m
+    1.07719 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.68048 0.269887 m
+    -1.64189 1.02447 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -3.07719 -0.951057 m
+    -2.68048 0.269887 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.68048 -2.172 m
+    -3.07719 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.64189 -2.92658 m
+    -2.68048 -2.172 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.358112 -2.92658 m
+    -1.64189 -2.92658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.680485 -2.172 m
+    -0.358112 -2.92658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    1.07719 -0.951057 m
+    0.680485 -2.172 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.32562 1.12447 m
+    0.76555 0.33169 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.67438 1.12447 m
+    -0.32562 1.12447 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.76555 0.33169 m
+    1.18234 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.76555 0.33169 m
+    -1.67438 1.12447 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -3.18234 -0.951057 m
+    -2.76555 0.33169 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.76555 -2.2338 m
+    -3.18234 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.67438 -3.02658 m
+    -2.76555 -2.2338 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.32562 -3.02658 m
+    -1.67438 -3.02658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.76555 -2.2338 m
+    -0.32562 -3.02658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    1.18234 -0.951057 m
+    0.76555 -2.2338 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.293128 1.22447 m
+    0.850615 0.393494 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.70687 1.22447 m
+    -0.293128 1.22447 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.850615 0.393494 m
+    1.28749 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.85061 0.393494 m
+    -1.70687 1.22447 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -3.28749 -0.951057 m
+    -2.85061 0.393494 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.85061 -2.29561 m
+    -3.28749 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.70687 -3.12658 m
+    -2.85061 -2.29561 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.293128 -3.12658 m
+    -1.70687 -3.12658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.850615 -2.29561 m
+    -0.293128 -3.12658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    1.28749 -0.951057 m
+    0.850615 -2.29561 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.260636 1.32447 m
+    0.93568 0.455297 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.73936 1.32447 m
+    -0.260636 1.32447 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.93568 0.455297 m
+    1.39263 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.93568 0.455297 m
+    -1.73936 1.32447 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -3.39263 -0.951057 m
+    -2.93568 0.455297 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -2.93568 -2.35741 m
+    -3.39263 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.73936 -3.22658 m
+    -2.93568 -2.35741 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.260636 -3.22658 m
+    -1.73936 -3.22658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    0.93568 -2.35741 m
+    -0.260636 -3.22658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    1.39263 -0.951057 m
+    0.93568 -2.35741 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.228144 1.42447 m
+    1.02075 0.517101 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.77186 1.42447 m
+    -0.228144 1.42447 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    1.02075 0.517101 m
+    1.49778 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -3.02075 0.517101 m
+    -1.77186 1.42447 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -3.49778 -0.951057 m
+    -3.02075 0.517101 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -3.02075 -2.41921 m
+    -3.49778 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.77186 -3.32658 m
+    -3.02075 -2.41921 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.228144 -3.32658 m
+    -1.77186 -3.32658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    1.02075 -2.41921 m
+    -0.228144 -3.32658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    1.49778 -0.951057 m
+    1.02075 -2.41921 l
+  </path>
+</group>
+<group>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.195652 1.52447 m
+    1.10581 0.578904 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.80435 1.52447 m
+    -0.195652 1.52447 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    1.10581 0.578904 m
+    1.60292 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -3.10581 0.578904 m
+    -1.80435 1.52447 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -3.60292 -0.951057 m
+    -3.10581 0.578904 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -3.10581 -2.48102 m
+    -3.60292 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -1.80435 -3.42658 m
+    -3.10581 -2.48102 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    -0.195652 -3.42658 m
+    -1.80435 -3.42658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    1.10581 -2.48102 m
+    -0.195652 -3.42658 l
+  </path>
+  <path cap="1" stroke="black" pen="thin" dash="dotted-narrower">
+    1.60292 -0.951057 m
+    1.10581 -2.48102 l
+  </path>
+</group>
+</group>
+<group layer="sk">
+  <path cap="1" stroke="blue">
+    -0.845492 -0.475528 m
+    2.40371 9.52447 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1.15451 -0.475528 m
+    -4.40371 9.52447 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1 -0.951057 m
+    -1.40451 -0.657164 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1 -0.951057 m
+    -1.15451 -0.475528 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1 -0.951057 m
+    -1.5 -0.951057 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1 -0.951057 m
+    -1 -0.951057 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1 -0.951057 m
+    -1 -0.951057 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1 -0.951057 m
+    -1 -0.951057 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1 -0.951057 m
+    -1 -0.951057 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1 -0.951057 m
+    -0.845492 -1.42658 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1 -0.951057 m
+    -1 -0.951057 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1 -0.951057 m
+    -1.15451 -1.42658 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1 -0.951057 m
+    -1 -0.951057 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1 -0.951057 m
+    -0.845492 -0.475528 l
+  </path>
+  <path cap="1" stroke="blue">
+    -0.595492 -0.657164 m
+    7.91102 5.52318 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1.40451 -0.657164 m
+    -9.91102 5.52318 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1.5 -0.951057 m
+    -12.0146 -0.951057 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1 -0.951057 m
+    -1.40451 -1.24495 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1.40451 -1.24495 m
+    -9.91102 -7.42529 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1.15451 -1.42658 m
+    -4.40371 -11.4266 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1 -0.951057 m
+    -0.595492 -1.24495 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1 -0.951057 m
+    -1 -0.951057 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1 -0.951057 m
+    -0.5 -0.951057 l
+  </path>
+  <path cap="1" stroke="blue">
+    -0.845492 -1.42658 m
+    2.40371 -11.4266 l
+  </path>
+  <path cap="1" stroke="blue">
+    -0.595492 -1.24495 m
+    7.91102 -7.42529 l
+  </path>
+  <path cap="1" stroke="blue">
+    -1 -0.951057 m
+    -0.595492 -0.657164 l
+  </path>
+  <path cap="1" stroke="blue">
+    -0.5 -0.951057 m
+    10.0146 -0.951057 l
+  </path>
+</group>
+<group layer="input">
+  <path cap="1" stroke="black" pen="heavier">
+    -0.845492 -0.475528 m
+    -1.15451 -0.475528 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    -1.40451 -0.657164 m
+    -1.15451 -0.475528 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    -1.5 -0.951057 m
+    -1.40451 -0.657164 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    -0.845492 -1.42658 m
+    -1.15451 -1.42658 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    -0.595492 -0.657164 m
+    -0.845492 -0.475528 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    -1.40451 -1.24495 m
+    -1.5 -0.951057 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    -1.15451 -1.42658 m
+    -1.40451 -1.24495 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    -0.5 -0.951057 m
+    -0.595492 -1.24495 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    -0.595492 -1.24495 m
+    -0.845492 -1.42658 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    -0.595492 -0.657164 m
+    -0.5 -0.951057 l
+  </path>
+</group>
+</page>
+</ipe>
