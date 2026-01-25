@@ -24,6 +24,20 @@ SURF_API int surf_run_graphml(
   int* err_len
 );
 
+// Same as surf_run_graphml, but also returns stats output (if available).
+SURF_API int surf_run_graphml_with_stats(
+  const char* graphml,
+  const char* skoffset,
+  int component,
+  int write_ipe,
+  char** out,
+  int* out_len,
+  char** stats,
+  int* stats_len,
+  char** err,
+  int* err_len
+);
+
 SURF_API void surf_free(void* p);
 
 #ifdef __cplusplus

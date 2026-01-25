@@ -35,13 +35,20 @@ BasicInputFromBGL(const BGLGraph& graph) {
   for (auto ep = boost::edges(graph); ep.first != ep.second; ++ep.first) {
     const EdgeType e = *ep.first;
     const NT weight((graph[e].weight == "") ? CORE_ONE : string_to_maybe_NT(graph[e].weight));
+    const NT weight_additive((graph[e].weight_additive == "") ? CORE_ZERO : string_to_maybe_NT(graph[e].weight_additive));
+    const bool use_additive = !compare_NT_real_eq(weight_additive, CORE_ZERO);
+    NT effective_weight = use_additive ? (CORE_ONE + weight_additive) : weight;
+    if (effective_weight <= CORE_ZERO) {
+      static const NT min_weight = string_to_maybe_NT("1e-9");
+      effective_weight = min_weight;
+    }
     unsigned s = source(e, graph);
     unsigned t = target(e, graph);
     if (s == t) {
       LOG(ERROR) << "Invalid input: source and target of edge " << num_edges_() << " are the same vertex (v" << t << ").";
       SURF_ABORT(EXIT_INVALID_INPUT, "Invalid input: self-loop edge.");
     }
-    add_edge(s, t, weight);
+    add_edge(s, t, effective_weight);
   }
 
   finalize();

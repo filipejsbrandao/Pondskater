@@ -31,8 +31,8 @@ namespace Pondskater
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
         {
             pManager.AddCurveParameter("Polyline", "P", "A polyline", GH_ParamAccess.item);
-            pManager.AddNumberParameter("Weights", "W", "A list of weights", GH_ParamAccess.list);
-            pManager.AddBooleanParameter("Type", "T", "True for Multiplicative weights and false for Additive weights", GH_ParamAccess.item, true);
+            pManager.AddNumberParameter("Weights", "W", "A list of weights per edge, by default a constant weight of 1 is assumed for all sides. Weights can be understood as the cotangent of the roof angle.", GH_ParamAccess.list);
+            pManager.AddBooleanParameter("Type", "T", "True for Multiplicative weights (edge speed = w) and false for Additive weights (edge speed = 1 + wa)", GH_ParamAccess.item, true);
             pManager.AddTextParameter("Dir", "D", "path to save the file", GH_ParamAccess.item);
             pManager.AddTextParameter("Filename", "F", "the filename", GH_ParamAccess.item);
             pManager.AddBooleanParameter("Save", "S", "Save the file", GH_ParamAccess.item, false);

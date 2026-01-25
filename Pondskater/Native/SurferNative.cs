@@ -20,6 +20,20 @@ namespace Pondskater.Native
             out int errLen
         );
 
+        [DllImport(LibraryName, CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
+        private static extern int surf_run_graphml_with_stats(
+            string graphml,
+            string skoffset,
+            int component,
+            int writeIpe,
+            out IntPtr outPtr,
+            out int outLen,
+            out IntPtr statsPtr,
+            out int statsLen,
+            out IntPtr errPtr,
+            out int errLen
+        );
+
         [DllImport(LibraryName, CallingConvention = CallingConvention.Cdecl)]
         private static extern void surf_free(IntPtr p);
 
@@ -93,6 +107,62 @@ namespace Pondskater.Native
             finally
             {
                 if (outPtr != IntPtr.Zero) surf_free(outPtr);
+                if (errPtr != IntPtr.Zero) surf_free(errPtr);
+            }
+
+            return result == 0;
+        }
+
+        internal static bool TryRunGraphmlWithStats(string graphml, string skoffset, int component, bool writeIpe, out string output, out string stats, out string error)
+        {
+            output = string.Empty;
+            stats = string.Empty;
+            error = string.Empty;
+
+            int result = surf_run_graphml_with_stats(
+                graphml,
+                skoffset ?? string.Empty,
+                component,
+                writeIpe ? 1 : 0,
+                out IntPtr outPtr,
+                out int outLen,
+                out IntPtr statsPtr,
+                out int statsLen,
+                out IntPtr errPtr,
+                out int errLen
+            );
+
+            try
+            {
+                if (outPtr != IntPtr.Zero && outLen > 0)
+                {
+#if NET7_0_OR_GREATER
+                    output = Marshal.PtrToStringUTF8(outPtr, outLen) ?? string.Empty;
+#else
+                    output = Marshal.PtrToStringAnsi(outPtr, outLen) ?? string.Empty;
+#endif
+                }
+                if (statsPtr != IntPtr.Zero && statsLen > 0)
+                {
+#if NET7_0_OR_GREATER
+                    stats = Marshal.PtrToStringUTF8(statsPtr, statsLen) ?? string.Empty;
+#else
+                    stats = Marshal.PtrToStringAnsi(statsPtr, statsLen) ?? string.Empty;
+#endif
+                }
+                if (errPtr != IntPtr.Zero && errLen > 0)
+                {
+#if NET7_0_OR_GREATER
+                    error = Marshal.PtrToStringUTF8(errPtr, errLen) ?? string.Empty;
+#else
+                    error = Marshal.PtrToStringAnsi(errPtr, errLen) ?? string.Empty;
+#endif
+                }
+            }
+            finally
+            {
+                if (outPtr != IntPtr.Zero) surf_free(outPtr);
+                if (statsPtr != IntPtr.Zero) surf_free(statsPtr);
                 if (errPtr != IntPtr.Zero) surf_free(errPtr);
             }
 

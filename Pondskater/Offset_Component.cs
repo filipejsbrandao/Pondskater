@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Reflection;
 
 using System.Xml;
@@ -34,10 +33,10 @@ namespace Pondskater
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
         {
             pManager.AddCurveParameter("Polyline", "P", "A planar polyline", GH_ParamAccess.item);
-            pManager.AddNumberParameter("Weights", "W", "A list of weights per edge, by default a constant weight is assumed for all sides", GH_ParamAccess.list);
+            pManager.AddNumberParameter("Weights", "W", "A list of weights per edge, by default a constant weight of 1 is assumed for all sides. Weights can be understood as the cotangent of the roof angle.", GH_ParamAccess.list);
             pManager.AddPlaneParameter("Plane", "Pl", "The plane on which the curve lies", GH_ParamAccess.item);
-            pManager.AddBooleanParameter("Type", "T", "True for Multiplicative weights and false for Additive weights", GH_ParamAccess.item, true);
-            pManager.AddIntegerParameter("Direction", "D", "Offset only inside - 0; offset only outside - 1; offset both sides - 2", GH_ParamAccess.item, 2);
+            pManager.AddBooleanParameter("Type", "T", "True for Multiplicative weights (edge speed = w) and false for Additive weights (edge speed = 1 + wa)", GH_ParamAccess.item, true);
+            pManager.AddIntegerParameter("Direction", "D", "Offset only inside - 0; offset only outside - 1; offset both sides - 2", GH_ParamAccess.item, 0);
             pManager.AddTextParameter("Distances", "Di",
                 "offset-spec = <one-block> [ ',' <one-block> [ ',' ... ] ] /n " +
                 "one - block = < one - offset > ['+' < one - offset > ['+'... ]] /n" +
@@ -72,7 +71,6 @@ namespace Pondskater
             List<double> weights = new List<double>();
             bool weight_type = true;
             string distances = String.Empty;
-            List<int> offsetSpecPattern = new List<int>();
 
             string directory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             if (!SurferNative.TryLoad(directory, out string loadError))
@@ -90,7 +88,7 @@ namespace Pondskater
 
             try
             {
-                offsetSpecPattern = OffsetParser.ParseOffsetSpec(distances);
+                OffsetParser.ParseOffsetSpec(distances);
                 distances = RemoveSpaces(distances);
                 AddRuntimeMessage(GH_RuntimeMessageLevel.Remark, "a valid string was found: " + distances);
             }
@@ -140,7 +138,7 @@ namespace Pondskater
             }
 
             // We prevent the user from requesting left sided offsets in open polylines
-            if (!poly.IsClosed) direction = 2;
+            if (!poly.IsClosed) direction = 0;
 
             /// TODO - See why polylines with one segment fail...
 
@@ -166,7 +164,7 @@ namespace Pondskater
 
             string graphmlXml = GraphmlSerializer.ToXml(graph);
             int component = (direction < 2) ? direction : -1;
-            if (!SurferNative.TryRunGraphml(graphmlXml, distances, component, true, out string result, out string nativeError))
+            if (!SurferNative.TryRunGraphmlWithStats(graphmlXml, distances, component, true, out string result, out string stats, out string nativeError))
             {
                 AddRuntimeMessage(GH_RuntimeMessageLevel.Error, nativeError);
                 return;

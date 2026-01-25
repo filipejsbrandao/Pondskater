@@ -42,7 +42,7 @@
 
 /** the version as supplied by CMake
  */
-#define VERSIONGIT "1.99-git:N/A"
+#define VERSIONGIT "1.99-eefbd6cb-dirty"
 
 /** Use double instead of CORE Expressions
  */

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Reflection;
+using System.Globalization;
 
 using System.Xml;
 using System.Xml.Serialization;
@@ -34,9 +34,11 @@ namespace Pondskater
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
         {
             pManager.AddCurveParameter("Polyline", "P", "A planar polyline", GH_ParamAccess.item);
-            pManager.AddNumberParameter("Weights", "W", "A list of weights", GH_ParamAccess.list);
-            pManager.AddBooleanParameter("Type", "T", "True for Multiplicative weights and false for Additive weights", GH_ParamAccess.item, true);
+            pManager.AddNumberParameter("Weights", "W", " list of weights per edge, by default a constant weight of 1 is assumed for all sides. Weights can be understood as the cotangent of the roof angle.", GH_ParamAccess.list);
+            pManager.AddBooleanParameter("Type", "T", "True for Multiplicative weights (edge speed = w) and false for Additive weights (edge speed = 1 + wa)", GH_ParamAccess.item, true);
+            pManager.AddIntegerParameter("Direction", "D", "Skeleton side selection: inside = 0, outside = 1, both = 2", GH_ParamAccess.item, 0);
             pManager[1].Optional = true;
+            pManager[3].Optional = true;
         }
 
         /// <summary>
@@ -59,6 +61,8 @@ namespace Pondskater
             List<Line> skeleton = new List<Line>();
             List<double> weights = new List<double>();
             bool weight_type = true;
+            int direction = 2;
+            const double offsetDistance = 1.0;
             
             string directory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             if (!SurferNative.TryLoad(directory, out string loadError))
@@ -70,6 +74,7 @@ namespace Pondskater
             if (!DA.GetData(0, ref curve)) return;
             DA.GetDataList(1, weights);
             if (!DA.GetData(2, ref weight_type)) return;
+            DA.GetData(3, ref direction);
 
             if (!curve.IsPlanar())
             {
@@ -120,7 +125,18 @@ namespace Pondskater
 
 
             string graphmlXml = GraphmlSerializer.ToXml(graph);
-            if (!SurferNative.TryRunGraphml(graphmlXml, "5", -1, true, out string result, out string nativeError))
+            if (direction < 0 || direction > 2)
+            {
+                direction = 2;
+                AddRuntimeMessage(GH_RuntimeMessageLevel.Warning, "direction values must be between 0 and 2");
+            }
+
+            int component = (direction < 2) ? direction : -1;
+            string skoffset = offsetDistance > 0
+                ? offsetDistance.ToString("g17", CultureInfo.InvariantCulture)
+                : string.Empty;
+
+            if (!SurferNative.TryRunGraphml(graphmlXml, skoffset, component, true, out string result, out string nativeError))
             {
                 AddRuntimeMessage(GH_RuntimeMessageLevel.Error, nativeError);
                 return;
@@ -144,19 +160,59 @@ namespace Pondskater
                 return;
             }
             
-            // Get the skeleton as a List of lines
-            // if no offsets are requested then the skeleton is the first group -> Group[0]
-            if (ipe2?.Page?.Group == null || ipe2.Page.Group.Length < 2 || ipe2.Page.Group[1]?.Path == null)
+            // Collect skeleton paths. With offsets enabled, skeleton is typically in Group[1].
+            if (ipe2?.Page?.Group == null || ipe2.Page.Group.Length == 0)
             {
-                AddRuntimeMessage(GH_RuntimeMessageLevel.Error, "Unexpected Ipe structure (missing skeleton group).");
+                AddRuntimeMessage(GH_RuntimeMessageLevel.Error, "Unexpected Ipe structure (missing groups).");
                 return;
             }
-            ipePageGroupPath[] sk = ipe2.Page.Group[1].Path;
-            foreach(ipePageGroupPath p in sk)
+            if (!string.IsNullOrEmpty(skoffset))
             {
-                Line l = p.PathToRHLine();
-                l.Transform(reverse_transform);
-                skeleton.Add(l);
+                if (ipe2.Page.Group.Length > 1 && ipe2.Page.Group[1]?.Path != null)
+                {
+                    foreach (ipePageGroupPath p in ipe2.Page.Group[1].Path)
+                    {
+                        Line l = p.PathToRHLine();
+                        l.Transform(reverse_transform);
+                        skeleton.Add(l);
+                    }
+                }
+            }
+            else
+            {
+                foreach (ipePageGroup group in ipe2.Page.Group)
+                {
+                    if (group?.Path != null)
+                    {
+                        foreach (ipePageGroupPath p in group.Path)
+                        {
+                            Line l = p.PathToRHLine();
+                            l.Transform(reverse_transform);
+                            skeleton.Add(l);
+                        }
+                    }
+                    if (group?.Group != null)
+                    {
+                        foreach (ipePageGroupGroup sub in group.Group)
+                        {
+                            if (sub?.Path == null)
+                            {
+                                continue;
+                            }
+                            foreach (ipePageGroupGroupPath p in sub.Path)
+                            {
+                                Line l = p.PathToRHLine();
+                                l.Transform(reverse_transform);
+                                skeleton.Add(l);
+                            }
+                        }
+                    }
+                }
+            }
+            if (skeleton.Count == 0)
+            {
+                AddRuntimeMessage(GH_RuntimeMessageLevel.Error, "Unexpected Ipe structure (no paths found).");
+                return;
             }
 
             DA.SetDataList(0, skeleton);

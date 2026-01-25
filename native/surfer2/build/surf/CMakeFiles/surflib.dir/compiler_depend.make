@@ -35443,6 +35443,8 @@ surf/CMakeFiles/surflib.dir/src/surf_c_api.cpp.o: /Users/filipeb/10_DEV/GraphML_
   /opt/homebrew/include/boost/concept_archetype.hpp \
   /opt/homebrew/include/boost/concept_check.hpp \
   /opt/homebrew/include/boost/config.hpp \
+  /opt/homebrew/include/boost/config/abi_prefix.hpp \
+  /opt/homebrew/include/boost/config/abi_suffix.hpp \
   /opt/homebrew/include/boost/config/compiler/clang.hpp \
   /opt/homebrew/include/boost/config/compiler/clang_version.hpp \
   /opt/homebrew/include/boost/config/detail/cxx_composite.hpp \
@@ -35550,6 +35552,7 @@ surf/CMakeFiles/surflib.dir/src/surf_c_api.cpp.o: /Users/filipeb/10_DEV/GraphML_
   /opt/homebrew/include/boost/detail/basic_pointerbuf.hpp \
   /opt/homebrew/include/boost/detail/call_traits.hpp \
   /opt/homebrew/include/boost/detail/fenv.hpp \
+  /opt/homebrew/include/boost/detail/is_incrementable.hpp \
   /opt/homebrew/include/boost/detail/lcast_precision.hpp \
   /opt/homebrew/include/boost/detail/numeric_traits.hpp \
   /opt/homebrew/include/boost/detail/reference_content.hpp \
@@ -35830,6 +35833,80 @@ surf/CMakeFiles/surflib.dir/src/surf_c_api.cpp.o: /Users/filipeb/10_DEV/GraphML_
   /opt/homebrew/include/boost/intrusive_ptr.hpp \
   /opt/homebrew/include/boost/io/ios_state.hpp \
   /opt/homebrew/include/boost/io_fwd.hpp \
+  /opt/homebrew/include/boost/iostreams/categories.hpp \
+  /opt/homebrew/include/boost/iostreams/char_traits.hpp \
+  /opt/homebrew/include/boost/iostreams/checked_operations.hpp \
+  /opt/homebrew/include/boost/iostreams/close.hpp \
+  /opt/homebrew/include/boost/iostreams/concepts.hpp \
+  /opt/homebrew/include/boost/iostreams/constants.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/adapter/concept_adapter.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/adapter/mode_adapter.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/adapter/non_blocking_adapter.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/adapter/output_iterator_adapter.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/adapter/range_adapter.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/bool_trait_def.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/buffer.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/call_traits.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/char_traits.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/config/auto_link.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/config/codecvt.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/config/disable_warnings.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/config/dyn_link.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/config/enable_warnings.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/config/fpos.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/config/gcc.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/config/limits.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/config/overload_resolution.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/config/unreachable_return.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/config/wide_streams.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/config/windows_posix.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/default_arg.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/dispatch.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/double_object.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/enable_if_stream.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/error.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/execute.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/file_handle.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/forward.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/functional.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/ios.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/iostream.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/is_dereferenceable.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/is_iterator_range.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/optional.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/path.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/push.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/push_params.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/resolve.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/select.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/select_by_size.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/streambuf.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/streambuf/direct_streambuf.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/streambuf/indirect_streambuf.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/streambuf/linked_streambuf.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/template_params.hpp \
+  /opt/homebrew/include/boost/iostreams/detail/wrap_unwrap.hpp \
+  /opt/homebrew/include/boost/iostreams/device/array.hpp \
+  /opt/homebrew/include/boost/iostreams/device/file_descriptor.hpp \
+  /opt/homebrew/include/boost/iostreams/device/null.hpp \
+  /opt/homebrew/include/boost/iostreams/flush.hpp \
+  /opt/homebrew/include/boost/iostreams/get.hpp \
+  /opt/homebrew/include/boost/iostreams/imbue.hpp \
+  /opt/homebrew/include/boost/iostreams/input_sequence.hpp \
+  /opt/homebrew/include/boost/iostreams/operations.hpp \
+  /opt/homebrew/include/boost/iostreams/operations_fwd.hpp \
+  /opt/homebrew/include/boost/iostreams/optimal_buffer_size.hpp \
+  /opt/homebrew/include/boost/iostreams/output_sequence.hpp \
+  /opt/homebrew/include/boost/iostreams/pipeline.hpp \
+  /opt/homebrew/include/boost/iostreams/positioning.hpp \
+  /opt/homebrew/include/boost/iostreams/put.hpp \
+  /opt/homebrew/include/boost/iostreams/read.hpp \
+  /opt/homebrew/include/boost/iostreams/seek.hpp \
+  /opt/homebrew/include/boost/iostreams/stream.hpp \
+  /opt/homebrew/include/boost/iostreams/stream_buffer.hpp \
+  /opt/homebrew/include/boost/iostreams/traits.hpp \
+  /opt/homebrew/include/boost/iostreams/traits_fwd.hpp \
+  /opt/homebrew/include/boost/iostreams/write.hpp \
   /opt/homebrew/include/boost/is_placeholder.hpp \
   /opt/homebrew/include/boost/iterator/advance.hpp \
   /opt/homebrew/include/boost/iterator/counting_iterator.hpp \
@@ -36699,6 +36776,9 @@ surf/CMakeFiles/surflib.dir/src/surf_c_api.cpp.o: /Users/filipeb/10_DEV/GraphML_
   /opt/homebrew/include/boost/preprocessor/facilities/overload.hpp \
   /opt/homebrew/include/boost/preprocessor/identity.hpp \
   /opt/homebrew/include/boost/preprocessor/inc.hpp \
+  /opt/homebrew/include/boost/preprocessor/iteration/detail/limits/local_256.hpp \
+  /opt/homebrew/include/boost/preprocessor/iteration/detail/local.hpp \
+  /opt/homebrew/include/boost/preprocessor/iteration/local.hpp \
   /opt/homebrew/include/boost/preprocessor/list/adt.hpp \
   /opt/homebrew/include/boost/preprocessor/list/detail/fold_left.hpp \
   /opt/homebrew/include/boost/preprocessor/list/detail/fold_right.hpp \
@@ -36743,6 +36823,8 @@ surf/CMakeFiles/surflib.dir/src/surf_c_api.cpp.o: /Users/filipeb/10_DEV/GraphML_
   /opt/homebrew/include/boost/preprocessor/seq/seq.hpp \
   /opt/homebrew/include/boost/preprocessor/seq/size.hpp \
   /opt/homebrew/include/boost/preprocessor/seq/transform.hpp \
+  /opt/homebrew/include/boost/preprocessor/slot/detail/def.hpp \
+  /opt/homebrew/include/boost/preprocessor/slot/slot.hpp \
   /opt/homebrew/include/boost/preprocessor/stringize.hpp \
   /opt/homebrew/include/boost/preprocessor/tuple/detail/is_single_return.hpp \
   /opt/homebrew/include/boost/preprocessor/tuple/eat.hpp \
@@ -36940,6 +37022,7 @@ surf/CMakeFiles/surflib.dir/src/surf_c_api.cpp.o: /Users/filipeb/10_DEV/GraphML_
   /opt/homebrew/include/boost/type_traits/cv_traits.hpp \
   /opt/homebrew/include/boost/type_traits/decay.hpp \
   /opt/homebrew/include/boost/type_traits/declval.hpp \
+  /opt/homebrew/include/boost/type_traits/detail/bool_trait_undef.hpp \
   /opt/homebrew/include/boost/type_traits/detail/config.hpp \
   /opt/homebrew/include/boost/type_traits/detail/has_binary_operator.hpp \
   /opt/homebrew/include/boost/type_traits/detail/has_postfix_operator.hpp \
@@ -37908,6 +37991,102 @@ surf/CMakeFiles/surflib.dir/src/tools.cpp.o: /Users/filipeb/10_DEV/GraphML_IO/na
   /Users/filipeb/10_DEV/GraphML_IO/native/surfer2/surf/include/tools.h
 
 
+/opt/homebrew/include/boost/type_traits/detail/bool_trait_undef.hpp:
+
+/opt/homebrew/include/boost/preprocessor/slot/detail/def.hpp:
+
+/opt/homebrew/include/boost/preprocessor/iteration/local.hpp:
+
+/opt/homebrew/include/boost/preprocessor/iteration/detail/limits/local_256.hpp:
+
+/opt/homebrew/include/boost/iostreams/traits_fwd.hpp:
+
+/opt/homebrew/include/boost/iostreams/traits.hpp:
+
+/opt/homebrew/include/boost/iostreams/stream.hpp:
+
+/opt/homebrew/include/boost/iostreams/seek.hpp:
+
+/opt/homebrew/include/boost/iostreams/read.hpp:
+
+/opt/homebrew/include/boost/iostreams/put.hpp:
+
+/opt/homebrew/include/boost/iostreams/pipeline.hpp:
+
+/opt/homebrew/include/boost/iostreams/optimal_buffer_size.hpp:
+
+/opt/homebrew/include/boost/iostreams/get.hpp:
+
+/opt/homebrew/include/boost/iostreams/device/file_descriptor.hpp:
+
+/opt/homebrew/include/boost/iostreams/device/array.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/streambuf/indirect_streambuf.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/streambuf/direct_streambuf.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/select_by_size.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/resolve.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/push_params.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/path.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/is_iterator_range.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/is_dereferenceable.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/functional.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/file_handle.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/execute.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/error.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/enable_if_stream.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/double_object.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/dispatch.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/default_arg.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/config/wide_streams.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/config/overload_resolution.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/config/fpos.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/config/enable_warnings.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/config/disable_warnings.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/char_traits.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/call_traits.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/bool_trait_def.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/adapter/non_blocking_adapter.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/adapter/mode_adapter.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/adapter/concept_adapter.hpp:
+
+/opt/homebrew/include/boost/iostreams/constants.hpp:
+
+/opt/homebrew/include/boost/iostreams/concepts.hpp:
+
+/opt/homebrew/include/boost/iostreams/categories.hpp:
+
+/opt/homebrew/include/boost/detail/is_incrementable.hpp:
+
+/opt/homebrew/include/boost/config/abi_suffix.hpp:
+
+/opt/homebrew/include/boost/config/abi_prefix.hpp:
+
 /Users/filipeb/10_DEV/GraphML_IO/native/surfer2/surf/src/surf_c_api.cpp:
 
 /Users/filipeb/10_DEV/GraphML_IO/native/surfer2/surf/src/WavefrontVertex.cpp:
@@ -37982,6 +38161,8 @@ surf/CMakeFiles/surflib.dir/src/tools.cpp.o: /Users/filipeb/10_DEV/GraphML_IO/na
 
 /opt/homebrew/include/boost/mpl/list/aux_/iterator.hpp:
 
+/opt/homebrew/include/boost/iostreams/imbue.hpp:
+
 /opt/homebrew/include/boost/mpl/list/aux_/include_preprocessed.hpp:
 
 /opt/homebrew/include/boost/mpl/list/aux_/front.hpp:
@@ -38031,6 +38212,8 @@ surf/CMakeFiles/surflib.dir/src/tools.cpp.o: /Users/filipeb/10_DEV/GraphML_IO/na
 /opt/homebrew/include/boost/mpl/pop_back.hpp:
 
 /opt/homebrew/include/boost/mpl/joint_view.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/config/auto_link.hpp:
 
 /opt/homebrew/include/boost/mpl/aux_/joint_iter.hpp:
 
@@ -38436,6 +38619,8 @@ surf/surfconfig.h:
 
 /opt/homebrew/include/boost/random/laplace_distribution.hpp:
 
+/opt/homebrew/include/boost/iostreams/input_sequence.hpp:
+
 /opt/homebrew/include/boost/random/lagged_fibonacci.hpp:
 
 /opt/homebrew/include/boost/fusion/mpl/front.hpp:
@@ -38694,6 +38879,8 @@ surf/surfconfig.h:
 
 /opt/homebrew/include/boost/numeric/interval/policies.hpp:
 
+/opt/homebrew/include/boost/iostreams/checked_operations.hpp:
+
 /opt/homebrew/include/boost/container_hash/detail/hash_mix.hpp:
 
 /opt/homebrew/include/boost/numeric/interval/detail/division.hpp:
@@ -38783,6 +38970,8 @@ surf/surfconfig.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/generate.h:
 
 /opt/homebrew/include/boost/multiprecision/detail/functions/trunc.hpp:
+
+/opt/homebrew/include/boost/iostreams/write.hpp:
 
 /opt/homebrew/include/boost/iterator/detail/if_default.hpp:
 
@@ -39076,6 +39265,8 @@ surf/surfconfig.h:
 
 /opt/homebrew/include/boost/fusion/view/iterator_range.hpp:
 
+/opt/homebrew/include/boost/iostreams/flush.hpp:
+
 /opt/homebrew/include/CGAL/utility.h:
 
 /opt/homebrew/include/CGAL/user_classes.h:
@@ -39156,11 +39347,15 @@ surf/surfconfig.h:
 
 /opt/homebrew/include/CGAL/convert_to_bfi.h:
 
+/opt/homebrew/include/boost/iostreams/output_sequence.hpp:
+
 /opt/homebrew/include/CGAL/constructions/kernel_ftC3.h:
 
 /opt/homebrew/include/CGAL/config.h:
 
 /opt/homebrew/include/CGAL/circulator.h:
+
+/opt/homebrew/include/boost/iostreams/positioning.hpp:
 
 /opt/homebrew/include/CGAL/boost_mp_type.h:
 
@@ -39304,6 +39499,8 @@ surf/surfconfig.h:
 
 /opt/homebrew/include/CGAL/Polynomial/Degree.h:
 
+/opt/homebrew/include/boost/iostreams/detail/config/unreachable_return.hpp:
+
 /opt/homebrew/include/CGAL/Needs_parens_as_product.h:
 
 /opt/homebrew/include/CGAL/Modular_traits.h:
@@ -39424,6 +39621,8 @@ surf/surfconfig.h:
 
 /opt/homebrew/include/boost/predef/compiler/llvm.h:
 
+/opt/homebrew/include/boost/iostreams/stream_buffer.hpp:
+
 /opt/homebrew/include/CGAL/Intersections_3/internal/Ray_3_Ray_3_intersection.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdint:
@@ -39513,6 +39712,8 @@ surf/surfconfig.h:
 /opt/homebrew/include/CGAL/Intersections_3/internal/Line_3_Plane_3_intersection.h:
 
 /opt/homebrew/include/CGAL/Intersections_3/internal/Line_3_Plane_3_do_intersect.h:
+
+/opt/homebrew/include/boost/iostreams/detail/config/codecvt.hpp:
 
 /opt/homebrew/include/boost/mp11/detail/mp_count.hpp:
 
@@ -39793,6 +39994,8 @@ surf/surfconfig.h:
 /opt/homebrew/include/CGAL/squared_distance_3.h:
 
 /opt/homebrew/include/CGAL/Distance_3/Plane_3_Plane_3.h:
+
+/opt/homebrew/include/boost/iostreams/detail/buffer.hpp:
 
 /opt/homebrew/include/boost/type_traits/decay.hpp:
 
@@ -40097,6 +40300,8 @@ surf/surfconfig.h:
 /Users/filipeb/10_DEV/GraphML_IO/native/surfer2/surf/include/tools.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/numeric:
+
+/opt/homebrew/include/boost/iostreams/detail/config/windows_posix.hpp:
 
 /opt/homebrew/include/boost/type_traits/integral_constant.hpp:
 
@@ -41084,6 +41289,8 @@ surf/surfconfig.h:
 
 /opt/homebrew/include/boost/multi_index/detail/serialization_version.hpp:
 
+/opt/homebrew/include/boost/iostreams/char_traits.hpp:
+
 /opt/homebrew/include/CGAL/Rational_traits.h:
 
 /opt/homebrew/include/boost/predef/os/solaris.h:
@@ -41226,6 +41433,8 @@ surf/surfconfig.h:
 
 /opt/homebrew/include/boost/fusion/support/is_segmented.hpp:
 
+/opt/homebrew/include/boost/iostreams/detail/streambuf/linked_streambuf.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_in_port_t.h:
 
 /opt/homebrew/include/boost/mp11/detail/mp_plus.hpp:
@@ -41249,6 +41458,8 @@ surf/surfconfig.h:
 /opt/homebrew/include/boost/optional/detail/optional_relops.hpp:
 
 /opt/homebrew/include/CGAL/long_long.h:
+
+/opt/homebrew/include/boost/iostreams/detail/config/dyn_link.hpp:
 
 /opt/homebrew/include/boost/mpl/vector/aux_/clear.hpp:
 
@@ -41341,6 +41552,8 @@ surf/surfconfig.h:
 /opt/homebrew/include/boost/mpl/plus.hpp:
 
 /opt/homebrew/include/boost/predef/compiler/iar.h:
+
+/opt/homebrew/include/boost/iostreams/operations_fwd.hpp:
 
 /opt/homebrew/include/boost/mpl/aux_/arg_typedef.hpp:
 
@@ -41686,7 +41899,11 @@ surf/surfconfig.h:
 
 /opt/homebrew/include/boost/fusion/algorithm/iteration/fold.hpp:
 
+/opt/homebrew/include/boost/preprocessor/slot/slot.hpp:
+
 /opt/homebrew/include/boost/mpl/aux_/preprocessed/gcc/vector.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/iostream.hpp:
 
 /opt/homebrew/include/boost/mpl/aux_/numeric_cast_utils.hpp:
 
@@ -41733,6 +41950,8 @@ surf/surfconfig.h:
 /opt/homebrew/include/boost/fusion/mpl/back.hpp:
 
 /opt/homebrew/include/boost/preprocessor/list/detail/limits/fold_right_256.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/config/gcc.hpp:
 
 /opt/homebrew/include/boost/multi_index/detail/bad_archive_exception.hpp:
 
@@ -42544,6 +42763,8 @@ surf/surfconfig.h:
 
 /opt/homebrew/include/CGAL/export/CORE.h:
 
+/opt/homebrew/include/boost/iostreams/device/null.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cxxabi.h:
 
 /opt/homebrew/include/boost/random/piecewise_linear_distribution.hpp:
@@ -42621,6 +42842,8 @@ surf/surfconfig.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_endian.h:
 
 /opt/homebrew/include/boost/predef/architecture/ppc.h:
+
+/opt/homebrew/include/boost/iostreams/detail/push.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/__endian.h:
 
@@ -43328,6 +43551,8 @@ surf/surfconfig.h:
 
 /opt/homebrew/include/CGAL/Cartesian/Point_3.h:
 
+/opt/homebrew/include/boost/iostreams/close.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_indices.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stat.h:
@@ -43375,6 +43600,8 @@ surf/surfconfig.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/errno.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/prev.h:
+
+/opt/homebrew/include/boost/iostreams/detail/template_params.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__system_error/throw_system_error.h:
 
@@ -43572,6 +43799,10 @@ surf/surfconfig.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream:
 
+/opt/homebrew/include/boost/iostreams/detail/optional.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/forward.hpp:
+
 /opt/homebrew/include/CGAL/int.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__memory/array_cookie.h:
@@ -43628,11 +43859,15 @@ surf/surfconfig.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_move.h:
 
+/opt/homebrew/include/boost/iostreams/detail/config/limits.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h:
 
 /opt/homebrew/include/boost/fusion/sequence/intrinsic/has_key.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__filesystem/file_status.h:
+
+/opt/homebrew/include/boost/iostreams/detail/adapter/output_iterator_adapter.hpp:
 
 /Users/filipeb/10_DEV/GraphML_IO/native/surfer2/surf/src/BasicInput.cpp:
 
@@ -43722,6 +43957,8 @@ surf/surfconfig.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_wctype.h:
 
+/opt/homebrew/include/boost/iostreams/operations.hpp:
+
 /opt/homebrew/include/boost/fusion/iterator/deref_data.hpp:
 
 /opt/homebrew/include/boost/preprocessor/seq/limits/elem_256.hpp:
@@ -43755,6 +43992,8 @@ surf/surfconfig.h:
 /opt/homebrew/include/boost/random/detail/large_arithmetic.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__config:
+
+/opt/homebrew/include/boost/iostreams/detail/wrap_unwrap.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assertion_handler:
 
@@ -43829,6 +44068,8 @@ surf/surfconfig.h:
 /opt/homebrew/include/CGAL/Intersections_2/Ray_2_Ray_2.h:
 
 /opt/homebrew/include/boost/core/launder.hpp:
+
+/opt/homebrew/include/boost/iostreams/detail/ios.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/default_searcher.h:
 
@@ -43978,6 +44219,8 @@ surf/surfconfig.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__type_traits/common_type.h:
 
+/opt/homebrew/include/boost/iostreams/detail/streambuf.hpp:
+
 /opt/homebrew/include/boost/preprocessor/list/limits/fold_left_256.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/steady_clock.h:
@@ -44025,6 +44268,8 @@ surf/surfconfig.h:
 /opt/homebrew/include/boost/type_traits/is_empty.hpp:
 
 /opt/homebrew/include/CGAL/Intersections_3/Tetrahedron_3_Tetrahedron_3.h:
+
+/opt/homebrew/include/boost/iostreams/detail/adapter/range_adapter.hpp:
 
 /opt/homebrew/include/boost/graph/buffer_concepts.hpp:
 
@@ -44198,6 +44443,8 @@ surf/surfconfig.h:
 
 /opt/homebrew/include/boost/mpl/aux_/preprocessed/gcc/iter_fold_if_impl.hpp:
 
+/opt/homebrew/include/boost/preprocessor/iteration/detail/local.hpp:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__cstddef/byte.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/string.h:
@@ -44225,6 +44472,8 @@ surf/surfconfig.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_strings.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sched.h:
+
+/opt/homebrew/include/boost/iostreams/detail/select.hpp:
 
 /opt/homebrew/include/CGAL/GMP/Gmpfr_type.h:
 

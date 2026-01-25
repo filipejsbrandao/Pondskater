@@ -19,7 +19,7 @@ using Pondskater.Native;
 
 namespace Pondskater
 {
-  public class PondskaterComponent : GH_Component
+  public class RooferComponent : GH_Component
   {
     private string _tempObjPath;
     /// <summary>
@@ -29,7 +29,7 @@ namespace Pondskater
     /// Subcategory the panel. If you use non-existing tab or panel names, 
     /// new tabs/panels will automatically be created.
     /// </summary>
-    public PondskaterComponent()
+    public RooferComponent()
       : base("Roofer", "Rf",
         "Build a roof from a closed planar polygon",
         "Pondskater", "Skeleton")
@@ -44,7 +44,7 @@ namespace Pondskater
       pManager.AddCurveParameter("Polyline", "P", "A planar polyline", GH_ParamAccess.item);
       pManager.AddNumberParameter("Slopes", "S", "A list of slope values. Slope is the cotangent of the angle. Note that 0 slope is a vertical wall", GH_ParamAccess.list);
       pManager.AddPlaneParameter("Plane", "Pl", "The plane where the curve lies", GH_ParamAccess.item);
-      pManager.AddBooleanParameter("Type", "T", "True for Multiplicative weights and false for Additive weights", GH_ParamAccess.item, true);
+      pManager.AddBooleanParameter("Type", "T", "Type", "T", "True for Multiplicative weights (edge speed = w) and false for Additive weights (edge speed = 1 + wa)", GH_ParamAccess.item, true);
       pManager[1].Optional = true;
     }
 
