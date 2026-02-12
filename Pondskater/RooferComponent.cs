@@ -11,8 +11,7 @@ using System.IO;
 using Grasshopper;
 using Grasshopper.Kernel;
 using Rhino.Geometry;
-using Rhino.FileIO;
-using Rhino.DocObjects;
+using System.Globalization;
 
 using Pondskater.IO;
 using Pondskater.Native;
@@ -44,7 +43,7 @@ namespace Pondskater
       pManager.AddCurveParameter("Polyline", "P", "A planar polyline", GH_ParamAccess.item);
       pManager.AddNumberParameter("Slopes", "S", "A list of slope values. Slope is the cotangent of the angle. Note that 0 slope is a vertical wall", GH_ParamAccess.list);
       pManager.AddPlaneParameter("Plane", "Pl", "The plane where the curve lies", GH_ParamAccess.item);
-      pManager.AddBooleanParameter("Type", "T", "Type", "T", "True for Multiplicative weights (edge speed = w) and false for Additive weights (edge speed = 1 + wa)", GH_ParamAccess.item, true);
+      pManager.AddBooleanParameter("Type", "T", "True for Multiplicative weights (edge speed = w) and false for Additive weights (edge speed = 1 + wa)", GH_ParamAccess.item, true);
       pManager[1].Optional = true;
     }
 
@@ -135,38 +134,14 @@ namespace Pondskater
           AddRuntimeMessage(GH_RuntimeMessageLevel.Error, nativeError);
           return;
       }
-      if (string.IsNullOrEmpty(_tempObjPath))
+      var meshes = ParseObjMeshes(objData);
+      if (meshes.Count == 0)
       {
-        _tempObjPath = Path.Combine(Path.GetTempPath(), $"pondskater_{Guid.NewGuid():N}.obj");
+          AddRuntimeMessage(GH_RuntimeMessageLevel.Error, "OBJ output did not contain any mesh faces.");
+          return;
       }
-      File.WriteAllText(_tempObjPath, objData);
-
-      // Create a headless file to append the mesh to...
-      var doc = Rhino.RhinoDoc.CreateHeadless("");
-      var options = new FileReadOptions()
+      foreach (var mesh in meshes)
       {
-          BatchMode = true,
-          ImportMode = true,
-          ImportReferenceMode = false,
-          InsertMode = false,
-          NewMode = false,
-          OpenMode = false,
-          ScaleGeometry = false,
-          UseScaleGeometry = true
-      };
-      var objOptions = new FileObjReadOptions(options)
-      {
-          MapYtoZ = false,
-          IgnoreTextures = true,
-          UseObjGroupsAs = FileObjReadOptions.UseObjGsAs.IgnoreObjGroups
-      };
-      FileObj.Read(_tempObjPath, doc, objOptions);
-      var meshes = new List<Mesh>();
-      foreach (var rhinoObject in doc.Objects.GetObjectList(ObjectType.Mesh))
-      {
-          var meshObject = rhinoObject as MeshObject;
-          if (meshObject == null) continue;
-          var mesh = meshObject.Geometry as Mesh;
           if (mesh == null) continue;
 
           //Remove the external points that appear in non-convex polygons
@@ -185,14 +160,18 @@ namespace Pondskater
 
           //return the mesh to its rightful place
           mesh.Transform(reverse_transform);
-          meshes.Add(mesh.DuplicateMesh());
       }
-      doc.Dispose();
+      var resultMeshes = new List<Mesh>(meshes.Count);
+      foreach (var mesh in meshes)
+      {
+          if (mesh == null) continue;
+          resultMeshes.Add(mesh.DuplicateMesh());
+      }
 
       //Math.
       //Math.Tanh()
 
-      DA.SetDataList(0, meshes);
+      DA.SetDataList(0, resultMeshes);
 
     }
 
@@ -211,21 +190,97 @@ namespace Pondskater
     /// </summary>
     public override Guid ComponentGuid => new Guid("fa59155e-95b8-4195-8145-6be07ccdd863");
 
-    public override void RemovedFromDocument(Grasshopper.Kernel.GH_Document document)
+    private static List<Mesh> ParseObjMeshes(string objData)
     {
-      if (!string.IsNullOrEmpty(_tempObjPath))
+      var meshes = new List<Mesh>();
+      if (string.IsNullOrWhiteSpace(objData)) return meshes;
+
+      var vertices = new List<Point3d>();
+      Mesh current = new Mesh();
+      var remap = new Dictionary<int, int>();
+
+      using (var reader = new StringReader(objData))
       {
-        try
+        string line;
+        while ((line = reader.ReadLine()) != null)
         {
-          File.Delete(_tempObjPath);
+          line = line.Trim();
+          if (line.Length == 0 || line.StartsWith("#", StringComparison.Ordinal)) continue;
+
+          if (line.StartsWith("o ", StringComparison.Ordinal) || line.StartsWith("g ", StringComparison.Ordinal))
+          {
+            if (current.Faces.Count > 0)
+            {
+              current.Normals.ComputeNormals();
+              current.Compact();
+              meshes.Add(current);
+            }
+            current = new Mesh();
+            remap = new Dictionary<int, int>();
+            continue;
+          }
+
+          if (line.StartsWith("v ", StringComparison.Ordinal))
+          {
+            var parts = line.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            if (parts.Length < 4) continue;
+            double x = double.Parse(parts[1], CultureInfo.InvariantCulture);
+            double y = double.Parse(parts[2], CultureInfo.InvariantCulture);
+            double z = double.Parse(parts[3], CultureInfo.InvariantCulture);
+            vertices.Add(new Point3d(x, y, z));
+            continue;
+          }
+
+          if (line.StartsWith("f ", StringComparison.Ordinal))
+          {
+            var parts = line.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            if (parts.Length < 4) continue;
+
+            int[] face = new int[parts.Length - 1];
+            for (int i = 1; i < parts.Length; i++)
+            {
+              string token = parts[i];
+              int slash = token.IndexOf('/');
+              if (slash >= 0) token = token.Substring(0, slash);
+              if (!int.TryParse(token, NumberStyles.Integer, CultureInfo.InvariantCulture, out int idx)) return meshes;
+              if (idx < 0) idx = vertices.Count + idx + 1;
+              int globalIndex = idx - 1;
+              if (!remap.TryGetValue(globalIndex, out int localIndex))
+              {
+                if (globalIndex < 0 || globalIndex >= vertices.Count) return meshes;
+                localIndex = current.Vertices.Add(vertices[globalIndex]);
+                remap[globalIndex] = localIndex;
+              }
+              face[i - 1] = localIndex;
+            }
+
+            if (face.Length == 3)
+            {
+              current.Faces.AddFace(face[0], face[1], face[2]);
+            }
+            else if (face.Length == 4)
+            {
+              current.Faces.AddFace(face[0], face[1], face[2], face[3]);
+            }
+            else if (face.Length > 4)
+            {
+              for (int i = 2; i < face.Length; i++)
+              {
+                current.Faces.AddFace(face[0], face[i - 1], face[i]);
+              }
+            }
+          }
         }
-        catch (Exception)
-        {
-          // Best-effort cleanup for temp file.
-        }
-        _tempObjPath = null;
       }
-      base.RemovedFromDocument(document);
+
+      if (current.Faces.Count > 0)
+      {
+        current.Normals.ComputeNormals();
+        current.Compact();
+        meshes.Add(current);
+      }
+
+      return meshes;
     }
   }
 }

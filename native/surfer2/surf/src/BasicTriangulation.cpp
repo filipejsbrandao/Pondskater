@@ -188,7 +188,11 @@ initialize(const BasicInput& input) {
       SURF_ABORT(EXIT_INVALID_INPUT, "Invalid input: constraint intersection.");
     }
     #else
-      #warning "Old CGAL version without Intersection_of_constraints_exception.  We will not detect some classes of invalid input."
+      #ifdef _MSC_VER
+        #pragma message("Old CGAL version without Intersection_of_constraints_exception. We will not detect some classes of invalid input.")
+      #else
+        #warning "Old CGAL version without Intersection_of_constraints_exception.  We will not detect some classes of invalid input."
+      #endif
     #endif
   }
 

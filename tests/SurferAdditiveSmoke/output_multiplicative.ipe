@@ -1,0 +1,211 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE ipe SYSTEM "ipe.dtd">
+<ipe version="70000" creator="surfer2">
+<info bbox="cropbox" />
+<ipestyle name="basic">
+  <pen name="heavier" value="0.8"/>
+  <color name="blue" value="0 0 1"/>
+</ipestyle>
+<ipestyle name="dashstyles">
+  <dashstyle name="dotted-narrower" value="[0.5 0.5] 0"/>
+</ipestyle>
+<ipestyle name="surfer">
+  <pen name="thin" value="0.2"/>
+</ipestyle>
+<page>
+<layer name="input" />
+<layer name="sk" />
+<group layer="sk">
+  <path cap="1" stroke="blue">
+    -150.152 87.1469 m
+    -163.168 114.548 l
+  </path>
+  <path cap="1" stroke="blue">
+    -150.152 87.1469 m
+    -94.2493 116.482 l
+  </path>
+  <path cap="1" stroke="blue">
+    -86.4556 109.123 m
+    -94.2493 116.482 l
+  </path>
+  <path cap="1" stroke="blue">
+    -61.442 116.221 m
+    -86.4556 109.123 l
+  </path>
+  <path cap="1" stroke="blue">
+    -61.442 116.221 m
+    -10.0239 171.537 l
+  </path>
+  <path cap="1" stroke="blue">
+    25.8508 42.7235 m
+    63.0362 0 l
+  </path>
+  <path cap="1" stroke="blue">
+    25.8508 42.7235 m
+    12.4626 40.4708 l
+  </path>
+  <path cap="1" stroke="blue">
+    -61.442 116.221 m
+    12.4626 40.4708 l
+  </path>
+  <path cap="1" stroke="blue">
+    -86.4556 109.123 m
+    0 0 l
+  </path>
+  <path cap="1" stroke="blue">
+    26.7039 48.3405 m
+    48.3218 45.9765 l
+  </path>
+  <path cap="1" stroke="blue">
+    25.8508 42.7235 m
+    26.7039 48.3405 l
+  </path>
+  <path cap="1" stroke="blue">
+    29.395 144.164 m
+    62.5838 102.87 l
+  </path>
+  <path cap="1" stroke="blue">
+    29.395 144.164 m
+    20.2025 87.8697 l
+  </path>
+  <path cap="1" stroke="blue">
+    26.8993 151.603 m
+    46.1075 154.692 l
+  </path>
+  <path cap="1" stroke="blue">
+    26.8993 151.603 m
+    29.395 144.164 l
+  </path>
+  <path cap="1" stroke="blue">
+    0 0 m
+    6.1092 -7.71094 l
+  </path>
+  <path cap="1" stroke="blue">
+    63.0362 0 m
+    69.7476 -7.71094 l
+  </path>
+  <path cap="1" stroke="blue">
+    48.3218 45.9765 m
+    52.7193 45.4957 l
+  </path>
+  <path cap="1" stroke="blue">
+    115.513 64.9886 m
+    125.457 66.0772 l
+  </path>
+  <path cap="1" stroke="blue">
+    78.9109 82.5554 m
+    62.5838 102.87 l
+  </path>
+  <path cap="1" stroke="blue">
+    55.9275 156.271 m
+    78.9109 82.5554 l
+  </path>
+  <path cap="1" stroke="blue">
+    55.9275 156.271 m
+    46.1075 154.692 l
+  </path>
+  <path cap="1" stroke="blue">
+    55.9275 156.271 m
+    83.1316 175.823 l
+  </path>
+  <path cap="1" stroke="blue">
+    83.1316 175.823 m
+    91.6129 181.918 l
+  </path>
+  <path cap="1" stroke="blue">
+    12.4626 40.4708 m
+    20.2025 87.8697 l
+  </path>
+  <path cap="1" stroke="blue">
+    64.0513 59.355 m
+    26.7039 48.3405 l
+  </path>
+  <path cap="1" stroke="blue">
+    64.0513 59.355 m
+    78.9109 82.5554 l
+  </path>
+  <path cap="1" stroke="blue">
+    64.0513 59.355 m
+    115.513 64.9886 l
+  </path>
+  <path cap="1" stroke="blue">
+    26.8993 151.603 m
+    30.4509 154.885 l
+  </path>
+  <path cap="1" stroke="blue">
+    -10.0239 171.537 m
+    -6.61245 175.207 l
+  </path>
+  <path cap="1" stroke="blue">
+    -94.2493 116.482 m
+    -46.0242 54.7266 l
+  </path>
+  <path cap="1" stroke="blue">
+    -150.152 87.1469 m
+    -105.346 -24.6073 l
+  </path>
+  <path cap="1" stroke="blue">
+    -163.168 114.548 m
+    -164.137 116.588 l
+  </path>
+  <path cap="1" stroke="blue">
+    -105.346 -24.6073 m
+    -102.01 -32.9271 l
+  </path>
+  <path cap="1" stroke="blue">
+    -46.0242 54.7266 m
+    -41.1421 48.4749 l
+  </path>
+</group>
+<group layer="input">
+  <path cap="1" stroke="black" pen="heavier">
+    -163.168 114.548 m
+    -10.0239 171.537 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    48.3218 45.9765 m
+    63.0362 0 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    63.0362 0 m
+    0 0 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    62.5838 102.87 m
+    20.2025 87.8697 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    46.1075 154.692 m
+    62.5838 102.87 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    48.3218 45.9765 m
+    115.513 64.9886 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    46.1075 154.692 m
+    83.1316 175.823 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    115.513 64.9886 m
+    83.1316 175.823 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    20.2025 87.8697 m
+    -10.0239 171.537 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    -105.346 -24.6073 m
+    -163.168 114.548 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    -46.0242 54.7266 m
+    -105.346 -24.6073 l
+  </path>
+  <path cap="1" stroke="black" pen="heavier">
+    0 0 m
+    -46.0242 54.7266 l
+  </path>
+</group>
+</page>
+</ipe>

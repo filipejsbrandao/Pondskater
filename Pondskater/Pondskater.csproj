@@ -16,6 +16,7 @@
 
   <PropertyGroup Condition="'$(TargetFramework)'=='net7.0'">
     <Nullable>enable</Nullable>
+    <NoWarn>$(NoWarn);CS8600;CS8601;CS8602;CS8603;CS8604;CS8618;CS8625;CS8632;CA1416</NoWarn>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(TargetFramework)'=='net48'">
@@ -31,6 +32,9 @@
     <EmbeddedResource Include="Resources/roofer.png" />
     <EmbeddedResource Include="Resources/offset.png" />
     <EmbeddedResource Include="Resources/skeleton2d.png" />
+    <EmbeddedResource Include="Resources/ReadGML.png" />
+    <EmbeddedResource Include="Resources/WriteGML.png" />
+    <EmbeddedResource Include="Resources/RandomHamilton.png" />
   </ItemGroup>
 
 </Project>

@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/Users/filipeb/10_DEV/GraphML_IO/native/surfer2/build/cmake_install.cmake",
-		"/Users/filipeb/10_DEV/GraphML_IO/native/surfer2/build/surf/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

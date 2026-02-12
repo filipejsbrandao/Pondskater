@@ -75,6 +75,9 @@ target_link_libraries(surflib ${CGAL_LIBRARIES} ${CGAL_3RD_PARTY_LIBRARIES})
 set_target_properties(surflib PROPERTIES PUBLIC_HEADER include/tools.h)
 
 target_compile_definitions(surflib PRIVATE ELPP_CUSTOM_COUT=std::cerr)
+if (MSVC)
+  target_compile_definitions(surflib PRIVATE NOMINMAX WIN32_LEAN_AND_MEAN)
+endif()
 
 target_include_directories(surflib PRIVATE include)
 target_include_directories(surflib PRIVATE src)

@@ -18,11 +18,16 @@ Windows (MSVC + vcpkg)
 1) Install vcpkg and deps:
    - vcpkg install cgal boost-graph boost-iostreams mpfr gmp --triplet x64-windows
 2) Configure (from a VS Developer Command Prompt):
-   - cmake -S native/surfer2 -B native/surfer2/build-win -DLIB_ONLY=ON -DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=C:/path/to/vcpkg/scripts/buildsystems/vcpkg.cmake
+   - rmdir /s /q native\surfer2\build-win  (if reconfiguring after changes)
+   - cmake -S native/surfer2 -B native/surfer2/build-win -DLIB_ONLY=ON -DBUILD_SHARED_LIBS=ON -DCMAKE_BUILD_TYPE=Release -DCMAKE_TOOLCHAIN_FILE=C:\dev\vcpkg\scripts\buildsystems\vcpkg.cmake
 3) Build:
    - cmake --build native/surfer2/build-win --config Release
 4) Copy output:
    - copy native\surfer2\build-win\surf\Release\surfer.dll native\bin\windows\surfer.dll
+5) Copy dependencies next to the .gha (or add to PATH):
+   - Run applocal to copy dependencies beside the DLL:
+     - powershell -ExecutionPolicy Bypass -File C:\dev\vcpkg\scripts\buildsystems\msbuild\applocal.ps1 -targetBinary "C:\Users\filipeb\AppData\Roaming\Grasshopper\Libraries\surfer.dll" -installedDir "C:\dev\vcpkg\installed\x64-windows\bin"
+   - Alternatively, add C:\dev\vcpkg\installed\x64-windows\bin to PATH before launching Rhino/Grasshopper.
 
 Notes
 - The GH plugin expects the native library next to the .gha at runtime.
