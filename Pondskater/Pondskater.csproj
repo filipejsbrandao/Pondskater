@@ -35,6 +35,19 @@
     <EmbeddedResource Include="Resources/ReadGML.png" />
     <EmbeddedResource Include="Resources/WriteGML.png" />
     <EmbeddedResource Include="Resources/RandomHamilton.png" />
+    <EmbeddedResource Include="Resources/3dcp.png" />
+    <EmbeddedResource Include="Resources/EdgeAligned.png" />
+    <EmbeddedResource Include="Resources/Eulerian.png" />
+    <EmbeddedResource Include="Resources/Hamiltonian.png" />
+    <EmbeddedResource Include="Resources/L_Component.png" />
+    <EmbeddedResource Include="Resources/MBR.png" />
+    <EmbeddedResource Include="Resources/Metric.png" />
+    <EmbeddedResource Include="Resources/Mitter_Component.png" />
+    <EmbeddedResource Include="Resources/N_Component.png" />
+    <EmbeddedResource Include="Resources/PolygonWidth.png" />
+    <EmbeddedResource Include="Resources/Pondskater_Icon.png" />
+    <EmbeddedResource Include="Resources/Symmetrical.png" />
+    <EmbeddedResource Include="Resources/T_Component.png" />
   </ItemGroup>
 
 </Project>

@@ -93,7 +93,7 @@ namespace Pondskater._3DCPUtils
         {
             get
             {
-                return IconLoader.Roofer;
+                return IconLoader.ThreeDcpSpeed;
             }
         }
 
