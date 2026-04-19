@@ -12,7 +12,7 @@ namespace Pondskater
         public MinimumBoundingRectangleComponent()
           : base("Minimum Bounding Rectangle", "MBR",
               "Constructs a robust minimum-area bounding rectangle for a planar polygon by evaluating all convex-hull edge-aligned candidates.",
-              "Pondskater", "Components")
+              "Pondskater", "Analysis")
         {
         }
 

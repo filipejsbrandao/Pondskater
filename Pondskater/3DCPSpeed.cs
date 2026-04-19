@@ -12,7 +12,7 @@ namespace Pondskater._3DCPUtils
         public _3DCPSpeed()
           : base("3DCP Velocity", "3DCPSpeed",
               "Compute the nozzle velocity for 3D concrete printing based on the material flow velocity, nozzle diameter, layer width and nozzle height. The analytical expressions were derived from (Alhussain et al., 2024) and tunned based on experimental data and regression analysis collected at the ARENA Lab of the School of Architecture Art and Design of the University of Minho.",
-              "Pondskater", "3DCPUtils")
+              "Pondskater", "Paths")
         {
         }
 

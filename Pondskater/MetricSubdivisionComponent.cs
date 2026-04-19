@@ -11,7 +11,7 @@ namespace Pondskater
         public MetricSubdivisionComponent()
           : base("Metric Subdivision", "MSub",
               "Subdivides a length by maximizing the use of a preferred maximum module length while enforcing a minimum allowable remainder length.",
-              "Pondskater", "Components")
+              "Pondskater", "Subdivision")
         {
         }
 

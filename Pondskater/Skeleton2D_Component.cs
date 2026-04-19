@@ -24,7 +24,7 @@ namespace Pondskater
         public Skeleton2D_Component()
           : base("Skeleton2d", "Sk2d",
             "Get the 2d skeleton of a planar polygon",
-            "Pondskater", "Skeleton")
+            "Pondskater", "Analysis")
         {
         }
 

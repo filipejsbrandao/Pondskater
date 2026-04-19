@@ -20,7 +20,7 @@ namespace Pondskater
         public ReadGraphml_Component()
           : base("GraphML To Polyline", "GML",
             "Convert a GraphML polyline to a Rhino Polyline",
-            "Pondskater", "IO")
+            "Pondskater", "Analysis")
         {
         }
 

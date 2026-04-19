@@ -31,7 +31,7 @@ namespace Pondskater
     public RooferComponent()
       : base("Roofer", "Rf",
         "Build a roof from a closed planar polygon",
-        "Pondskater", "Skeleton")
+        "Pondskater", "Analysis")
     {
     }
 

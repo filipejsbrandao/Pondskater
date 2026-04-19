@@ -21,7 +21,7 @@ namespace Pondskater
         public WriteGraphml_Component()
           : base("Write GraphML", "Write GML",
             "Write GraphML files",
-            "Pondskater", "IO")
+            "Pondskater", "Analysis")
         {
         }
 

@@ -13,7 +13,7 @@ namespace Pondskater
         public NComponent()
           : base("N Component", "NComp",
               "Creates the closed polyline of a multi-wall intersection component from a construction plane, wall directions, per-arm widths and per-arm minimum member lengths measured beyond the joint geometry.",
-              "Pondskater", "Components")
+              "Pondskater", "Subdivision")
         {
         }
 

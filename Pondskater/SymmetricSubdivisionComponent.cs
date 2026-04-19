@@ -11,7 +11,7 @@ namespace Pondskater
         public SymmetricSubdivisionComponent()
           : base("Symmetric Subdivision", "SSub",
               "Subdivides a length by maximizing the use of a preferred maximum module length while distributing the remainder symmetrically to both ends.",
-              "Pondskater", "Components")
+              "Pondskater", "Subdivision")
         {
         }
 

@@ -5,6 +5,15 @@ using Grasshopper.Kernel;
 
 namespace Pondskater
 {
+    public class PondskaterCategoryIcon : Grasshopper.Kernel.GH_AssemblyPriority
+  {
+      public override Grasshopper.Kernel.GH_LoadingInstruction PriorityLoad()
+      {
+          Grasshopper.Instances.ComponentServer.AddCategoryIcon("Pondskater", Pondskater.IconLoader.PondskaterIcon);
+          Grasshopper.Instances.ComponentServer.AddCategorySymbolName("Pondskater", 'P');
+          return Grasshopper.Kernel.GH_LoadingInstruction.Proceed;
+      }
+  }
   public class PondskaterInfo : GH_AssemblyInfo
   {
     public override string Name => "Pondskater";

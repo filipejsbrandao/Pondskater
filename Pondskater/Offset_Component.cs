@@ -23,7 +23,7 @@ namespace Pondskater
         public Offset_Component()
           : base("Offset", "O",
             "Offset description",
-            "Pondskater", "Skeleton")
+            "Pondskater", "Analysis")
         {
         }
 

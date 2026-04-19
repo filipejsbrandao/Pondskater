@@ -13,7 +13,7 @@ namespace Pondskater
         public PolygonWidthComponent()
           : base("Polygon Width", "PWidth",
               "Computes the minimum width of a planar polygon from its convex hull and returns the two support lines for the best antipodal configuration.",
-              "Pondskater", "Components")
+              "Pondskater", "Analysis")
         {
         }
 

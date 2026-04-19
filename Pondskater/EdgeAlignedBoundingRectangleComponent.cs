@@ -12,7 +12,7 @@ namespace Pondskater
         public EdgeAlignedBoundingRectangleComponent()
           : base("Edge Aligned Bounding Rectangle", "EABR",
               "Constructs the bounding rectangle of a planar polygon aligned to the direction of a selected input polyline edge. Bounding extents are computed from the polygon convex hull.",
-              "Pondskater", "Components")
+              "Pondskater", "Analysis")
         {
         }
 

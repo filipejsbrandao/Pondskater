@@ -13,7 +13,7 @@ namespace Pondskater
         public MiterComponent()
           : base("Miter Component", "Miter",
               "Creates one closed polyline miter-joint component per wall direction from a construction plane, wall directions, arm lengths and widths.",
-              "Pondskater", "Components")
+              "Pondskater", "Subdivision")
         {
         }
 

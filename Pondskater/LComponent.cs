@@ -12,7 +12,7 @@ namespace Pondskater
         public LComponent()
           : base("L Component", "LComp",
               "Creates the closed polyline of an L corner connection from a construction plane, two arm directions, per-arm widths and per-arm minimum member lengths measured beyond the joint geometry.",
-              "Pondskater", "Components")
+              "Pondskater", "Subdivision")
         {
         }
 

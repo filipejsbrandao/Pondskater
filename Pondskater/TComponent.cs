@@ -12,7 +12,7 @@ namespace Pondskater
         public TComponent()
           : base("T Component", "TComp",
               "Creates the closed polyline of a T corner connection from a construction plane, three arm directions, per-arm widths and per-arm minimum member lengths measured beyond the joint geometry.",
-              "Pondskater", "Components")
+              "Pondskater", "Subdivision")
         {
         }
 
