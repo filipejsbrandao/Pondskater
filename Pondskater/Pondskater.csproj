@@ -4,7 +4,7 @@
     <TargetFrameworks>net7.0;net48</TargetFrameworks>
     <EnableDynamicLoading>true</EnableDynamicLoading>
     <LangVersion>8.0</LangVersion>
-    <Version>1.0</Version>
+    <Version>0.0.2</Version>
     <AssemblyName>Pondskater</AssemblyName>
     <Title>Pondskater</Title>
     <Description>Pondskater provides tools for offseting, obtaining the straight skeleton and creating roofs or topographic features. It is a wrap around the library Surfer2 developed by the University of Salzburg's Computational Geometry and Applications Lab. Surfer2 is an implementation of Aichholzer and Aurenhammer's triangulation based straight skeleton algorithm using CGAL. </Description>
