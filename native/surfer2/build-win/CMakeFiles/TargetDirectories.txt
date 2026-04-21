@@ -1,6 +1,0 @@
-D:/10_DEV/GraphML_IO/native/surfer2/build-win/CMakeFiles/RUN_TESTS.dir
-D:/10_DEV/GraphML_IO/native/surfer2/build-win/CMakeFiles/ALL_BUILD.dir
-D:/10_DEV/GraphML_IO/native/surfer2/build-win/CMakeFiles/ZERO_CHECK.dir
-D:/10_DEV/GraphML_IO/native/surfer2/build-win/surf/CMakeFiles/surflib.dir
-D:/10_DEV/GraphML_IO/native/surfer2/build-win/surf/CMakeFiles/RUN_TESTS.dir
-D:/10_DEV/GraphML_IO/native/surfer2/build-win/surf/CMakeFiles/ALL_BUILD.dir

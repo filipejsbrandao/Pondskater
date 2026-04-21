@@ -398,6 +398,15 @@ ASALocalRun/
 # NVidia Nsight GPU debugger configuration file
 *.nvuser
 
+# Ignore archived distribution and build artifacts created during cleanup
+distribution_archived_*
+distribution_archived_20260420T104344Z
+native/surfer2/build-win_archived_*
+output_archived_*.txt
+
+# Ignore temporary dist copies
+Pondskater_GH/dist/
+
 # MFractors (Xamarin productivity tool) working folder
 .mfractor/
 

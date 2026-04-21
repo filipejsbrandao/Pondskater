@@ -50,4 +50,16 @@
     <EmbeddedResource Include="Resources/T_Component.png" />
   </ItemGroup>
 
+  <!-- Copy built plugin artifact to Pondskater_GH/dist after build -->
+  <Target Name="CopyGhaToDist" AfterTargets="Build">
+    <PropertyGroup>
+      <_DistDir>$(MSBuildThisFileDirectory)..\Pondskater_GH\dist\</_DistDir>
+    </PropertyGroup>
+    <MakeDir Directories="$(_DistDir)" />
+    <ItemGroup>
+      <_BuiltGhaFiles Include="$(OutputPath)*$(TargetExt)" />
+    </ItemGroup>
+    <Copy SourceFiles="@(_BuiltGhaFiles)" DestinationFolder="$(_DistDir)" SkipUnchangedFiles="true" />
+  </Target>
+
 </Project>
