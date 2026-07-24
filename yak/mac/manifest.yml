@@ -1,0 +1,13 @@
+---
+name: pondskater
+version: 0.0.2
+authors:
+- Filipe Brandão
+description: Pondskater provides a set of tools for working polygons and paths, including offsetting, obtaining the straight skeleton and creating roofs or topographic features.
+url: "mailto:filipe.brandao@eaad.uminho.pt"
+keywords:   
+  - offsetting
+  - 3dprinting
+  - subdivision
+  - roof
+  - straightskeleton

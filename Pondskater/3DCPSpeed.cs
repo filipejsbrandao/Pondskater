@@ -78,7 +78,7 @@ namespace Pondskater._3DCPUtils
                 AddRuntimeMessage(GH_RuntimeMessageLevel.Error, "Input ratios produce an unstable contact width expression.");
                 return;
             }
-            double contactWidth = 0.7059 * (1 / (velocityRatio * HeightRatio)) - 0.0783 * HeightRatio - 0.0935;
+            double contactWidth = (0.7059 * (1 / (velocityRatio * HeightRatio)) - 0.0783 * HeightRatio - 0.0935) * nozzleDiameter;
 
             DA.SetData(0, nozzleVelocity);
             DA.SetData(1, contactWidth);
