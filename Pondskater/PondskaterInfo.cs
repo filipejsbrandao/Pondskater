@@ -32,6 +32,6 @@ namespace Pondskater
     //Return a string representing your preferred contact details.
     public override string AuthorContact => "filipe.brandao@eaad.uminho.pt";
 
-    public override string Version => "0.0.6";
+    public override string Version => "0.0.7";
   }
 }

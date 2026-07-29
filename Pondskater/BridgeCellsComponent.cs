@@ -332,7 +332,7 @@ namespace Pondskater
                 return false;
             }
 
-            double signedDistance = orientation == CurveOrientation.CounterClockwise ? distance : -distance;
+            double signedDistance = orientation == CurveOrientation.CounterClockwise ? -distance : distance;
             Curve[] offsets = cell.Offset(Plane.WorldXY, signedDistance, tolerance, CurveOffsetCornerStyle.Sharp);
             double originalArea = GetCurveArea(cell);
             double areaTolerance = tolerance * tolerance;
