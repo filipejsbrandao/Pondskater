@@ -34,8 +34,8 @@ namespace Pondskater
 
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
         {
-            pManager.AddPointParameter("Points", "P", "Hamiltonian vertex order from start to end.", GH_ParamAccess.list);
-            pManager.AddCurveParameter("Path", "C", "Polyline through the Hamiltonian vertex order.", GH_ParamAccess.item);
+            pManager.AddPointParameter("Points", "Pt", "Hamiltonian vertex order from start to end.", GH_ParamAccess.list);
+            pManager.AddCurveParameter("Path", "P", "Polyline through the Hamiltonian vertex order.", GH_ParamAccess.item);
             pManager.AddBooleanParameter("Full", "F", "True if the returned path visits every vertex in the start component.", GH_ParamAccess.item);
         }
 
