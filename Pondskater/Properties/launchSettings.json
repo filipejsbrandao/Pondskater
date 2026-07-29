@@ -3,17 +3,17 @@
     "Pondskater": {
       "commandName": "Executable",
       "executablePath": "C:\\Program Files\\Rhino 8\\System\\Rhino.exe",
-      "commandLineArgs": "",
+      "commandLineArgs": "/runscript=\"_Grasshopper\"",
       "environmentVariables": {
-        "RHINO_PACKAGE_DIRS": "$(ProjectDir)$(BaseOutputPath)$(Configuration)\\$(TargetFramework)\\"
+        "RHINO_PACKAGE_DIRS": "$(ProjectDir)bin\\Pondskater\\$(Configuration)\\net7.0"
       }
     },
     "Pondskater (macOS)": {
       "commandName": "Executable",
       "executablePath": "/Applications/Rhino 8.app/Contents/MacOS/Rhinoceros",
-      "commandLineArgs": "",
+      "commandLineArgs": "-runscript=_Grasshopper",
       "environmentVariables": {
-        "RHINO_PACKAGE_DIRS": "$(ProjectDir)$(BaseOutputPath)$(Configuration)/$(TargetFramework)/"
+        "RHINO_PACKAGE_DIRS": "$(ProjectDir)bin/Pondskater/$(Configuration)/net7.0"
       }
     }
   }

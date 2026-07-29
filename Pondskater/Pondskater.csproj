@@ -28,6 +28,16 @@
     <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
   </ItemGroup>
 
+  <ItemGroup Condition="$([MSBuild]::IsOSPlatform('OSX'))">
+    <None Include="../yak/mac/libsurfer.dylib" Link="libsurfer.dylib" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$([MSBuild]::IsOSPlatform('Windows'))">
+    <None Include="../yak/win/surfer.dll" Link="surfer.dll" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../yak/win/gmp-10.dll" Link="gmp-10.dll" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../yak/win/boost_graph-vc143-mt-x64-1_90.dll" Link="boost_graph-vc143-mt-x64-1_90.dll" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Resources/roofer.png" />
     <EmbeddedResource Include="Resources/offset.png" />
@@ -60,6 +70,14 @@
       <_BuiltGhaFiles Include="$(OutputPath)*$(TargetExt)" />
     </ItemGroup>
     <Copy SourceFiles="@(_BuiltGhaFiles)" DestinationFolder="$(_DistDir)" SkipUnchangedFiles="true" />
+  </Target>
+
+  <!-- Grasshopper's macOS loader may resolve symbols using the full .gha filename. -->
+  <Target Name="CopyGrasshopperDebugSymbols" AfterTargets="Build" Condition="'$(Configuration)'=='Debug'">
+    <Copy SourceFiles="$(OutputPath)$(AssemblyName).pdb"
+          DestinationFiles="$(OutputPath)$(AssemblyName).gha.pdb"
+          SkipUnchangedFiles="true"
+          Condition="Exists('$(OutputPath)$(AssemblyName).pdb')" />
   </Target>
 
 </Project>

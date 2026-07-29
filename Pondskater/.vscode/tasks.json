@@ -3,17 +3,27 @@
     "tasks": [
         {
             "label": "build-plugin-netcore",
-            // This will ensure the project is built before we try to debug it
-            "command": "dotnet build ${workspaceFolder}/*.csproj -f net7.0",
-            "type": "shell",
-            "args": [],
+            "type": "process",
+            "command": "dotnet",
+            "args": [
+                "build",
+                "${workspaceFolder}/Pondskater.csproj",
+                "--configuration",
+                "Debug",
+                "--framework",
+                "net7.0",
+                "--no-restore"
+            ],
             "problemMatcher": [
                 "$msCompile"
             ],
             "presentation": {
                 "reveal": "always"
             },
-            "group": "build"
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
