@@ -1,0 +1,107 @@
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+
+using Grasshopper.Kernel;
+using Rhino.Geometry;
+
+namespace Pondskater
+{
+    public class ThreeSegmentArchComponent : GH_Component
+    {
+        public ThreeSegmentArchComponent()
+          : base("Three-Segment Arch", "3SegArch",
+              "Constructs a three-segment arch.",
+              "Pondskater", "Curves")
+        {
+            
+        }
+        protected override void RegisterInputParams(GH_InputParamManager pManager)
+        {
+            pManager.AddNumberParameter("Span", "S", "The span of the arch.", GH_ParamAccess.item, 10.0);
+            pManager.AddNumberParameter("Rise", "R", "The rise of the arch.", GH_ParamAccess.item, 3.0);
+            pManager.AddPlaneParameter("Plane", "P", "The plane of the arch.", GH_ParamAccess.item, Plane.WorldXY);
+        }
+
+        protected override void RegisterOutputParams(GH_OutputParamManager pManager)
+        {
+            pManager.AddCurveParameter("Arch", "A", "The three-segment arch curve.", GH_ParamAccess.item);
+            pManager.AddArcParameter("Arc Segments", "AS", "The three individual arc segments from left to right.", GH_ParamAccess.list);
+            pManager.AddPointParameter("Centers", "C", "Centers of the three arc segments.", GH_ParamAccess.list);
+            pManager.AddPointParameter("Joints", "J", "Junction points between consecutive arc segments.", GH_ParamAccess.list);
+            pManager.AddPointParameter("Apex", "AP", "Apex point of the arch.", GH_ParamAccess.item);
+        }
+
+        private static readonly double maxRiseRatio = 0.5 * Math.Sqrt(3.0);
+        private static readonly double minRiseRise = Math.Tan(Math.PI / 12);
+        protected override void SolveInstance(IGH_DataAccess DA)
+        {
+            double span = 0.0;
+            double rise = 0.0;
+            Plane plane = Plane.Plane.WorldXY;
+
+            if (!DA.GetData(0, ref span)) return;
+            if (!DA.GetData(1, ref rise)) return;
+            if (!DA.GetData(2, ref plane)) return;
+
+            if (span <= 0.0 || rise <= 0.0)
+            {
+                AddRuntimeMessage(GH_RuntimeMessageLevel.Error, "Span and rise must be greater than zero.");
+                return;
+            }
+
+            if (!plane.IsValid)
+            {
+                AddRuntimeMessage(GH_RuntimeMessageLevel.Error, "Plane is invalid.");
+                return;
+            }
+            
+            if(rise > maxRiseRatio * span)
+            {
+                rise = maxRiseRatio * span;
+                AddRuntimeMessage(GH_RuntimeMessageLevel.Warning, $"Rise is too high for the given span. It has been clamped to the maximum value of {maxRiseRatio:F3}.");
+            }
+            if(rise < minRiseRise * span / 2.0)
+            {
+                rise = minRiseRise * span / 2.0;
+                AddRuntimeMessage(GH_RuntimeMessageLevel.Warning, $"Rise is too low for the given span. It has been clamped to the minimum value of {minRiseRise:F3}.");    
+            }
+
+            double x = (rise - Math.Sqrt(3) * span/2)/ (Math.Sqrt(3) - Math.Tan(Math.PI / 12));
+            double y = Math.Sqrt(3) * x + (Math.Sqrt(3) * span / 2);
+
+            Arc baseArc = new Arc(plane, span * 0.5, Math.PI);
+            Point3d a = baseArc.PointAt(1/3.0 * baseArc.Length/2);
+            Point3d b = baseArc.PointAt(2/3.0 * baseArc.Length/2);
+            Point3d f = plane.Origin + -x * plane.XAxis + y * plane.YAxis;
+            Point3d e = plane.Origin + x * plane.XAxis + y * plane.YAxis;
+            Transform rotate90 = Transform.Rotation(Math.PI / 2, Vector3d.ZAxis, Point3d.Origin);
+            Vector3d arc2StartTangent = baseArc.PointAt(2/3.0) - plane.Origin;
+            arc2StartTangent.Transform(rotate90);
+            Vector3d arc3StartTangent = baseArc.PointAt(1/3.0) - plane.Origin;
+            arc3StartTangent.Transform(rotate90);
+            //Arc 1
+            Arc arc1 = new Arc(baseArc.EndPoint, plane.Y, e);
+            //Arc 2
+            Arc arc2 = new Arc(e, arc2StartTangent, f);
+            //Arc 3
+            Arc arc3 = new Arc(f, arc3StartTangent, baseArc.StartPoint);
+
+            List<Arc> arcs = new List<Arc> { arc1, arc2, arc3 };
+            List<Point3d> centers = new List<Point3d> { arc1.Center, arc2.Center, arc3.Center };
+            List<Point3d> joints = new List<Point3d> { baseArc.StartPoint, e, f, baseArc.EndPoint };
+            Point3d apex = arc2.PointAt(0.5);
+
+            DA.SetData(0, new Curve[] { arc1, arc2, arc3 });
+            DA.SetData(1, arcs);
+            DA.SetData(2, centers);
+            DA.SetData(3, joints);
+            DA.SetData(4, apex);
+
+        }
+
+        protected override Bitmap Icon => IconLoader.PondskaterIcon;
+
+        public override Guid ComponentGuid => new Guid("A1B2C3D4-E5F6-7890-1234-56789ABCDEF0");
+    }
+}
