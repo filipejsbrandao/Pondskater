@@ -90,12 +90,15 @@ namespace Pondskater
             double y = Math.Sqrt(3.0) * x + (Math.Sqrt(3.0) * span / 2.0);
 
             Arc baseArc = new Arc(Plane.WorldXY, halfSpan, Math.PI);
-            Point3d a = PointAtArcFraction(baseArc, 1.0 / 3.0);
-            Point3d b = PointAtArcFraction(baseArc, 2.0 / 3.0);
+            //Point3d a = PointAtArcFraction(baseArc, 1.0 / 3.0);
+            //Point3d b = PointAtArcFraction(baseArc, 2.0 / 3.0);
+            ArcCurve baseArcCurve = new ArcCurve(baseArc, 0.0, 1.0);
+            Point3d a = baseArcCurve.PointAt(1.0 / 3.0);
+            Point3d b = baseArcCurve.PointAt(2.0 / 3.0);
             Point3d f = Plane.WorldXY.Origin + -x * Plane.WorldXY.XAxis + y * Plane.WorldXY.YAxis;
             Point3d e = Plane.WorldXY.Origin + x * Plane.WorldXY.XAxis + y * Plane.WorldXY.YAxis;
-            Vector3d arc2StartTangent = Rotate90Degrees(baseArc.Center -b);
-            Vector3d arc3StartTangent = Rotate90Degrees(baseArc.Center -a);
+            Vector3d arc2StartTangent = Rotate90Degrees(baseArc.Center - b);
+            Vector3d arc3StartTangent = Rotate90Degrees(baseArc.Center - a);
 
             Arc arc1 = new Arc(leftSpring, Plane.WorldXY.YAxis, e);
             Arc arc2 = new Arc(e, arc2StartTangent, f);
@@ -133,7 +136,7 @@ namespace Pondskater
             DA.SetData(4, apex);
         }
 
-        private static Point3d PointAtArcFraction(Arc arc, double fraction)
+        /*private static Point3d PointAtArcFraction(Arc arc, double fraction)
         {
             if (fraction <= 0.0) return arc.StartPoint;
             if (fraction >= 1.0) return arc.EndPoint;
@@ -149,7 +152,7 @@ namespace Pondskater
 
             double angle = startAngle + sweep * fraction;
             return arc.Center + arc.Radius * new Vector3d(Math.Cos(angle), Math.Sin(angle), 0.0);
-        }
+        }*/
 
         private static Vector3d Rotate90Degrees(Vector3d vector)
         {

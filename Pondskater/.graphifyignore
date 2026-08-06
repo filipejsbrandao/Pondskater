@@ -1,0 +1,16 @@
+# Ignore design assets and generated output that should not be part of code analysis
+Icons/
+Core_Diagnostics/
+bin/
+obj/
+graphify-out/
+
+# Ignore unsupported asset file types
+*.afdesign
+*.ai
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.ico

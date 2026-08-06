@@ -1,0 +1,232 @@
+{
+  ".codex/hooks.json": {
+    "mtime": 1785833032.6147773,
+    "ast_hash": "8c1765918fe4755216ccf81b387704a6",
+    "semantic_hash": "8c1765918fe4755216ccf81b387704a6"
+  },
+  ".vscode/launch.json": {
+    "mtime": 1785360412.3871686,
+    "ast_hash": "f508cb294dbd3ef094979a0dcee45a8b",
+    "semantic_hash": "f508cb294dbd3ef094979a0dcee45a8b"
+  },
+  ".vscode/settings.json": {
+    "mtime": 1726355624.075971,
+    "ast_hash": "d4017bd9491c28f9c275128956dd1fcf",
+    "semantic_hash": "d4017bd9491c28f9c275128956dd1fcf"
+  },
+  ".vscode/tasks.json": {
+    "mtime": 1785360412.5197394,
+    "ast_hash": "c006f9fa1891c6a39800e4b2d4fd89f0",
+    "semantic_hash": "c006f9fa1891c6a39800e4b2d4fd89f0"
+  },
+  "3DCPSpeed.cs": {
+    "mtime": 1784910774.8345957,
+    "ast_hash": "4a3609a137a7094f063ae47dca95e049",
+    "semantic_hash": "4a3609a137a7094f063ae47dca95e049"
+  },
+  "BayazitPartition.cs": {
+    "mtime": 1776618944.5624378,
+    "ast_hash": "b3e4f6dec3e1f71bba30c908d4a9d6bf",
+    "semantic_hash": "b3e4f6dec3e1f71bba30c908d4a9d6bf"
+  },
+  "BoundingRectangle2D.cs": {
+    "mtime": 1775747384.1846328,
+    "ast_hash": "98e9257d598e5c1491d72e46bda88ef0",
+    "semantic_hash": "98e9257d598e5c1491d72e46bda88ef0"
+  },
+  "BridgeCellsComponent.cs": {
+    "mtime": 1785339534.3722591,
+    "ast_hash": "4d360b02861302b32df12847d87b34e7",
+    "semantic_hash": "4d360b02861302b32df12847d87b34e7"
+  },
+  "ComponentGeometry2D.cs": {
+    "mtime": 1775743560.5229647,
+    "ast_hash": "0b31d44060aa421ff3b41ae53fbc20d6",
+    "semantic_hash": "0b31d44060aa421ff3b41ae53fbc20d6"
+  },
+  "ConvexPolygon2D.cs": {
+    "mtime": 1775767841.3364086,
+    "ast_hash": "8c43a00e5e72469244aef7b69bd6a2c5",
+    "semantic_hash": "8c43a00e5e72469244aef7b69bd6a2c5"
+  },
+  "EdgeAlignedBoundingRectangleComponent.cs": {
+    "mtime": 1776616545.892599,
+    "ast_hash": "1e214329bf310c2d2e2816df9a50accd",
+    "semantic_hash": "1e214329bf310c2d2e2816df9a50accd"
+  },
+  "EulerianPath.cs": {
+    "mtime": 1776607197.1277826,
+    "ast_hash": "a4a97673196416c4aa1b5f9d7dce6e0c",
+    "semantic_hash": "a4a97673196416c4aa1b5f9d7dce6e0c"
+  },
+  "ExtrusionProfileComponent.cs": {
+    "mtime": 1784903571.8882654,
+    "ast_hash": "55c31613b3a07bfb39696a9ce8b7527c",
+    "semantic_hash": "55c31613b3a07bfb39696a9ce8b7527c"
+  },
+  "FiveSegmentArchComponent.cs": {
+    "mtime": 1785492093.730415,
+    "ast_hash": "f7e61af22a63518f5986beb787692325",
+    "semantic_hash": "f7e61af22a63518f5986beb787692325"
+  },
+  "HamiltonianPath_Component.cs": {
+    "mtime": 1785331793.7699115,
+    "ast_hash": "dba2dc5f6e5eb41321011a7e3d576858",
+    "semantic_hash": "dba2dc5f6e5eb41321011a7e3d576858"
+  },
+  "IO/GraphmlSerializer.cs": {
+    "mtime": 1769205890.715781,
+    "ast_hash": "56b777fbe86aab507dbdb054cdab4a10",
+    "semantic_hash": "56b777fbe86aab507dbdb054cdab4a10"
+  },
+  "IO/graphml_aux.cs": {
+    "mtime": 1769355415.9952996,
+    "ast_hash": "5af6374450bfe8bc9ac5fdb9022a6011",
+    "semantic_hash": "5af6374450bfe8bc9ac5fdb9022a6011"
+  },
+  "IO/graphml_generated.cs": {
+    "mtime": 1769205890.7170448,
+    "ast_hash": "2f61e45c2657350eb02fb51128ed2d29",
+    "semantic_hash": "2f61e45c2657350eb02fb51128ed2d29"
+  },
+  "IO/ipe_extension.cs": {
+    "mtime": 1769205890.716016,
+    "ast_hash": "11ed54501d20b304441a2d1174531b5a",
+    "semantic_hash": "11ed54501d20b304441a2d1174531b5a"
+  },
+  "IO/ipe_generated.cs": {
+    "mtime": 1769205890.7167456,
+    "ast_hash": "e6b64e619e9eeccdac3365474c64fd7e",
+    "semantic_hash": "e6b64e619e9eeccdac3365474c64fd7e"
+  },
+  "IceRayLatticeComponent.cs": {
+    "mtime": 1784903683.7799094,
+    "ast_hash": "2ce4ca7b7d77827671485c68791abcf8",
+    "semantic_hash": "2ce4ca7b7d77827671485c68791abcf8"
+  },
+  "IconLoader.cs": {
+    "mtime": 1776607317.6920652,
+    "ast_hash": "f30629e134b41a9c62fef959023d9da4",
+    "semantic_hash": "f30629e134b41a9c62fef959023d9da4"
+  },
+  "LComponent.cs": {
+    "mtime": 1776616545.8927786,
+    "ast_hash": "c45bc76fd548281a8dc08568feb25b73",
+    "semantic_hash": "c45bc76fd548281a8dc08568feb25b73"
+  },
+  "MetricSubdivisionComponent.cs": {
+    "mtime": 1776616545.8926375,
+    "ast_hash": "f8cf0e246d4c0b526d3c88ed28bdc7b4",
+    "semantic_hash": "f8cf0e246d4c0b526d3c88ed28bdc7b4"
+  },
+  "MinimumBoundingRectangleComponent.cs": {
+    "mtime": 1776616545.8926337,
+    "ast_hash": "33c1e95e2b288c5825253f3986c818d6",
+    "semantic_hash": "33c1e95e2b288c5825253f3986c818d6"
+  },
+  "MiterComponent.cs": {
+    "mtime": 1776616545.8928196,
+    "ast_hash": "f474d96b002d9b30acc905c8af068add",
+    "semantic_hash": "f474d96b002d9b30acc905c8af068add"
+  },
+  "NComponent.cs": {
+    "mtime": 1776616545.920558,
+    "ast_hash": "055e4489dbb6f5e69ee77f8badb26f7c",
+    "semantic_hash": "055e4489dbb6f5e69ee77f8badb26f7c"
+  },
+  "Native/SurferNative.cs": {
+    "mtime": 1769274036.416294,
+    "ast_hash": "07b34f0c9bf0b76b3b6c03c319e1657e",
+    "semantic_hash": "07b34f0c9bf0b76b3b6c03c319e1657e"
+  },
+  "OffsetParser.cs": {
+    "mtime": 1769205890.7112093,
+    "ast_hash": "2ccdafebf1c51b33ca5867b82c02d700",
+    "semantic_hash": "2ccdafebf1c51b33ca5867b82c02d700"
+  },
+  "Offset_Component.cs": {
+    "mtime": 1776616545.8926306,
+    "ast_hash": "b908672d62d45a1eaaa67233d462f10e",
+    "semantic_hash": "b908672d62d45a1eaaa67233d462f10e"
+  },
+  "PolygonPartition.cs": {
+    "mtime": 1776618944.5629363,
+    "ast_hash": "dc57392383fbfaf29bfed37bb5a00a39",
+    "semantic_hash": "dc57392383fbfaf29bfed37bb5a00a39"
+  },
+  "PolygonWidthComponent.cs": {
+    "mtime": 1776616545.892603,
+    "ast_hash": "9df19525fd90d952d226108a5e253b94",
+    "semantic_hash": "9df19525fd90d952d226108a5e253b94"
+  },
+  "Pondskater.csproj": {
+    "mtime": 1785361479.5322437,
+    "ast_hash": "87087dbba082885825c43dcedf36779c",
+    "semantic_hash": "87087dbba082885825c43dcedf36779c"
+  },
+  "PondskaterInfo.cs": {
+    "mtime": 1785339592.4500613,
+    "ast_hash": "223aff9e7338ebfcd15296e4980b0782",
+    "semantic_hash": "223aff9e7338ebfcd15296e4980b0782"
+  },
+  "Properties/launchSettings.json": {
+    "mtime": 1785360412.6490571,
+    "ast_hash": "574b13c1683a2e60e7871ae62542055e",
+    "semantic_hash": "574b13c1683a2e60e7871ae62542055e"
+  },
+  "RandomHamiltonPath.cs": {
+    "mtime": 1769205890.71525,
+    "ast_hash": "7e2f0e12a34c06cd762c9715212197ff",
+    "semantic_hash": "7e2f0e12a34c06cd762c9715212197ff"
+  },
+  "RandomHamilton__Component.cs": {
+    "mtime": 1776606722.2960498,
+    "ast_hash": "e19b630984b1166ac7632d273c2b3100",
+    "semantic_hash": "e19b630984b1166ac7632d273c2b3100"
+  },
+  "ReadGraphml_Component.cs": {
+    "mtime": 1776616545.8926275,
+    "ast_hash": "034f1123641d86776e69dc96a17ec696",
+    "semantic_hash": "034f1123641d86776e69dc96a17ec696"
+  },
+  "RooferComponent.cs": {
+    "mtime": 1785361374.4838488,
+    "ast_hash": "abac3007b749980e7176b81037220de9",
+    "semantic_hash": "abac3007b749980e7176b81037220de9"
+  },
+  "ShiftPolyCurveSeamComponent.cs": {
+    "mtime": 1785014578.9332263,
+    "ast_hash": "d6adcdc34acff108b90e9d4320ad87ac",
+    "semantic_hash": "d6adcdc34acff108b90e9d4320ad87ac"
+  },
+  "Skeleton2D_Component.cs": {
+    "mtime": 1776616545.8926156,
+    "ast_hash": "39b4aae5ee375932bc047faa072b2401",
+    "semantic_hash": "39b4aae5ee375932bc047faa072b2401"
+  },
+  "SymmetricSubdivisionComponent.cs": {
+    "mtime": 1776616545.9245539,
+    "ast_hash": "006c11abae9fca2a39d98d7b03700b1b",
+    "semantic_hash": "006c11abae9fca2a39d98d7b03700b1b"
+  },
+  "TComponent.cs": {
+    "mtime": 1776616545.9245524,
+    "ast_hash": "509685deb90ae1c66a51f15629f7faeb",
+    "semantic_hash": "509685deb90ae1c66a51f15629f7faeb"
+  },
+  "ThreeSegmentArchComponent.cs": {
+    "mtime": 1785831782.1566296,
+    "ast_hash": "9771485890f77eca582de1339ed1d107",
+    "semantic_hash": "9771485890f77eca582de1339ed1d107"
+  },
+  "UnicursalMaze.cs": {
+    "mtime": 1769205890.7099712,
+    "ast_hash": "1a0760f501a4ecdfea146db7e25b7b19",
+    "semantic_hash": "1a0760f501a4ecdfea146db7e25b7b19"
+  },
+  "WriteGraphml_Component.cs": {
+    "mtime": 1776616545.892617,
+    "ast_hash": "7a9cdb39e4bb2210163a010133ca5fa2",
+    "semantic_hash": "7a9cdb39e4bb2210163a010133ca5fa2"
+  }
+}

@@ -71,15 +71,16 @@ namespace Pondskater
             double y = Math.Sqrt(3) * x + (Math.Sqrt(3) * span / 2);
 
             Arc baseArc = new Arc(plane, span * 0.5, Math.PI);
-            Point3d a = baseArc.PointAt(1/3.0 * baseArc.Length/2);
-            Point3d b = baseArc.PointAt(2/3.0 * baseArc.Length/2);
+            ArcCurve bArc = new ArcCurve(baseArc, 0 , 1);
+            Point3d a = bArc.PointAt(1/3.0);
+            Point3d b = bArc.PointAt(2/3.0);
             Point3d f = plane.Origin + -x * plane.XAxis + y * plane.YAxis;
             Point3d e = plane.Origin + x * plane.XAxis + y * plane.YAxis;
             Transform rotate90 = Transform.Rotation(Math.PI / 2, Vector3d.ZAxis, Point3d.Origin);
-            Vector3d arc2StartTangent = baseArc.PointAt(2/3.0) - plane.Origin;
-            arc2StartTangent.Transform(rotate90);
-            Vector3d arc3StartTangent = baseArc.PointAt(1/3.0) - plane.Origin;
-            arc3StartTangent.Transform(rotate90);
+            Vector3d arc2StartTangent = plane.Origin - a;
+            arc2StartTangent = Rotate90Degrees(arc2StartTangent);
+            Vector3d arc3StartTangent = Plane.WorldXY.Origin - a;
+            arc3StartTangent = Rotate90Degrees(arc3StartTangent);
             //Arc 1
             Arc arc1 = new Arc(baseArc.EndPoint, plane.Y, e);
             //Arc 2
