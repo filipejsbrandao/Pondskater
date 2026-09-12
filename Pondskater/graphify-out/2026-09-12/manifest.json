@@ -160,14 +160,14 @@
     "semantic_hash": "9df19525fd90d952d226108a5e253b94"
   },
   "Pondskater.csproj": {
-    "mtime": 1786095525.5070534,
-    "ast_hash": "d41dd8d07c97f3232fc1716f11957711",
-    "semantic_hash": ""
+    "mtime": 1785361479.5322437,
+    "ast_hash": "87087dbba082885825c43dcedf36779c",
+    "semantic_hash": "87087dbba082885825c43dcedf36779c"
   },
   "PondskaterInfo.cs": {
-    "mtime": 1786095525.5070534,
-    "ast_hash": "5d61f796160344b397627342af421326",
-    "semantic_hash": ""
+    "mtime": 1785339592.4500613,
+    "ast_hash": "223aff9e7338ebfcd15296e4980b0782",
+    "semantic_hash": "223aff9e7338ebfcd15296e4980b0782"
   },
   "Properties/launchSettings.json": {
     "mtime": 1785360412.6490571,
@@ -215,9 +215,9 @@
     "semantic_hash": "509685deb90ae1c66a51f15629f7faeb"
   },
   "ThreeSegmentArchComponent.cs": {
-    "mtime": 1786056748.6146855,
-    "ast_hash": "347bb929a0d08e4f0506468a07da3d8f",
-    "semantic_hash": ""
+    "mtime": 1785831782.1566296,
+    "ast_hash": "9771485890f77eca582de1339ed1d107",
+    "semantic_hash": "9771485890f77eca582de1339ed1d107"
   },
   "UnicursalMaze.cs": {
     "mtime": 1769205890.7099712,
@@ -228,20 +228,5 @@
     "mtime": 1776616545.892617,
     "ast_hash": "7a9cdb39e4bb2210163a010133ca5fa2",
     "semantic_hash": "7a9cdb39e4bb2210163a010133ca5fa2"
-  },
-  "BridgeCellTreeComponent.cs": {
-    "mtime": 1789197802.0049577,
-    "ast_hash": "4fb393b74b67e217563ca1ebf504fcd6",
-    "semantic_hash": ""
-  },
-  "AGENTS.md": {
-    "mtime": 1785833012.7063315,
-    "ast_hash": "6a47d64fcc136324ca395065a707ef76",
-    "semantic_hash": ""
-  },
-  "README.md": {
-    "mtime": 1769358527.7152236,
-    "ast_hash": "e0d81291df98e26fc10a7c4f0ee0235c",
-    "semantic_hash": ""
   }
 }

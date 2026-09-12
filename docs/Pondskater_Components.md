@@ -40,6 +40,12 @@ This document lists the Grasshopper components provided by the Pondskater plugin
 - Inputs: `Columns`, `Rows`, `Steps`, `Increment X`, `Increment Y`, `Horizontal`, `Seed`
 - Outputs: `Path` (curve)
 
+## Bridge Cell Tree (CellTreeBridge)
+- Category: Pondskater / Paths
+- Description: Joins planar cells with centroid-to-centroid corridors described by an indexed tree of neighbor lists.
+- Inputs: `Cells` (list), `Neighbors` (data tree where branch `{i}` contains neighbor cell indices), `Width`, `Inset Cells`, optional `Plane`
+- Outputs: `Boundaries` (closed curves), `Connections` (centroid lines)
+
 ## Roofer (Rf)
 - Category: Pondskater / Analysis
 - Description: Build a roof mesh from a closed planar polygon using the native Surfer library.
