@@ -1,5 +1,8 @@
 # Pondskater
 
+##Intro
+Pondskater is in active development as part of the research conducted at the ACTech in the School of Architecture Art and Design of the University of Minho. The plugin currently provides tools for offsetting, obtaining the straight skeleton and creating roofs or topographic features. It also provides pathfinding tools for 3D printing.
+
 Overview
 - `Pondskater/` — core source code and native libraries.
 - `Pondskater_GH/` — Grasshopper plugin packaging and distribution artifacts (`dist/`).
