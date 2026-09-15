@@ -1,17 +1,17 @@
 # Pondskater
 
-##Intro
-Pondskater is in active development as part of the research conducted at the ACTech in the School of Architecture Art and Design of the University of Minho. The plugin currently provides tools for offsetting, obtaining the straight skeleton and creating roofs or topographic features. It also provides pathfinding tools for 3D printing.
+## Intro
+Pondskater is in active development as part of the research conducted at the ACTech in the School of Architecture Art and Design of the University of Minho. The plugin currently provides tools for offsetting, obtaining the straight skeleton and creating roofs or topographic features. It also provides pathfinding tools for 3D printing. The offsetting and straight skeleton tools are based on Surfer2. Surfer2 is an implementation of Aichholzer and Aurenhammer's triangulation based straight skeleton algorithm using CGAL. It has been developed at the University of Salzburg's Computational Geometry and Applications Lab.
 
-Overview
+## Overview
 - `Pondskater/` — core source code and native libraries.
 - `Pondskater_GH/` — Grasshopper plugin packaging and distribution artifacts (`dist/`).
 - `distribution/` — legacy packaged artifacts (copied into `Pondskater_GH/dist/`).
   
-Legacy archive
+## Legacy archive
 - `distribution/` has been archived to `distribution_archived_20260420T104344Z` — use `Pondskater_GH/dist/` as the authoritative location for plugin artifacts.
 
-Quickstart
+## Quickstart
 1. Build the plugin (from project):
 
 ```bash
