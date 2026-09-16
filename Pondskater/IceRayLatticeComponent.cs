@@ -183,7 +183,7 @@ namespace Pondskater
             DA.SetDataList(0, worldPolygons);
         }
 
-        protected override Bitmap Icon => null;
+        protected override Bitmap Icon => IconLoader.IceRay;
 
         public override Guid ComponentGuid => new Guid("A7598120-A28E-4A08-A8DB-5B3D37E8E2F7");
 

@@ -29,6 +29,8 @@ namespace Pondskater
     public static Bitmap FiveSegmentArch { get; private set; }
     public static Bitmap BridgeCells { get; private set; }
     public static Bitmap BridgeCellTree { get; private set; }
+    public static Bitmap IceRay { get; private set; }
+    public static Bitmap ShiftSeam { get; private set; }
     public static Bitmap PondskaterIcon { get; private set; }
 
 
@@ -56,6 +58,8 @@ namespace Pondskater
       FiveSegmentArch = LoadIcon("Pondskater.Resources.5Arch.png");
       BridgeCells = LoadIcon("Pondskater.Resources.BridgeCell.png");
       BridgeCellTree = LoadIcon("Pondskater.Resources.BridgeCellTree.png");
+      IceRay = LoadIcon("Pondskater.Resources.IceRay.png");
+      ShiftSeam = LoadIcon("Pondskater.Resources.ShiftSeam.png");
       PondskaterIcon = LoadIcon("Pondskater.Resources.Pondskater_Icon.png");
     }
 

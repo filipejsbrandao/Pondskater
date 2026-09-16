@@ -838,7 +838,7 @@
       "label": ".TryBuildTreeEdges()",
       "file_type": "code",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L214",
+      "source_location": "L213",
       "metadata": {
         "namespace": "Pondskater",
         "scope_chain": [
@@ -899,7 +899,7 @@
       "label": ".IsConnectedTree()",
       "file_type": "code",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L280",
+      "source_location": "L277",
       "metadata": {
         "namespace": "Pondskater",
         "scope_chain": [
@@ -916,7 +916,7 @@
       "label": ".TryMakeCorridor()",
       "file_type": "code",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L306",
+      "source_location": "L303",
       "metadata": {
         "namespace": "Pondskater",
         "scope_chain": [
@@ -955,7 +955,7 @@
       "label": ".TryMakeLocal()",
       "file_type": "code",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L330",
+      "source_location": "L327",
       "metadata": {
         "namespace": "Pondskater",
         "scope_chain": [
@@ -983,7 +983,7 @@
       "label": ".TryGetCentroid()",
       "file_type": "code",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L360",
+      "source_location": "L357",
       "metadata": {
         "namespace": "Pondskater",
         "scope_chain": [
@@ -1000,7 +1000,7 @@
       "label": ".TryOffsetInward()",
       "file_type": "code",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L371",
+      "source_location": "L368",
       "metadata": {
         "namespace": "Pondskater",
         "scope_chain": [
@@ -1017,7 +1017,7 @@
       "label": ".HasSelfIntersections()",
       "file_type": "code",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L402",
+      "source_location": "L399",
       "metadata": {
         "namespace": "Pondskater",
         "scope_chain": [
@@ -1034,7 +1034,7 @@
       "label": ".GetCurveArea()",
       "file_type": "code",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L408",
+      "source_location": "L405",
       "metadata": {
         "namespace": "Pondskater",
         "scope_chain": [
@@ -4639,7 +4639,7 @@
       "label": ".LoadIcon()",
       "file_type": "code",
       "source_file": "IconLoader.cs",
-      "source_location": "L66",
+      "source_location": "L54",
       "metadata": {
         "namespace": "Pondskater",
         "scope_chain": [
@@ -8012,7 +8012,7 @@
       "label": ".Rotate90Degrees()",
       "file_type": "code",
       "source_file": "ThreeSegmentArchComponent.cs",
-      "source_location": "L139",
+      "source_location": "L157",
       "metadata": {
         "namespace": "Pondskater",
         "scope_chain": [
@@ -8040,7 +8040,7 @@
       "label": ".TransformPoints()",
       "file_type": "code",
       "source_file": "ThreeSegmentArchComponent.cs",
-      "source_location": "L147",
+      "source_location": "L165",
       "metadata": {
         "namespace": "Pondskater",
         "scope_chain": [
@@ -10717,7 +10717,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L415",
+      "source_location": "L412",
       "weight": 1.0,
       "context": "field",
       "metadata": {
@@ -10732,7 +10732,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L417",
+      "source_location": "L414",
       "weight": 1.0,
       "context": "field",
       "metadata": {
@@ -10747,7 +10747,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L408",
+      "source_location": "L405",
       "weight": 1.0,
       "_origin": "ast",
       "source": "bridgecelltreecomponent_pondskater_bridgecelltreecomponent",
@@ -10758,7 +10758,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L402",
+      "source_location": "L399",
       "weight": 1.0,
       "_origin": "ast",
       "source": "bridgecelltreecomponent_pondskater_bridgecelltreecomponent",
@@ -10769,7 +10769,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L280",
+      "source_location": "L277",
       "weight": 1.0,
       "_origin": "ast",
       "source": "bridgecelltreecomponent_pondskater_bridgecelltreecomponent",
@@ -10813,7 +10813,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L214",
+      "source_location": "L213",
       "weight": 1.0,
       "_origin": "ast",
       "source": "bridgecelltreecomponent_pondskater_bridgecelltreecomponent",
@@ -10824,7 +10824,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L360",
+      "source_location": "L357",
       "weight": 1.0,
       "_origin": "ast",
       "source": "bridgecelltreecomponent_pondskater_bridgecelltreecomponent",
@@ -10835,7 +10835,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L306",
+      "source_location": "L303",
       "weight": 1.0,
       "_origin": "ast",
       "source": "bridgecelltreecomponent_pondskater_bridgecelltreecomponent",
@@ -10846,7 +10846,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L330",
+      "source_location": "L327",
       "weight": 1.0,
       "_origin": "ast",
       "source": "bridgecelltreecomponent_pondskater_bridgecelltreecomponent",
@@ -10857,7 +10857,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L371",
+      "source_location": "L368",
       "weight": 1.0,
       "_origin": "ast",
       "source": "bridgecelltreecomponent_pondskater_bridgecelltreecomponent",
@@ -10914,7 +10914,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L107",
+      "source_location": "L106",
       "weight": 1.0,
       "_origin": "ast",
       "source": "bridgecelltreecomponent_pondskater_bridgecelltreecomponent_solveinstance",
@@ -10926,7 +10926,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L140",
+      "source_location": "L139",
       "weight": 1.0,
       "_origin": "ast",
       "source": "bridgecelltreecomponent_pondskater_bridgecelltreecomponent_solveinstance",
@@ -10938,7 +10938,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L134",
+      "source_location": "L133",
       "weight": 1.0,
       "_origin": "ast",
       "source": "bridgecelltreecomponent_pondskater_bridgecelltreecomponent_solveinstance",
@@ -10950,7 +10950,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L113",
+      "source_location": "L112",
       "weight": 1.0,
       "_origin": "ast",
       "source": "bridgecelltreecomponent_pondskater_bridgecelltreecomponent_solveinstance",
@@ -10962,7 +10962,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L152",
+      "source_location": "L151",
       "weight": 1.0,
       "_origin": "ast",
       "source": "bridgecelltreecomponent_pondskater_bridgecelltreecomponent_solveinstance",
@@ -10974,7 +10974,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L101",
+      "source_location": "L100",
       "weight": 1.0,
       "_origin": "ast",
       "source": "bridgecelltreecomponent_pondskater_bridgecelltreecomponent_solveinstance",
@@ -10986,7 +10986,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L121",
+      "source_location": "L120",
       "weight": 1.0,
       "_origin": "ast",
       "source": "bridgecelltreecomponent_pondskater_bridgecelltreecomponent_solveinstance",
@@ -10997,7 +10997,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L214",
+      "source_location": "L213",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -11012,7 +11012,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L214",
+      "source_location": "L213",
       "weight": 1.0,
       "context": "generic_arg",
       "metadata": {
@@ -11027,7 +11027,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L214",
+      "source_location": "L213",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -11042,7 +11042,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L214",
+      "source_location": "L213",
       "weight": 1.0,
       "context": "generic_arg",
       "metadata": {
@@ -11057,7 +11057,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L280",
+      "source_location": "L277",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -11072,7 +11072,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L280",
+      "source_location": "L277",
       "weight": 1.0,
       "context": "generic_arg",
       "metadata": {
@@ -11087,7 +11087,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L306",
+      "source_location": "L303",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -11102,7 +11102,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L306",
+      "source_location": "L303",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -11117,7 +11117,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L360",
+      "source_location": "L357",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -11132,7 +11132,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L408",
+      "source_location": "L405",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -11147,7 +11147,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L402",
+      "source_location": "L399",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -11162,7 +11162,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L360",
+      "source_location": "L357",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -11177,7 +11177,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L330",
+      "source_location": "L327",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -11192,7 +11192,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L371",
+      "source_location": "L368",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -11207,7 +11207,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L330",
+      "source_location": "L327",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -11223,7 +11223,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "BridgeCellTreeComponent.cs",
-      "source_location": "L384",
+      "source_location": "L381",
       "weight": 1.0,
       "_origin": "ast",
       "source": "bridgecelltreecomponent_pondskater_bridgecelltreecomponent_tryoffsetinward",
@@ -17622,7 +17622,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "IconLoader.cs",
-      "source_location": "L34",
+      "source_location": "L28",
       "weight": 1.0,
       "context": "field",
       "metadata": {
@@ -17637,7 +17637,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "IconLoader.cs",
-      "source_location": "L66",
+      "source_location": "L54",
       "weight": 1.0,
       "_origin": "ast",
       "source": "iconloader_pondskater_iconloader",
@@ -17648,7 +17648,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "IconLoader.cs",
-      "source_location": "L66",
+      "source_location": "L54",
       "weight": 1.0,
       "context": "return_type",
       "metadata": {
@@ -21210,7 +21210,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "ThreeSegmentArchComponent.cs",
-      "source_location": "L157",
+      "source_location": "L175",
       "weight": 1.0,
       "context": "field",
       "metadata": {
@@ -21240,7 +21240,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "ThreeSegmentArchComponent.cs",
-      "source_location": "L159",
+      "source_location": "L177",
       "weight": 1.0,
       "context": "field",
       "metadata": {
@@ -21277,7 +21277,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "ThreeSegmentArchComponent.cs",
-      "source_location": "L139",
+      "source_location": "L157",
       "weight": 1.0,
       "_origin": "ast",
       "source": "threesegmentarchcomponent_pondskater_threesegmentarchcomponent",
@@ -21299,7 +21299,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "ThreeSegmentArchComponent.cs",
-      "source_location": "L147",
+      "source_location": "L165",
       "weight": 1.0,
       "_origin": "ast",
       "source": "threesegmentarchcomponent_pondskater_threesegmentarchcomponent",
@@ -21379,7 +21379,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "ThreeSegmentArchComponent.cs",
-      "source_location": "L139",
+      "source_location": "L157",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -21394,7 +21394,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "ThreeSegmentArchComponent.cs",
-      "source_location": "L147",
+      "source_location": "L165",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -21409,7 +21409,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "ThreeSegmentArchComponent.cs",
-      "source_location": "L147",
+      "source_location": "L165",
       "weight": 1.0,
       "context": "generic_arg",
       "metadata": {
@@ -21424,7 +21424,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "ThreeSegmentArchComponent.cs",
-      "source_location": "L147",
+      "source_location": "L165",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -22057,5 +22057,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "6cb57e61b4f8d625cd7b50b9f3b2b9ae7368cb2c"
+  "built_at_commit": "1496fd1a5112481e83c5b4921dced36b09e5cd37"
 }

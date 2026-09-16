@@ -141,7 +141,7 @@ namespace Pondskater
             return result < 0 ? result + modulus : result;
         }
 
-        protected override Bitmap Icon => null;
+        protected override Bitmap Icon => IconLoader.ShiftSeam;
 
         public override Guid ComponentGuid => new Guid("7A618A58-7DBD-4F70-92AD-46A751BFEC07");
     }

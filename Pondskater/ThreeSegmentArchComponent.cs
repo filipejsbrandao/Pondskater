@@ -136,24 +136,6 @@ namespace Pondskater
             DA.SetData(4, apex);
         }
 
-        /*private static Point3d PointAtArcFraction(Arc arc, double fraction)
-        {
-            if (fraction <= 0.0) return arc.StartPoint;
-            if (fraction >= 1.0) return arc.EndPoint;
-
-            Vector3d startVector = arc.StartPoint - arc.Center;
-            Vector3d endVector = arc.EndPoint - arc.Center;
-            double startAngle = Math.Atan2(startVector.Y, startVector.X);
-            double endAngle = Math.Atan2(endVector.Y, endVector.X);
-            double sweep = endAngle - startAngle;
-
-            while (sweep < 0.0) sweep += 2.0 * Math.PI;
-            while (sweep > 2.0 * Math.PI) sweep -= 2.0 * Math.PI;
-
-            double angle = startAngle + sweep * fraction;
-            return arc.Center + arc.Radius * new Vector3d(Math.Cos(angle), Math.Sin(angle), 0.0);
-        }*/
-
         private static Vector3d Rotate90Degrees(Vector3d vector)
         {
             Transform rotate90 = Transform.Rotation(Math.PI / 2, Vector3d.ZAxis, Point3d.Origin);

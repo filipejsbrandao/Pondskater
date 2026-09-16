@@ -35,9 +35,9 @@
     "semantic_hash": "98e9257d598e5c1491d72e46bda88ef0"
   },
   "BridgeCellsComponent.cs": {
-    "mtime": 1789551905.1202917,
-    "ast_hash": "be403f20561a9597c7b87b8a3fe641c7",
-    "semantic_hash": ""
+    "mtime": 1785339534.3722591,
+    "ast_hash": "4d360b02861302b32df12847d87b34e7",
+    "semantic_hash": "4d360b02861302b32df12847d87b34e7"
   },
   "ComponentGeometry2D.cs": {
     "mtime": 1775743560.5229647,
@@ -65,9 +65,9 @@
     "semantic_hash": "55c31613b3a07bfb39696a9ce8b7527c"
   },
   "FiveSegmentArchComponent.cs": {
-    "mtime": 1789553566.0106757,
-    "ast_hash": "edd3737b811b6799a6c1230c5f2bd539",
-    "semantic_hash": ""
+    "mtime": 1785492093.730415,
+    "ast_hash": "f7e61af22a63518f5986beb787692325",
+    "semantic_hash": "f7e61af22a63518f5986beb787692325"
   },
   "HamiltonianPath_Component.cs": {
     "mtime": 1785331793.7699115,
@@ -100,14 +100,14 @@
     "semantic_hash": "e6b64e619e9eeccdac3365474c64fd7e"
   },
   "IceRayLatticeComponent.cs": {
-    "mtime": 1789589471.5654616,
-    "ast_hash": "044b1723f3ffdafb8c713bcad8414abe",
-    "semantic_hash": ""
+    "mtime": 1784903683.7799094,
+    "ast_hash": "2ce4ca7b7d77827671485c68791abcf8",
+    "semantic_hash": "2ce4ca7b7d77827671485c68791abcf8"
   },
   "IconLoader.cs": {
-    "mtime": 1789589471.4994388,
-    "ast_hash": "eadc2ece5c753f3f53a078329a436066",
-    "semantic_hash": ""
+    "mtime": 1776607317.6920652,
+    "ast_hash": "f30629e134b41a9c62fef959023d9da4",
+    "semantic_hash": "f30629e134b41a9c62fef959023d9da4"
   },
   "LComponent.cs": {
     "mtime": 1776616545.8927786,
@@ -160,13 +160,13 @@
     "semantic_hash": "9df19525fd90d952d226108a5e253b94"
   },
   "Pondskater.csproj": {
-    "mtime": 1789589671.5845118,
-    "ast_hash": "251611854d817c2114f2f275830360cd",
+    "mtime": 1786095525.5070534,
+    "ast_hash": "d41dd8d07c97f3232fc1716f11957711",
     "semantic_hash": ""
   },
   "PondskaterInfo.cs": {
-    "mtime": 1789589671.58471,
-    "ast_hash": "a6fb83878fad9bf6c9c5d1a2e6feb6c1",
+    "mtime": 1786095525.5070534,
+    "ast_hash": "5d61f796160344b397627342af421326",
     "semantic_hash": ""
   },
   "Properties/launchSettings.json": {
@@ -195,9 +195,9 @@
     "semantic_hash": "abac3007b749980e7176b81037220de9"
   },
   "ShiftPolyCurveSeamComponent.cs": {
-    "mtime": 1789589471.6299086,
-    "ast_hash": "bde22228bad6325910396b7cb10a7586",
-    "semantic_hash": ""
+    "mtime": 1785014578.9332263,
+    "ast_hash": "d6adcdc34acff108b90e9d4320ad87ac",
+    "semantic_hash": "d6adcdc34acff108b90e9d4320ad87ac"
   },
   "Skeleton2D_Component.cs": {
     "mtime": 1776616545.8926156,
@@ -215,8 +215,8 @@
     "semantic_hash": "509685deb90ae1c66a51f15629f7faeb"
   },
   "ThreeSegmentArchComponent.cs": {
-    "mtime": 1789588427.0451803,
-    "ast_hash": "55815f30d2678611d2d8d22c4c43f6e8",
+    "mtime": 1786056748.6146855,
+    "ast_hash": "347bb929a0d08e4f0506468a07da3d8f",
     "semantic_hash": ""
   },
   "UnicursalMaze.cs": {
@@ -230,8 +230,8 @@
     "semantic_hash": "7a9cdb39e4bb2210163a010133ca5fa2"
   },
   "BridgeCellTreeComponent.cs": {
-    "mtime": 1789551905.144099,
-    "ast_hash": "a93dee4a22522c7c12bc9cefb148af60",
+    "mtime": 1789197802.0049577,
+    "ast_hash": "4fb393b74b67e217563ca1ebf504fcd6",
     "semantic_hash": ""
   },
   "AGENTS.md": {
