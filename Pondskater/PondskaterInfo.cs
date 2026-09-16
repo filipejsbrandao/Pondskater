@@ -22,7 +22,7 @@ namespace Pondskater
     public override Bitmap Icon => IconLoader.PondskaterIcon;
 
     //Return a short string describing the purpose of this GHA library.
-    public override string Description => "Pondskater provides tools for offseting, obtaining the straight skeleton and creating roofs or topographic features.";
+    public override string Description => "Pondskater is in active development as part of the research conducted at the ACTech in the School of Architecture Art and Design of the University of Minho. The plugin currently provides tools for offsetting, obtaining the straight skeleton and creating roofs or topographic features. It also provides pathfinding tools for 3D printing.";
 
     public override Guid Id => new Guid("def025e7-a8e6-468f-a97e-6a7255fe7c59");
 
@@ -32,6 +32,6 @@ namespace Pondskater
     //Return a string representing your preferred contact details.
     public override string AuthorContact => "filipe.brandao@eaad.uminho.pt";
 
-    public override string Version => "0.0.9";
+    public override string Version => "0.0.10";
   }
 }

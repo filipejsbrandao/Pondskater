@@ -369,7 +369,7 @@ namespace Pondskater
             }
         }
 
-        protected override Bitmap Icon => IconLoader.PondskaterIcon;
+        protected override Bitmap Icon => IconLoader.BridgeCells;
 
         public override Guid ComponentGuid => new Guid("3D6156BA-38BC-470C-81F3-23E59B0540A0");
     }

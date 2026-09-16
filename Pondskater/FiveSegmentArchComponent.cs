@@ -285,7 +285,7 @@ namespace Pondskater
             }
         }
 
-        protected override Bitmap Icon => IconLoader.PondskaterIcon;
+        protected override Bitmap Icon => IconLoader.FiveSegmentArch;
 
         public override Guid ComponentGuid => new Guid("D80563B7-75B8-414F-B4DA-780A3EBE0105");
     }

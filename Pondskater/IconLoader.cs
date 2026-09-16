@@ -25,6 +25,10 @@ namespace Pondskater
     public static Bitmap PolygonWidth { get; private set; }
     public static Bitmap MetricSubdivision { get; private set; }
     public static Bitmap SymmetricSubdivision { get; private set; }
+    public static Bitmap ThreeSegmentArch { get; private set; }
+    public static Bitmap FiveSegmentArch { get; private set; }
+    public static Bitmap BridgeCells { get; private set; }
+    public static Bitmap BridgeCellTree { get; private set; }
     public static Bitmap PondskaterIcon { get; private set; }
 
 
@@ -48,6 +52,10 @@ namespace Pondskater
       PolygonWidth = LoadIcon("Pondskater.Resources.PolygonWidth.png");
       MetricSubdivision = LoadIcon("Pondskater.Resources.Metric.png");
       SymmetricSubdivision = LoadIcon("Pondskater.Resources.Symmetrical.png");
+      ThreeSegmentArch = LoadIcon("Pondskater.Resources.3Arch.png");
+      FiveSegmentArch = LoadIcon("Pondskater.Resources.5Arch.png");
+      BridgeCells = LoadIcon("Pondskater.Resources.BridgeCell.png");
+      BridgeCellTree = LoadIcon("Pondskater.Resources.BridgeCellTree.png");
       PondskaterIcon = LoadIcon("Pondskater.Resources.Pondskater_Icon.png");
     }
 

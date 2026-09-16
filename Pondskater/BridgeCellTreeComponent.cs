@@ -412,7 +412,7 @@ namespace Pondskater
                 return properties == null ? 0.0 : Math.Abs(properties.Area);
         }
 
-        protected override Bitmap Icon => null;
+        protected override Bitmap Icon => IconLoader.BridgeCellTree;
 
         public override Guid ComponentGuid => new Guid("F7D07A78-B302-4E65-BC81-7B30B792B7C9");
     }
