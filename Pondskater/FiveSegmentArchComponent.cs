@@ -23,8 +23,8 @@ namespace Pondskater
 
         protected override void RegisterInputParams(GH_InputParamManager pManager)
         {
-            pManager.AddNumberParameter("Span", "S", "Overall width of the arch.", GH_ParamAccess.item);
-            pManager.AddNumberParameter("Rise", "R", "Vertical height from the spring line to the apex.", GH_ParamAccess.item);
+            pManager.AddNumberParameter("Span", "S", "Overall width of the arch.", GH_ParamAccess.item, 10);
+            pManager.AddNumberParameter("Rise", "R", "Vertical height from the spring line to the apex.", GH_ParamAccess.item, 5);
             pManager.AddPlaneParameter("Plane", "P", "Construction plane. Span follows its X axis and rise follows its Y axis.", GH_ParamAccess.item, Plane.WorldXY);
         }
 
