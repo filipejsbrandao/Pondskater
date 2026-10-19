@@ -24,6 +24,13 @@ dotnet build Pondskater/Pondskater.csproj -c Release
 bash Pondskater_GH/prepare_dist.sh
 ```
 
+## Grasshopper
+To install in Grasshopper it is recommended to use PackageManager command in rhino. 
+- Run packagemanager
+- Search pondskater
+- Install
+- Restart Rhino
+
 Notes
 - The Grasshopper plugin artifacts live under `Pondskater_GH/dist/` to avoid confusion between the repository name and the plugin folder name on GitHub.
 - Solution name remains `Pondskater` and the project assembly uses the `Pondskater` namespace.
