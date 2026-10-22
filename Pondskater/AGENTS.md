@@ -1,3 +1,9 @@
+# Pondskater instructions
+
+Read and follow the shared instructions in [`../AGENTS.md`](../AGENTS.md) before
+working in this project, including when `Pondskater/` is the opened workspace.
+The sections below supplement that shared file.
+
 ## graphify
 
 This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.

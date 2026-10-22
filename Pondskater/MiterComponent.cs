@@ -22,7 +22,7 @@ namespace Pondskater
             pManager.AddPlaneParameter("Plane", "P", "Construction plane. Its origin defines the joint center.", GH_ParamAccess.item, Plane.WorldXY);
             pManager.AddVectorParameter("Vectors", "V", "Wall directions meeting at the joint.", GH_ParamAccess.list);
             pManager.AddNumberParameter("Arm Lengths", "B", "Per-arm lengths. If fewer values are provided than vectors, the last value is repeated.", GH_ParamAccess.list);
-            pManager.AddNumberParameter("Widths", "H", "Per-arm widths. If fewer values are provided than vectors, the last value is repeated.", GH_ParamAccess.list);
+            pManager.AddNumberParameter("Widths", "W", "Per-arm widths. If fewer values are provided than vectors, the last value is repeated.", GH_ParamAccess.list);
             pManager.AddNumberParameter("Min Angle", "A", "Minimum angular separation in degrees for distinct wall directions.", GH_ParamAccess.item, 5.0);
         }
 
