@@ -24,7 +24,7 @@ namespace Pondskater
             pManager.AddCurveParameter("Cells", "C", "Closed coplanar cell boundaries to join.", GH_ParamAccess.list);
             pManager.AddCurveParameter("Path", "P", "Open polyline path crossing the cells in the order they are to be joined.", GH_ParamAccess.item);
             pManager.AddNumberParameter("Width", "W", "Total width of the connecting corridor, or filament layer width.", GH_ParamAccess.item);
-            pManager.AddBooleanParameter("Inset Cells", "I", "Inset every cell by half the corridor width (or half of the filament layer width) before joining.", GH_ParamAccess.item, false);
+            pManager.AddBooleanParameter("Inset Cells", "I", "Inset every cell by half the corridor width (or half of the filament layer width) before joining.", GH_ParamAccess.item, true);
             pManager.AddPlaneParameter("Plane", "Pl", "Optional common working plane. When omitted, the plane is inferred from the path.", GH_ParamAccess.item);
             pManager[4].Optional = true;
         }

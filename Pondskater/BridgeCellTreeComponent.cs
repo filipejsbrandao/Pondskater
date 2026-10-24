@@ -26,7 +26,7 @@ namespace Pondskater
             pManager.AddCurveParameter("Cells", "C", "Closed coplanar cell boundaries. Cell indices follow the input list order.", GH_ParamAccess.list);
             pManager.AddIntegerParameter("Neighbors", "N", "Neighbor indices for each cell. Branch {i} contains the indices connected to cell i.", GH_ParamAccess.tree);
             pManager.AddNumberParameter("Width", "W", "Total width of each centroid connection corridor.", GH_ParamAccess.item);
-            pManager.AddBooleanParameter("Inset Cells", "I", "Inset every cell by half the corridor width before joining.", GH_ParamAccess.item, false);
+            pManager.AddBooleanParameter("Inset Cells", "I", "Inset every cell by half the corridor width before joining.", GH_ParamAccess.item, true);
             pManager.AddPlaneParameter("Plane", "Pl", "Optional common working plane. When omitted, the plane is inferred from the first cell.", GH_ParamAccess.item);
             pManager[4].Optional = true;
         }
