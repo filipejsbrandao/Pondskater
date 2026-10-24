@@ -11,7 +11,7 @@
       "_origin": "ast",
       "id": "3dcpspeed",
       "community": 0,
-      "community_name": "GH_Component",
+      "community_name": "_3DCPSpeed",
       "norm_label": "3dcpspeed.cs"
     },
     {
@@ -27,7 +27,7 @@
       "_origin": "ast",
       "id": "csharp_namespace:ef951a2503d6f7da",
       "community": 0,
-      "community_name": "GH_Component",
+      "community_name": "_3DCPSpeed",
       "norm_label": "pondskater._3dcputils"
     },
     {
@@ -44,7 +44,7 @@
       "_origin": "ast",
       "id": "3dcpspeed_pondskater_3dcputils_3dcpspeed",
       "community": 0,
-      "community_name": "GH_Component",
+      "community_name": "_3DCPSpeed",
       "norm_label": "_3dcpspeed"
     },
     {
@@ -54,7 +54,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "gh_component",
-      "community": 0,
+      "community": 27,
       "community_name": "GH_Component",
       "norm_label": "gh_component"
     },
@@ -72,7 +72,7 @@
       "_origin": "ast",
       "id": "3dcpspeed_pondskater_3dcputils_3dcpspeed_registerinputparams",
       "community": 0,
-      "community_name": "GH_Component",
+      "community_name": "_3DCPSpeed",
       "norm_label": ".registerinputparams()"
     },
     {
@@ -83,7 +83,7 @@
       "_origin": "ast",
       "id": "3dcpspeed_cs_gh_inputparammanager",
       "community": 0,
-      "community_name": "GH_Component",
+      "community_name": "_3DCPSpeed",
       "norm_label": "gh_inputparammanager"
     },
     {
@@ -100,7 +100,7 @@
       "_origin": "ast",
       "id": "3dcpspeed_pondskater_3dcputils_3dcpspeed_registeroutputparams",
       "community": 0,
-      "community_name": "GH_Component",
+      "community_name": "_3DCPSpeed",
       "norm_label": ".registeroutputparams()"
     },
     {
@@ -111,7 +111,7 @@
       "_origin": "ast",
       "id": "3dcpspeed_cs_gh_outputparammanager",
       "community": 0,
-      "community_name": "GH_Component",
+      "community_name": "_3DCPSpeed",
       "norm_label": "gh_outputparammanager"
     },
     {
@@ -128,7 +128,7 @@
       "_origin": "ast",
       "id": "3dcpspeed_pondskater_3dcputils_3dcpspeed_solveinstance",
       "community": 0,
-      "community_name": "GH_Component",
+      "community_name": "_3DCPSpeed",
       "norm_label": ".solveinstance()"
     },
     {
@@ -139,7 +139,7 @@
       "_origin": "ast",
       "id": "3dcpspeed_cs_igh_dataaccess",
       "community": 0,
-      "community_name": "GH_Component",
+      "community_name": "_3DCPSpeed",
       "norm_label": "igh_dataaccess"
     },
     {
@@ -150,7 +150,7 @@
       "_origin": "ast",
       "id": "3dcpspeed_cs_bitmap",
       "community": 0,
-      "community_name": "GH_Component",
+      "community_name": "_3DCPSpeed",
       "norm_label": "bitmap"
     },
     {
@@ -161,7 +161,7 @@
       "_origin": "ast",
       "id": "3dcpspeed_cs_guid",
       "community": 0,
-      "community_name": "GH_Component",
+      "community_name": "_3DCPSpeed",
       "norm_label": "guid"
     },
     {
@@ -729,8 +729,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "bridgecelltreecomponent",
-      "community": 20,
-      "community_name": "BridgeCellTreeComponent",
+      "community": 3,
+      "community_name": "Pondskater",
       "norm_label": "bridgecelltreecomponent.cs"
     },
     {
@@ -1508,10 +1508,27 @@
       "norm_label": ".projectintersectionpoint()"
     },
     {
-      "label": ".CcwAngle()",
+      "label": ".LJointExtent()",
       "file_type": "code",
       "source_file": "ComponentGeometry2D.cs",
       "source_location": "L105",
+      "metadata": {
+        "namespace": "Pondskater",
+        "scope_chain": [
+          "s75"
+        ]
+      },
+      "_origin": "ast",
+      "id": "componentgeometry2d_pondskater_componentgeometry2d_ljointextent",
+      "community": 2,
+      "community_name": "ComponentGeometry2D",
+      "norm_label": ".ljointextent()"
+    },
+    {
+      "label": ".CcwAngle()",
+      "file_type": "code",
+      "source_file": "ComponentGeometry2D.cs",
+      "source_location": "L112",
       "metadata": {
         "namespace": "Pondskater",
         "scope_chain": [
@@ -1528,7 +1545,7 @@
       "label": ".AngleInPlane()",
       "file_type": "code",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L113",
+      "source_location": "L120",
       "metadata": {
         "namespace": "Pondskater",
         "scope_chain": [
@@ -1556,7 +1573,7 @@
       "label": ".AngleOrder()",
       "file_type": "code",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L120",
+      "source_location": "L127",
       "metadata": {
         "namespace": "Pondskater",
         "scope_chain": [
@@ -1573,7 +1590,7 @@
       "label": ".TryProjectAndUnitize()",
       "file_type": "code",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L125",
+      "source_location": "L132",
       "metadata": {
         "namespace": "Pondskater",
         "scope_chain": [
@@ -1590,7 +1607,7 @@
       "label": ".MergeDuplicateDirections()",
       "file_type": "code",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L131",
+      "source_location": "L138",
       "metadata": {
         "namespace": "Pondskater",
         "scope_chain": [
@@ -1618,7 +1635,7 @@
       "label": ".ExpandValues()",
       "file_type": "code",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L155",
+      "source_location": "L162",
       "metadata": {
         "namespace": "Pondskater",
         "scope_chain": [
@@ -1896,8 +1913,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "edgealignedboundingrectanglecomponent",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 1,
+      "community_name": "ConvexPolygon2D",
       "norm_label": "edgealignedboundingrectanglecomponent.cs"
     },
     {
@@ -1913,8 +1930,8 @@
       },
       "_origin": "ast",
       "id": "edgealignedboundingrectanglecomponent_pondskater_edgealignedboundingrectanglecomponent",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 1,
+      "community_name": "ConvexPolygon2D",
       "norm_label": "edgealignedboundingrectanglecomponent"
     },
     {
@@ -1930,8 +1947,8 @@
       },
       "_origin": "ast",
       "id": "edgealignedboundingrectanglecomponent_pondskater_edgealignedboundingrectanglecomponent_registerinputparams",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 1,
+      "community_name": "ConvexPolygon2D",
       "norm_label": ".registerinputparams()"
     },
     {
@@ -1941,8 +1958,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "edgealignedboundingrectanglecomponent_cs_gh_inputparammanager",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 1,
+      "community_name": "ConvexPolygon2D",
       "norm_label": "gh_inputparammanager"
     },
     {
@@ -1958,8 +1975,8 @@
       },
       "_origin": "ast",
       "id": "edgealignedboundingrectanglecomponent_pondskater_edgealignedboundingrectanglecomponent_registeroutputparams",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 1,
+      "community_name": "ConvexPolygon2D",
       "norm_label": ".registeroutputparams()"
     },
     {
@@ -1969,8 +1986,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "edgealignedboundingrectanglecomponent_cs_gh_outputparammanager",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 1,
+      "community_name": "ConvexPolygon2D",
       "norm_label": "gh_outputparammanager"
     },
     {
@@ -2008,8 +2025,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "edgealignedboundingrectanglecomponent_cs_bitmap",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 1,
+      "community_name": "ConvexPolygon2D",
       "norm_label": "bitmap"
     },
     {
@@ -2019,8 +2036,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "edgealignedboundingrectanglecomponent_cs_guid",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 1,
+      "community_name": "ConvexPolygon2D",
       "norm_label": "guid"
     },
     {
@@ -2486,7 +2503,7 @@
       "_origin": "ast",
       "id": "extrusionprofilecomponent",
       "community": 0,
-      "community_name": "GH_Component",
+      "community_name": "_3DCPSpeed",
       "norm_label": "extrusionprofilecomponent.cs"
     },
     {
@@ -2815,8 +2832,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "fivesegmentarchcomponent",
-      "community": 3,
-      "community_name": "Pondskater",
+      "community": 11,
+      "community_name": "FiveSegmentArchComponent",
       "norm_label": "fivesegmentarchcomponent.cs"
     },
     {
@@ -4659,7 +4676,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "lcomponent",
-      "community": 0,
+      "community": 27,
       "community_name": "GH_Component",
       "norm_label": "lcomponent.cs"
     },
@@ -4676,7 +4693,7 @@
       },
       "_origin": "ast",
       "id": "lcomponent_pondskater_lcomponent",
-      "community": 0,
+      "community": 27,
       "community_name": "GH_Component",
       "norm_label": "lcomponent"
     },
@@ -4693,7 +4710,7 @@
       },
       "_origin": "ast",
       "id": "lcomponent_pondskater_lcomponent_registerinputparams",
-      "community": 0,
+      "community": 27,
       "community_name": "GH_Component",
       "norm_label": ".registerinputparams()"
     },
@@ -4704,7 +4721,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "lcomponent_cs_gh_inputparammanager",
-      "community": 0,
+      "community": 27,
       "community_name": "GH_Component",
       "norm_label": "gh_inputparammanager"
     },
@@ -4721,7 +4738,7 @@
       },
       "_origin": "ast",
       "id": "lcomponent_pondskater_lcomponent_registeroutputparams",
-      "community": 0,
+      "community": 27,
       "community_name": "GH_Component",
       "norm_label": ".registeroutputparams()"
     },
@@ -4732,7 +4749,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "lcomponent_cs_gh_outputparammanager",
-      "community": 0,
+      "community": 27,
       "community_name": "GH_Component",
       "norm_label": "gh_outputparammanager"
     },
@@ -4771,7 +4788,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "lcomponent_cs_bitmap",
-      "community": 0,
+      "community": 27,
       "community_name": "GH_Component",
       "norm_label": "bitmap"
     },
@@ -4782,7 +4799,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "lcomponent_cs_guid",
-      "community": 0,
+      "community": 27,
       "community_name": "GH_Component",
       "norm_label": "guid"
     },
@@ -5347,8 +5364,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ncomponent",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 28,
+      "community_name": "NComponent",
       "norm_label": "ncomponent.cs"
     },
     {
@@ -5364,8 +5381,8 @@
       },
       "_origin": "ast",
       "id": "ncomponent_pondskater_ncomponent",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 28,
+      "community_name": "NComponent",
       "norm_label": "ncomponent"
     },
     {
@@ -5381,8 +5398,8 @@
       },
       "_origin": "ast",
       "id": "ncomponent_pondskater_ncomponent_registerinputparams",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 28,
+      "community_name": "NComponent",
       "norm_label": ".registerinputparams()"
     },
     {
@@ -5392,8 +5409,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "ncomponent_cs_gh_inputparammanager",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 28,
+      "community_name": "NComponent",
       "norm_label": "gh_inputparammanager"
     },
     {
@@ -5409,8 +5426,8 @@
       },
       "_origin": "ast",
       "id": "ncomponent_pondskater_ncomponent_registeroutputparams",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 28,
+      "community_name": "NComponent",
       "norm_label": ".registeroutputparams()"
     },
     {
@@ -5420,8 +5437,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "ncomponent_cs_gh_outputparammanager",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 28,
+      "community_name": "NComponent",
       "norm_label": "gh_outputparammanager"
     },
     {
@@ -5459,8 +5476,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "ncomponent_cs_bitmap",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 28,
+      "community_name": "NComponent",
       "norm_label": "bitmap"
     },
     {
@@ -5470,8 +5487,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "ncomponent_cs_guid",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 28,
+      "community_name": "NComponent",
       "norm_label": "guid"
     },
     {
@@ -5481,8 +5498,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "native_surfernative",
-      "community": 4,
-      "community_name": "SurferNative",
+      "community": 3,
+      "community_name": "Pondskater",
       "norm_label": "surfernative.cs"
     },
     {
@@ -5677,8 +5694,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "offsetparser",
-      "community": 3,
-      "community_name": "Pondskater",
+      "community": 4,
+      "community_name": "SurferNative",
       "norm_label": "offsetparser.cs"
     },
     {
@@ -5694,8 +5711,8 @@
       },
       "_origin": "ast",
       "id": "offsetparser_pondskater_offsetparserexception",
-      "community": 3,
-      "community_name": "Pondskater",
+      "community": 4,
+      "community_name": "SurferNative",
       "norm_label": "offsetparserexception"
     },
     {
@@ -5705,8 +5722,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "exception",
-      "community": 3,
-      "community_name": "Pondskater",
+      "community": 4,
+      "community_name": "SurferNative",
       "norm_label": "exception"
     },
     {
@@ -5722,8 +5739,8 @@
       },
       "_origin": "ast",
       "id": "offsetparser_pondskater_offsetparser",
-      "community": 3,
-      "community_name": "Pondskater",
+      "community": 4,
+      "community_name": "SurferNative",
       "norm_label": "offsetparser"
     },
     {
@@ -5733,8 +5750,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "offsetparser_cs_string",
-      "community": 3,
-      "community_name": "Pondskater",
+      "community": 4,
+      "community_name": "SurferNative",
       "norm_label": "string"
     },
     {
@@ -5750,8 +5767,8 @@
       },
       "_origin": "ast",
       "id": "offsetparser_pondskater_offsetparser_parseoffsetspec",
-      "community": 3,
-      "community_name": "Pondskater",
+      "community": 4,
+      "community_name": "SurferNative",
       "norm_label": ".parseoffsetspec()"
     },
     {
@@ -5761,8 +5778,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "offsetparser_cs_list",
-      "community": 3,
-      "community_name": "Pondskater",
+      "community": 4,
+      "community_name": "SurferNative",
       "norm_label": "list"
     },
     {
@@ -5778,8 +5795,8 @@
       },
       "_origin": "ast",
       "id": "offsetparser_pondskater_offsetparser_getpolylinecount",
-      "community": 3,
-      "community_name": "Pondskater",
+      "community": 4,
+      "community_name": "SurferNative",
       "norm_label": ".getpolylinecount()"
     },
     {
@@ -5957,8 +5974,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "polygonpartition",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 26,
+      "community_name": "PolygonPartition",
       "norm_label": "polygonpartition.cs"
     },
     {
@@ -5974,8 +5991,8 @@
       },
       "_origin": "ast",
       "id": "polygonpartition_pondskater_polygonpartition",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 26,
+      "community_name": "PolygonPartition",
       "norm_label": "polygonpartition"
     },
     {
@@ -5991,8 +6008,8 @@
       },
       "_origin": "ast",
       "id": "polygonpartition_pondskater_polygonpartition_registerinputparams",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 26,
+      "community_name": "PolygonPartition",
       "norm_label": ".registerinputparams()"
     },
     {
@@ -6002,8 +6019,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "polygonpartition_cs_gh_inputparammanager",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 26,
+      "community_name": "PolygonPartition",
       "norm_label": "gh_inputparammanager"
     },
     {
@@ -6019,8 +6036,8 @@
       },
       "_origin": "ast",
       "id": "polygonpartition_pondskater_polygonpartition_registeroutputparams",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 26,
+      "community_name": "PolygonPartition",
       "norm_label": ".registeroutputparams()"
     },
     {
@@ -6030,8 +6047,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "polygonpartition_cs_gh_outputparammanager",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 26,
+      "community_name": "PolygonPartition",
       "norm_label": "gh_outputparammanager"
     },
     {
@@ -6047,8 +6064,8 @@
       },
       "_origin": "ast",
       "id": "polygonpartition_pondskater_polygonpartition_solveinstance",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 26,
+      "community_name": "PolygonPartition",
       "norm_label": ".solveinstance()"
     },
     {
@@ -6058,8 +6075,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "polygonpartition_cs_igh_dataaccess",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 26,
+      "community_name": "PolygonPartition",
       "norm_label": "igh_dataaccess"
     },
     {
@@ -6069,8 +6086,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "polygonpartition_cs_bitmap",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 26,
+      "community_name": "PolygonPartition",
       "norm_label": "bitmap"
     },
     {
@@ -6080,8 +6097,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "polygonpartition_cs_guid",
-      "community": 0,
-      "community_name": "GH_Component",
+      "community": 26,
+      "community_name": "PolygonPartition",
       "norm_label": "guid"
     },
     {
@@ -6091,8 +6108,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "polygonwidthcomponent",
-      "community": 1,
-      "community_name": "ConvexPolygon2D",
+      "community": 21,
+      "community_name": "PolygonWidthComponent",
       "norm_label": "polygonwidthcomponent.cs"
     },
     {
@@ -6108,8 +6125,8 @@
       },
       "_origin": "ast",
       "id": "polygonwidthcomponent_pondskater_polygonwidthcomponent",
-      "community": 1,
-      "community_name": "ConvexPolygon2D",
+      "community": 21,
+      "community_name": "PolygonWidthComponent",
       "norm_label": "polygonwidthcomponent"
     },
     {
@@ -6125,8 +6142,8 @@
       },
       "_origin": "ast",
       "id": "polygonwidthcomponent_pondskater_polygonwidthcomponent_registerinputparams",
-      "community": 1,
-      "community_name": "ConvexPolygon2D",
+      "community": 21,
+      "community_name": "PolygonWidthComponent",
       "norm_label": ".registerinputparams()"
     },
     {
@@ -6136,8 +6153,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "polygonwidthcomponent_cs_gh_inputparammanager",
-      "community": 1,
-      "community_name": "ConvexPolygon2D",
+      "community": 21,
+      "community_name": "PolygonWidthComponent",
       "norm_label": "gh_inputparammanager"
     },
     {
@@ -6153,8 +6170,8 @@
       },
       "_origin": "ast",
       "id": "polygonwidthcomponent_pondskater_polygonwidthcomponent_registeroutputparams",
-      "community": 1,
-      "community_name": "ConvexPolygon2D",
+      "community": 21,
+      "community_name": "PolygonWidthComponent",
       "norm_label": ".registeroutputparams()"
     },
     {
@@ -6164,8 +6181,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "polygonwidthcomponent_cs_gh_outputparammanager",
-      "community": 1,
-      "community_name": "ConvexPolygon2D",
+      "community": 21,
+      "community_name": "PolygonWidthComponent",
       "norm_label": "gh_outputparammanager"
     },
     {
@@ -6203,8 +6220,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "polygonwidthcomponent_cs_bitmap",
-      "community": 1,
-      "community_name": "ConvexPolygon2D",
+      "community": 21,
+      "community_name": "PolygonWidthComponent",
       "norm_label": "bitmap"
     },
     {
@@ -6214,8 +6231,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "polygonwidthcomponent_cs_guid",
-      "community": 1,
-      "community_name": "ConvexPolygon2D",
+      "community": 21,
+      "community_name": "PolygonWidthComponent",
       "norm_label": "guid"
     },
     {
@@ -6231,8 +6248,8 @@
       },
       "_origin": "ast",
       "id": "polygonwidthcomponent_pondskater_polygonwidthcomponent_computeminimumwidth",
-      "community": 1,
-      "community_name": "ConvexPolygon2D",
+      "community": 21,
+      "community_name": "PolygonWidthComponent",
       "norm_label": ".computeminimumwidth()"
     },
     {
@@ -6242,8 +6259,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "polygonwidthcomponent_cs_list",
-      "community": 1,
-      "community_name": "ConvexPolygon2D",
+      "community": 21,
+      "community_name": "PolygonWidthComponent",
       "norm_label": "list"
     },
     {
@@ -6253,8 +6270,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "polygonwidthcomponent_cs_point3d",
-      "community": 1,
-      "community_name": "ConvexPolygon2D",
+      "community": 21,
+      "community_name": "PolygonWidthComponent",
       "norm_label": "point3d"
     },
     {
@@ -6264,8 +6281,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "minwidthresult",
-      "community": 1,
-      "community_name": "ConvexPolygon2D",
+      "community": 21,
+      "community_name": "PolygonWidthComponent",
       "norm_label": "minwidthresult"
     },
     {
@@ -6281,8 +6298,8 @@
       },
       "_origin": "ast",
       "id": "polygonwidthcomponent_pondskater_polygonwidthcomponent_distancetoline",
-      "community": 1,
-      "community_name": "ConvexPolygon2D",
+      "community": 21,
+      "community_name": "PolygonWidthComponent",
       "norm_label": ".distancetoline()"
     },
     {
@@ -6299,8 +6316,8 @@
       },
       "_origin": "ast",
       "id": "polygonwidthcomponent_pondskater_minwidthresult",
-      "community": 1,
-      "community_name": "ConvexPolygon2D",
+      "community": 21,
+      "community_name": "PolygonWidthComponent",
       "norm_label": "minwidthresult"
     },
     {
@@ -6310,8 +6327,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "polygonwidthcomponent_cs_line",
-      "community": 1,
-      "community_name": "ConvexPolygon2D",
+      "community": 21,
+      "community_name": "PolygonWidthComponent",
       "norm_label": "line"
     },
     {
@@ -6387,8 +6404,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pondskaterinfo",
-      "community": 21,
-      "community_name": "PondskaterInfo",
+      "community": 3,
+      "community_name": "Pondskater",
       "norm_label": "pondskaterinfo.cs"
     },
     {
@@ -6404,8 +6421,8 @@
       },
       "_origin": "ast",
       "id": "pondskaterinfo_pondskater_pondskatercategoryicon",
-      "community": 21,
-      "community_name": "PondskaterInfo",
+      "community": 3,
+      "community_name": "Pondskater",
       "norm_label": "pondskatercategoryicon"
     },
     {
@@ -6415,8 +6432,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "gh_assemblypriority",
-      "community": 21,
-      "community_name": "PondskaterInfo",
+      "community": 3,
+      "community_name": "Pondskater",
       "norm_label": "gh_assemblypriority"
     },
     {
@@ -6432,8 +6449,8 @@
       },
       "_origin": "ast",
       "id": "pondskaterinfo_pondskater_pondskatercategoryicon_priorityload",
-      "community": 21,
-      "community_name": "PondskaterInfo",
+      "community": 3,
+      "community_name": "Pondskater",
       "norm_label": ".priorityload()"
     },
     {
@@ -6443,8 +6460,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "gh_loadinginstruction",
-      "community": 21,
-      "community_name": "PondskaterInfo",
+      "community": 3,
+      "community_name": "Pondskater",
       "norm_label": "gh_loadinginstruction"
     },
     {
@@ -6460,8 +6477,8 @@
       },
       "_origin": "ast",
       "id": "pondskaterinfo_pondskater_pondskaterinfo",
-      "community": 21,
-      "community_name": "PondskaterInfo",
+      "community": 3,
+      "community_name": "Pondskater",
       "norm_label": "pondskaterinfo"
     },
     {
@@ -6471,8 +6488,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "gh_assemblyinfo",
-      "community": 21,
-      "community_name": "PondskaterInfo",
+      "community": 3,
+      "community_name": "Pondskater",
       "norm_label": "gh_assemblyinfo"
     },
     {
@@ -6482,8 +6499,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pondskaterinfo_cs_bitmap",
-      "community": 21,
-      "community_name": "PondskaterInfo",
+      "community": 3,
+      "community_name": "Pondskater",
       "norm_label": "bitmap"
     },
     {
@@ -6493,8 +6510,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pondskaterinfo_cs_guid",
-      "community": 21,
-      "community_name": "PondskaterInfo",
+      "community": 3,
+      "community_name": "Pondskater",
       "norm_label": "guid"
     },
     {
@@ -8459,8 +8476,8 @@
       },
       "_origin": "ast",
       "id": "writegraphml_component_pondskater_writegraphml_component_solveinstance",
-      "community": 4,
-      "community_name": "SurferNative",
+      "community": 3,
+      "community_name": "Pondskater",
       "norm_label": ".solveinstance()"
     },
     {
@@ -8470,8 +8487,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "writegraphml_component_cs_igh_dataaccess",
-      "community": 4,
-      "community_name": "SurferNative",
+      "community": 3,
+      "community_name": "Pondskater",
       "norm_label": "igh_dataaccess"
     },
     {
@@ -8504,18 +8521,29 @@
       "_origin": "ast",
       "id": "agents",
       "community": 25,
-      "community_name": "AGENTS.md",
+      "community_name": "Pondskater instructions",
       "norm_label": "agents.md"
+    },
+    {
+      "label": "Pondskater instructions",
+      "file_type": "document",
+      "source_file": "AGENTS.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "agents_pondskater_instructions",
+      "community": 25,
+      "community_name": "Pondskater instructions",
+      "norm_label": "pondskater instructions"
     },
     {
       "label": "graphify",
       "file_type": "document",
       "source_file": "AGENTS.md",
-      "source_location": "L1",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "agents_graphify",
       "community": 25,
-      "community_name": "AGENTS.md",
+      "community_name": "Pondskater instructions",
       "norm_label": "graphify"
     },
     {
@@ -11584,7 +11612,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L113",
+      "source_location": "L120",
       "weight": 1.0,
       "_origin": "ast",
       "source": "componentgeometry2d_pondskater_componentgeometry2d",
@@ -11595,7 +11623,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L120",
+      "source_location": "L127",
       "weight": 1.0,
       "_origin": "ast",
       "source": "componentgeometry2d_pondskater_componentgeometry2d",
@@ -11617,7 +11645,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L105",
+      "source_location": "L112",
       "weight": 1.0,
       "_origin": "ast",
       "source": "componentgeometry2d_pondskater_componentgeometry2d",
@@ -11639,7 +11667,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L155",
+      "source_location": "L162",
       "weight": 1.0,
       "_origin": "ast",
       "source": "componentgeometry2d_pondskater_componentgeometry2d",
@@ -11683,7 +11711,18 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L131",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "componentgeometry2d_pondskater_componentgeometry2d",
+      "target": "componentgeometry2d_pondskater_componentgeometry2d_ljointextent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ComponentGeometry2D.cs",
+      "source_location": "L138",
       "weight": 1.0,
       "_origin": "ast",
       "source": "componentgeometry2d_pondskater_componentgeometry2d",
@@ -11727,7 +11766,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L125",
+      "source_location": "L132",
       "weight": 1.0,
       "_origin": "ast",
       "source": "componentgeometry2d_pondskater_componentgeometry2d",
@@ -11754,7 +11793,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L127",
+      "source_location": "L134",
       "weight": 1.0,
       "_origin": "ast",
       "source": "componentgeometry2d_pondskater_componentgeometry2d_tryprojectandunitize",
@@ -11789,7 +11828,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L113",
+      "source_location": "L120",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -11819,7 +11858,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L105",
+      "source_location": "L112",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -11894,7 +11933,22 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L131",
+      "source_location": "L105",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "Vector3d"
+      },
+      "_origin": "ast",
+      "source": "componentgeometry2d_pondskater_componentgeometry2d_ljointextent",
+      "target": "componentgeometry2d_cs_vector3d",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "ComponentGeometry2D.cs",
+      "source_location": "L138",
       "weight": 1.0,
       "context": "generic_arg",
       "metadata": {
@@ -11939,7 +11993,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L125",
+      "source_location": "L132",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -12200,13 +12254,13 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "LComponent.cs",
-      "source_location": "L112",
+      "source_file": "ComponentGeometry2D.cs",
+      "source_location": "L109",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "lcomponent_pondskater_lcomponent_solveinstance",
-      "target": "componentgeometry2d_pondskater_componentgeometry2d_projectintersectionpoint"
+      "source": "componentgeometry2d_pondskater_componentgeometry2d_ljointextent",
+      "target": "componentgeometry2d_pondskater_componentgeometry2d_projectintersectionpoint",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -12236,8 +12290,20 @@
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "LComponent.cs",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "lcomponent_pondskater_lcomponent_solveinstance",
+      "target": "componentgeometry2d_pondskater_componentgeometry2d_ljointextent"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L143",
+      "source_location": "L150",
       "weight": 1.0,
       "_origin": "ast",
       "source": "componentgeometry2d_pondskater_componentgeometry2d_mergeduplicatedirections",
@@ -12272,7 +12338,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L113",
+      "source_location": "L120",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -12359,7 +12425,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L131",
+      "source_location": "L138",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -12386,7 +12452,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L155",
+      "source_location": "L162",
       "weight": 1.0,
       "context": "return_type",
       "metadata": {
@@ -12401,7 +12467,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "ComponentGeometry2D.cs",
-      "source_location": "L155",
+      "source_location": "L162",
       "weight": 1.0,
       "context": "parameter_type",
       "metadata": {
@@ -17674,7 +17740,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "LComponent.cs",
-      "source_location": "L154",
+      "source_location": "L148",
       "weight": 1.0,
       "context": "field",
       "metadata": {
@@ -17689,7 +17755,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "LComponent.cs",
-      "source_location": "L156",
+      "source_location": "L150",
       "weight": 1.0,
       "context": "field",
       "metadata": {
@@ -22030,6 +22096,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "agents",
+      "target": "agents_pondskater_instructions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENTS.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "agents_pondskater_instructions",
       "target": "agents_graphify",
       "confidence_score": 1.0
     },
@@ -22057,5 +22134,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "6cb57e61b4f8d625cd7b50b9f3b2b9ae7368cb2c"
+  "built_at_commit": "647bc4fe13c0818a39988623de1ce77b7c3fdb9f"
 }

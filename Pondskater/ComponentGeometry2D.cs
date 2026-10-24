@@ -102,6 +102,13 @@ namespace Pondskater
             return Vector3d.Multiply(v1 + v2, a);
         }
 
+        internal static double LJointExtent(double widthA, double widthB, Vector3d a, Vector3d b, Vector3d normal)
+        {
+            // An L outline contains both opposite joint corners. The forward extent
+            // is the larger of their projections, regardless of arm winding.
+            return Math.Abs(ProjectIntersectionPoint(widthA, widthB, a, b, normal));
+        }
+
         internal static double CcwAngle(Vector3d first, Vector3d second, Vector3d normal)
         {
             double angle = Math.Atan2(Vector3d.Multiply(Vector3d.CrossProduct(first, second), normal), Vector3d.Multiply(first, second));

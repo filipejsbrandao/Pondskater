@@ -109,14 +109,8 @@ namespace Pondskater
             double memberLengthA = expandedLengths[0];
             double memberLengthB = expandedLengths[1];
 
-            double jointProjectionA = ComponentGeometry2D.ProjectIntersectionPoint(widthA, widthB, projectedA, projectedB, normal);
-            double jointProjectionB = ComponentGeometry2D.ProjectIntersectionPoint(widthB, widthA, projectedB, projectedA, normal);
-
-            if (jointProjectionA <= ComponentGeometry2D.Epsilon || jointProjectionB <= ComponentGeometry2D.Epsilon)
-            {
-                AddRuntimeMessage(GH_RuntimeMessageLevel.Error, "The resolved joint flips behind the origin for the supplied arm directions and widths.");
-                return;
-            }
+            double jointProjectionA = ComponentGeometry2D.LJointExtent(widthA, widthB, projectedA, projectedB, normal);
+            double jointProjectionB = ComponentGeometry2D.LJointExtent(widthB, widthA, projectedB, projectedA, normal);
 
             double lengthA = jointProjectionA + memberLengthA;
             double lengthB = jointProjectionB + memberLengthB;

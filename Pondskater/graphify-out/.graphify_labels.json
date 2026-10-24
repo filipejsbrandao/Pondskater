@@ -1,5 +1,5 @@
 {
-  "0": "GH_Component",
+  "0": "_3DCPSpeed",
   "1": "ConvexPolygon2D",
   "2": "ComponentGeometry2D",
   "3": "Pondskater",
@@ -20,9 +20,12 @@
   "18": "MetricSubdivisionComponent",
   "19": "SymmetricSubdivisionComponent",
   "20": "BridgeCellTreeComponent",
-  "21": "PondskaterInfo",
+  "21": "PolygonWidthComponent",
   "22": "Pondskater.csproj",
   "23": "TComponent",
   "24": "Pondskater",
-  "25": "AGENTS.md"
+  "25": "Pondskater instructions",
+  "26": "PolygonPartition",
+  "27": "GH_Component",
+  "28": "NComponent"
 }
